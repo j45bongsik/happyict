@@ -9,6 +9,8 @@
 <a href="https://j45bongsik.github.io/happyict/holdings/idx.html" target="_blank">03_SKholdings 열기</a>
 <br>
 <a href="https://j45bongsik.github.io/happyict/sklookie/idx.html" target="_blank">04_SKlookie 열기</a>
+<br>
+<a href="http://j45.dothome.co.kr/pub_guide/convention/intro.html" target="_blank">05_Publishing guide 열기</a>
 
 
 
