@@ -1,0 +1,527 @@
+<!DOCTYPE html>
+<!-- <%
+	dim now_year, now_month, now_day, now_hour, now_minute, now_second, now_micro, queryString
+	now_year   = left(now(),4)
+	now_month  = mid(now(),6,2)
+	now_day    = mid(now(),9,2) 
+	now_hour   = right("0" & hour(now), 2)
+	now_minute = right("0" & minute(now), 2)
+	now_second = right("0" & second(now), 2)
+	now_micro  = right("000" & (timer * 1000) Mod 1000, 3)
+	 
+	queryString = now_year & now_month & now_day & now_hour & now_minute & now_second & now_micro
+%> -->
+<html lang="ko">
+
+<head>
+	<meta content="text/html; charset=utf-8" http-equiv="Content-Type" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+	<meta name="viewport" content="width=device-width" />
+	<meta name="format-detection" content="telephone=no" />
+	<title>SK holdings</title>
+	<link href="/holdings/resources/css/font.css" rel="stylesheet" />
+	<link href="/holdings/resources/css/animate.css" rel="stylesheet" />
+	<link href="/holdings/resources/css/common.css" rel="stylesheet" />
+	<link href="/holdings/resources/css/main.css?<%=queryString%>" rel="stylesheet" />
+	<link href="/holdings/resources/css/board.css?<%=queryString%>" rel="stylesheet" />
+	<link href="/holdings/resources/css/sub.css?<%=queryString%>" rel="stylesheet" />
+
+
+	<!-- <link href="/holdings/resources/path/favicon.ico" rel="shortcut icon" /> -->
+
+	<!--[if lt IE 9]>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.2/html5shiv.js"></script>
+		<![endif]-->
+
+	<script src="/holdings/resources/js/jquery-3.4.1.min.js"></script>
+	<script src="/holdings/resources/js/jquery-ui.min.js"></script>
+	<script src="/holdings/resources/js/jquery.ba-throttle-debounce.min.js"></script>
+	<script src="/holdings/resources/js/slick.js"></script>
+	<script src="/holdings/resources/js/jquery.ellipsis.js"></script>
+	<script src="/holdings/resources/js/common.js?<%=queryString%>"></script>
+	<script src="/holdings/resources/js/sub.js?<%=queryString%>"></script>
+
+</head>
+
+<!-- 메인페이지 home 클래스 -->
+
+<body class="home">
+
+	<!-- 안내네비게이션 -->
+	<p id="skip-navi-info">현재 사이트는 반응형 웹사이트입니다. 화면의 크기에 따라 표시되는(보여지는) 콘텐츠가 다를 수 있습니다. 화면을 최대화하여 사용해 주시기 바랍니다.</p>
+
+	<!-- 스킵네비게이션 -->
+	<ul id="skip-navi">
+		<li><a href="#contents">본문 바로가기</a></li>
+	</ul>
+
+	<!-- wrap -->
+	<div class="wrap" id="sub">
+		<div id="header">
+
+			<div class="top_gnb">
+				<a href="javascript:;" target="_blank" title="새 창 열림">SK주식회사 C&amp;C</a>
+			</div>
+
+			<!-- GNB 메뉴 -->
+			<div class="h_group">
+				<div>
+					<h1 class="top_logo">
+						<a href="/holdings/kr/main/main.html">SK holdings</a>
+					</h1>
+					<div id="gnb">												
+						<a class="btn_menu" href="javascript:;" title="전체 메뉴 열기">
+							<span></span>
+							<span>전체 메뉴 열기</span>
+							<span></span>
+						</a>					
+						<div class="box">						
+							<a class="btn_close" href="javascript:;" title="전체 메뉴 닫기">
+								<span></span>
+								<span>전체 메뉴 닫기</span>
+								<span></span>
+							</a>
+							<div class="gnb_m_top">
+								<div class="top_logo_m">
+									<a href="/holdings/kr/main/main.html">SK holdings</a>
+								</div>
+								<div class="btn_lang_m">
+									<ul>
+										<li><a href="/holdings/en/main/main.html" target="_blank" title="새 창 열림">ENG</a></li>
+										<li class="on"><a href="/holdings/kr/main/main.html" target="_blank" title="새 창 열림">KOR</a></li>
+									</ul>
+								</div>
+							</div>
+							<ul class="gnb_m">
+								<li>
+									<p class="depth_1"><a href="javascript:;">회사소개</a></p>
+									<div class="sub_menu">
+										<div class="inner">
+											<ul class="depth_2">
+												<li><a href="/holdings/kr/about/overview.html">회사개요</a></li>
+												<li><a href="/holdings/kr/about/ceo.html">CEO Message</a></li>
+												<li><a href="/holdings/kr/about/strategy.html">사업소개</a></li>
+												<!-- <li><a href="javascript:alert('준비중입니다');">행복경영</a></li> -->
+											</ul>
+										</div>
+									</div>
+								</li>
+								<li>
+									<p class="depth_1"><a href="javascript:;">투자정보</a></p>
+									<div class="sub_menu">
+										<div class="inner">
+											<ul class="depth_2">
+												<li>
+													<a href="javascript:;">기업지배구조</a>
+													<ul class="depth_3">
+														<li><a href="/holdings/kr/ir/directors.html">이사회</a></li>
+														<li><a href="/holdings/kr/ir/committees.html">이사회 내 위원회</a></li>
+														<li><a href="/holdings/kr/ir/charter.html">지배구조헌장</a></li>
+													</ul>
+												</li>
+												<li>
+													<a href="javascript:;">재무정보</a>
+													<ul class="depth_3">
+														<li><a href="/holdings/kr/ir/shareholders.html">주주구성 </a></li>
+														<li><a href="/holdings/kr/ir/balanceSheet2019.html">주요재무제표</a></li>
+														<li><a href="/holdings/kr/ir/shareholdersReturn.html">주주환원</a></li>
+													</ul>
+												</li>
+												<li>
+													<a href="javascript:;">공시정보</a>
+													<ul class="depth_3">
+														<li><a href="/holdings/kr/ir/announcementList.html">전자공고</a></li>
+														<li><a href="http://dart.fss.or.kr/html/search/SearchCompanyIR3_M.html?textCrpNM=034730" target="_blank" title="새창에서 열림">공시자료</a></li>
+														<li><a href="/holdings/kr/ir/managementRegulations.html">공시정보관리규정</a></li>
+													</ul>
+												</li>
+												<li>
+													<a href="javascript:;">IR자료실</a>
+													<ul class="depth_3">
+														<li><a href="/holdings/kr/ir/presentation.html">Presentation</a></li>
+														<li><a href="/holdings/kr/ir/businessReports.html">사업보고서</a></li>
+														<li><a href="/holdings/kr/ir/auditReports.html">감사보고서</a></li>
+													</ul>
+												</li>
+											</ul>
+										</div>
+									</div>
+								</li>
+								<li>
+									<p class="depth_1"><a href="javascript:;">사회적가치</a></p>
+									<div class="sub_menu">
+										<div class="inner">
+											<ul class="depth_2">
+												<!-- <li><a href="javascript:alert('준비중입니다');">사회적가치제고활동</a></li> -->
+												<li>
+													<a href="javascript:;">지속가능경영</a>
+													<ul class="depth_3">
+														<li><a href="/holdings/kr/sv/sustainabilityStrategies.html">지속가능경영 전략</a></li>
+														<li><a href="/holdings/kr/sv/sustainabilityReport.html">지속가능경영 보고서</a></li>
+														<li><a href="/holdings/kr/sv/ethics.html">윤리규범</a></li>
+													</ul>
+												</li>
+											</ul>
+										</div>
+									</div>
+								</li>
+								<li>
+									<p class="depth_1"><a href="javascript:;">미디어센터</a></p>
+									<div class="sub_menu">
+										<div class="inner">
+											<ul class="depth_2">
+												<li><a href="/holdings/kr/media/PRCenterList.html">보도자료</a></li>
+											</ul>
+										</div>
+									</div>
+								</li>
+							</ul>
+							<div class="gnb_banner_wrap">
+								<div class="gnb_banner">
+									<a href="https://cc.sk.co.kr/" target="_blank" alt="새 창 열림">
+										<p>SK주식회사 C&C<span>Digital Innovation Leading Company</span></p>
+									</a>
+								</div>
+							</div>
+						</div>
+						<!-- // box -->
+					</div>
+					<!-- // gnb -->
+					<div class="util_menu_pc">
+						<div class="btn_lang">
+							<ul>
+								<li><a href="/holdings/en/main/main.html" target="_blank" title="새 창 열림">ENG</a></li>
+								<li class="on"><a href="/holdings/kr/main/main.html" target="_blank" title="새 창 열림">KOR</a></li>
+							</ul>
+						</div>
+						<div class="btn_sitemap">
+							<div class="nav_area">
+								<div class="navbar_toggle">
+									<a href="javascript:;">전체 메뉴 열기
+										<div class="menu_bar" title="전체 메뉴 열기">
+											<div class="bar1"></div>
+											<div class="bar2"></div>
+											<div class="bar3"></div>
+										</div>
+									</a>
+								</div>
+								<div class="nav">
+									<nav class="nav_hide">
+										<!-- 사이트맵 -->
+										<div class="sitemap_wrap">
+											<div class="sitemap">
+												<div class="sitemap_ul">
+													<p>회사소개</p>
+													<ul>
+														<li><a href="/holdings/kr/about/overview.html">회사개요</a></li>
+														<li><a href="/holdings/kr/about/ceo.html">CEO Message</a></li>
+														<li><a href="/holdings/kr/about/strategy.html">사업소개</a></li>
+														<!-- <li><a href="javascript:alert('준비중입니다');">행복경영</a></li> -->
+													</ul>
+												</div>
+												<div class="sitemap_ul">
+													<p>투자정보</p>
+													<ul>
+														<li>
+															<a href="/holdings/kr/ir/charter.html">기업지배구조</a>
+															<ul class="sitemap_depth_3">
+																<li><a href="/holdings/kr/ir/directors.html">이사회</a></li>
+																<li><a href="/holdings/kr/ir/committees.html">이사회 내 위원회</a></li>
+																<li><a href="/holdings/kr/ir/charter.html">지배구조헌장</a></li>
+															</ul>
+														</li>
+														<li>
+															<a href="/holdings/kr/ir/shareholders.html">재무정보</a>
+															<ul class="sitemap_depth_3">
+																<li><a href="/holdings/kr/ir/shareholders.html">주주구성</a></li>
+																<li><a href="/holdings/kr/ir/balanceSheet2019.html">주요재무제표</a></li>
+																<li><a href="/holdings/kr/ir/shareholdersReturn.html">주주환원</a></li>
+															</ul>
+														</li>
+														<li>
+															<a href="/holdings/kr/ir/announcementList.html">공시정보</a>
+															<ul class="sitemap_depth_3">
+																<li><a href="/holdings/kr/ir/announcementList.html">전자공고</a></li>
+																<li><a href="http://dart.fss.or.kr/html/search/SearchCompanyIR3_M.html?textCrpNM=034730" target="_blank" title="새 창 열림">공시자료</a></li>
+																<li><a href="/holdings/kr/ir/managementRegulations.html">공시정보관리규정</a></li>
+															</ul>
+														</li>
+														<li>
+															<a href="/holdings/kr/ir/presentation.html">IR자료실</a>
+															<ul class="sitemap_depth_3">
+																<li><a href="/holdings/kr/ir/presentation.html">Presentation</a></li>
+																<li><a href="/holdings/kr/ir/businessReports.html">사업보고서</a></li>
+																<li><a href="/holdings/kr/ir/auditReports.html">감사보고서</a></li>
+															</ul>
+														</li>
+													</ul>
+												</div>
+												<div class="sitemap_ul">
+													<p>사회적가치</p>
+													<ul>
+														<!-- <li><a href="javascript:;">사회적가치제고활동</a></li> -->
+														<li>
+															<a href="javascript:">지속가능경영</a>
+															<ul class="sitemap_depth_3">
+																<li><a href="/holdings/kr/ir/sustainabilityStrategies.html">지속가능경영 전략</a></li>
+																<li><a href="/holdings/kr/ir/sustainabilityReport.html">지속가능경영 보고서</a></li>
+																<li><a href="/holdings/kr/sv/ethics.html">윤리규범</a></li>
+															</ul>
+														</li>
+
+													</ul>
+												</div>
+												<div class="sitemap_ul">
+													<p>미디어센터</p>
+													<ul>
+														<li><a href="/holdings/kr/media/PRCenterList.html">보도자료</a></li>
+													</ul>
+												</div>
+											</div>
+											<!-- // sitemap -->
+										</div>
+										<!-- // sitemap_wrap -->
+									</nav>
+								</div>
+								<!-- // nav -->
+							</div>
+						</div>
+					</div>
+					<!-- // util_menu_pc -->
+				</div>
+			</div>
+			<!-- // h_group -->
+
+		</div>
+		<!-- // header -->
+<div class="container">
+    <div class="content">
+        <div class="sub_banner etc">
+        </div>
+        <div class="location">
+            <ul class="inner_wrap">
+                <li class="home"><a href="javascript:;">Home</a></li>
+                <li class="on">자회사 소개</li>
+            </ul>
+        </div>
+        <div class="sub_contents">
+            <div class="inner_wrap">
+                <h3>자회사 소개</h3>
+                <h4>상장 자회사</h4>
+                <ul class="subsidiary">
+                    <li>
+                        <div class="ico"><img src="/holdings/resources/img/contents/etc/logo_materials.png" title="SK머티리얼즈" /></div>
+                        <div class="info">
+                            <strong class="title">SK머티리얼즈</strong>
+                            <p class="text">
+                                SK머티리얼즈는 첨단 IT 소재용 특수가스의 불모지였던 한국에서 삼불화질소(NF3)의 첫 국산화를 시작으로 육불화텅스텐(WF6), 모노실란(SiH4), 다이실란(Si2H6) 등 특수가스 분야의 Global No.1으로 자리매김 했을 뿐만 아니라, 산업가스 및 반도체 프리커서 소재, 식각가스 분야에서도 사업기반을 확장하며 Gas & IT Total Solution Provider로 성장하고 있습니다.
+                            </p>
+                            <div class="title_sub">
+                                <p>설립일 : 1982년 11월 10일</p>
+                                <p>상장일 : 1982년 11월 10일</p>
+                                <p>기업 홈페이지 : <a href="http://www.sk-materials.com" target="_blank" title="새창에서 열림">www.sk-materials.com</a></p>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="ico"><img src="/holdings/resources/img/contents/etc/logo_innovation.png" title="SK이노베이션" /></div>
+                        <div class="info">
+                            <strong class="title">SK이노베이션</strong>
+                            <p class="text">
+                                SK이노베이션은 석유 한 방울 나지 않는 대한민국을 에너지 강국으로 만들기 위해 열심히 달려왔습니다. 1962년 대한민국 최초의 정유회사로 출발한 SK이노베이션은 지난 반세기 우리나라의 에너지∙화학 대표기업으로서 국가 경제발전에 앞장서왔습니다. 새로운 반세기를 향해 가고 있는 SK이노베이션은 글로벌 일류 에너지∙화학기업으로 도약하기 위해 도전과 혁신을 멈추지 않을 것입니다. 
+                            </p>
+                            <div class="title_sub">
+                                <p>설립일 : 2007년 7월 3일</p>
+                                <p>상장일 : 2007년 7월 25일</p>
+                                <p>기업 홈페이지 : <a href="http://www.skinnovation.com" target="_blank" title="새창에서 열림">www.skinnovation.com</a></p>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="ico"><img src="/holdings/resources/img/contents/etc/logo_telecom.png" title="SK텔레콤" /></div>
+                        <div class="info">
+                            <strong class="title">SK텔레콤</strong>
+                            <p class="text">
+                                SK텔레콤은 1996년 CDMA 세계 최초 상용화를 시작으로 2013년 세계 최초 LTE-A 상용화,2019년 세계 최초 5G 상용화 등 대한민국 이동통신 산업 발전의 중심에 서 있습니다. SK텔레콤은 넓은 커버리지와 빠른 속도, 완벽한 보안으로 세계 최초 5G 상용화라는 통신의 진화를 이끈 힘을 바탕으로 기존 한계를 뛰어넘는 ‘초(超)혁신’을 통해 고객 여러분의 삶의 질을 높이고 대한민국 산업이 발전할 수 있는 변화의 촉매제가 되고자 합니다.
+                            </p>
+                            <div class="title_sub">
+                                <p>설립일 : 1984년 3월 29일</p>
+                                <p>상장일 : 1989년 11월 7일</p>
+                                <p>기업 홈페이지 : <a href="http://www.sktelecom.com" target="_blank" title="새창에서 열림">www.sktelecom.com</a></p>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="ico"><img src="/holdings/resources/img/contents/etc/logo_ens.png" title="SK E&S" /></div>
+                        <div class="info">
+                            <strong class="title">SK E&S</strong>
+                            <p class="text">
+                                SK E&S는 1999년 도시가스 사업 지주회사로 출범하여 현재 LNG, 전력, 집단에너지, 신재생에너지, 그리고 해외 에너지 사업까지 영역을 확장하여 수행하고 있습니다. SK E&S는 천연가스발전소를 운영하여 전력을 공급하고 있으며, 경쟁력 있는 LNG를 도입함으로써 국가 전력 수급에 기여하고 있습니다. Global Clean Energy & Solution Provider를 목표로 국내 뿐만 아니라 해외사업을 활발히 추진하고 있습니다.
+                            </p>
+                            <div class="title_sub">
+                                <p>설립일 : 1999년 1월 13일</p>
+                                <p>기업 홈페이지 : <a href="http://www.skens.com" target="_blank" title="새창에서 열림">www.skens.com</a></p>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="ico"><img src="/holdings/resources/img/contents/etc/logo_skc.png" title="SKC" /></div>
+                        <div class="info">
+                            <strong class="title">SKC</strong>
+                            <p class="text">
+                                SKC는 필름 및 화학 소재산업 선도기업(Leading Company)으로서 앞선 기술 역량과 노하우를 바탕으로 고부가가치 신규사업 진출 및 해외 시장 확대를 이뤄내고 미래 성장동력을 확보하겠습니다. 나아가 신성장 사업분야에서 고부가·고기능 스페셜티(Specialty) 제품을 생산하는 세계 최고 수준의 첨단소재 전문기업으로 도약할 것입니다.
+                            </p>
+                            <div class="title_sub">
+                                <p>설립일 : 1973년 7월 16일</p>
+                                <p>상장일 : 1997년 7월 18일</p>
+                                <p>기업 홈페이지 : <a href="http://www.skc.kr" target="_blank" title="새창에서 열림">www.skc.kr</a></p>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="ico"><img src="/holdings/resources/img/contents/etc/logo_networks.png" title="SK네트웍스" /></div>
+                        <div class="info">
+                            <strong class="title">SK네트웍스</strong>
+                            <p class="text">
+                                SK그룹의 모태인 선경직물로 출범한 SK네트웍스는 국내외 네트워크와 우량 거래선, 우수한 물류 능력 등의 경쟁력을 바탕으로 다양한 사업을 전개하고 있습니다. 특히 4차 산업혁명 속에서 각광받고 있는 렌탈 비즈니스의 성장을 가속화 하는 동시에, 해외시장 개척 경험과 노하우를 기반으로 한 글로벌 진출을 통해 수익력과 성장력을 제고하도록 하겠습니다.
+                            </p>
+                            <div class="title_sub">
+                                <p>설립일 : 1956년 3월 24일</p>
+                                <p>상장일 : 1977년 6월 30일</p>
+                                <p>기업 홈페이지 : <a href="http://www.sknetworks.co.kr" target="_blank" title="새창에서 열림">www.sknetworks.co.kr</a></p>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+
+                <h4 class="mt-80">비상장 자회사</h4>
+                <ul class="subsidiary">
+                    <li>
+                        <div class="ico"><img src="/holdings/resources/img/contents/etc/logo_skec.png" title="SK건설" /></div>
+                        <div class="info">
+                            <strong class="title">SK건설</strong>
+                            <p class="text">
+                                SK건설은 인프라분야에서 도로, 철도, 항만 등의 국가기간산업 건설과 건축/주택분야에서의 프리미엄 주거공간의 창출 및 대형 개발사업 등의 참여로 국내외에서의 입지를 굳건히 하고 있습니다. 또한, 플랜트분야에서는 지구촌 곳곳에서 대형 석유화학 및 발전, 반도체 시설 등 다양한 프로젝트 수주와 성공적인 시공을 통하여 세계적인 업체들과 어깨를 나란히 하는 Global Player로서 업계를 선도해 가고 있습니다.
+                            </p>
+                            <div class="title_sub">
+                                <p>설립일 : 1962년 2월 21일</p>
+                                <p>기업 홈페이지 : <a href="http://www.skec.co.kr" target="_blank" title="새창에서 열림">www.skec.co.kr</a></p>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="ico"><img src="/holdings/resources/img/contents/etc/logo_sksiltron.png" title="SK실트론" /></div>
+                        <div class="info">
+                            <strong class="title">SK실트론</strong>
+                            <p class="text">
+                                SK실트론은 국내 유일의 반도체 웨이퍼 전문 제조기업으로 35년 이상 반도체 산업의 발전과 그 역사를 함께하며 성장해 왔습니다. 오랜 양산 경험과 축적된 역량을 기반으로 선제적 증설과 제조·기술경쟁력의 지속적인 강화를 추진하는 한편, 신성장 사업인 SiC 웨이퍼 사업 진출 등 사업 포트폴리오 확장을 통해 양적 규모와 수익성을 동시에 갖춘 Global 최고의 반도체 소재 기업으로 나아갈 기반을 확고히 하고 있습니다.
+                            </p>
+                            <div class="title_sub">
+                                <p>설립일 : 1983년 4월 25일</p>
+                                <p>기업 홈페이지 : <a href="http://www.sksiltron.com" target="_blank" title="새창에서 열림">www.sksiltron.com</a></p>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="ico"><img src="/holdings/resources/img/contents/etc/logo_skbp.png" title="SK바이오팜" /></div>
+                        <div class="info">
+                            <strong class="title">SK바이오팜</strong>
+                            <p class="text">
+                                SK바이오팜은 글로벌 종합제약사로서의 경쟁력을 갖추기 위해 현재 한국과 미국, 중국에 법인을 두고 운영하고 있습니다. 글로벌 시장을 타겟으로 혁신 신약 개발에 앞장서 왔으며, 앞으로 신약 상업화 등의 성과를 통해 신약 후보 물질 탐색부터 출시 이후 마케팅에 이르는 전 과정을 아우르는 글로벌 종합 제약사(FIPCO: Fully Integrated Pharma Company)로의 도약을 목표로 하고 있습니다.
+                            </p>
+                            <div class="title_sub">
+                                <p>설립일 : 2011년 4월 1일</p>
+                                <p>기업 홈페이지 : <a href="http://www.skbp.com" target="_blank" title="새창에서 열림">www.skbp.com</a></p>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="ico"><img src="/holdings/resources/img/contents/etc/logo_pharmteco.png" title="SK Pharmteco" /></div>
+                        <div class="info">
+                            <strong class="title">SK Pharmteco</strong>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="ico"><img src="/holdings/resources/img/contents/etc/logo_skbp.png" title="SK임업" /></div>
+                        <div class="info">
+                            <strong class="title">SK임업</strong>
+                            <p class="text">
+                                SK임업은 산림사업을 통한 장학사업의 장기적인 재원을 확보하고 국가의 산림녹화에 기여하고자 지난 40년간 충주, 천안, 영동 등 총 4천여ha의 조림지를 조성하였고, 이에 조림 및 육림사업 발전과 산림자원화에 노력한 공로가 인정되었습니다. 특히 충주, 천안, 영동 조림지는 특용활엽수 단지에 의한 국내 유일의 산림청 지정 ‘특수산림사업지구’로서 기업임업의 중추적 역할을 하고 있습니다.
+                            </p>
+                            <div class="title_sub">
+                                <p>설립일 : 2009년 4월 30일</p>
+                                <p>기업 홈페이지 : <a href="http://www.skforest.com" target="_blank" title="새창에서 열림">www.skforest.com</a></p>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="ico"><img src="/holdings/resources/img/contents/etc/img_luceville.png" title="휘찬" /></div>
+                        <div class="info">
+                            <strong class="title">휘찬</strong>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <!-- // content -->
+    
+    
+		<section>			
+			<!-- footer -->
+			<div class="footer pc">
+				<div class="footer_wrap">
+					<div class="footerL">
+						<div class="logo">SK holdings</div>
+						<div class="add">
+							<p class="link_text"><a href="/holdings/kr/sv/ethics.html">SK윤리경영상담/제보</a><span class="middot"></span><a href="/holdings/kr/about/subsidiary.html">자회사 소개</a></p>
+                        	<p class="copy">(03188) 서울특별시 종로구 종로 26 <span class="br"></span>COPYRIGHT ⓒ BY SK HOLDINGS CO., <span class="br_640"></span>LTD. ALL RIGHTS RESERVED</p>
+						</div>						
+					</div>
+					<!-- // footerL -->
+					<div class="footerR">
+						<div class="wa_mark">
+							<a href="http://www.webwatch.or.kr/Situation/WA_Situation.html?MenuCD=110" title="국가 공인 인증기관 : 웹와치"><img src="/holdings/resources/img/common/mark_wa.png" alt="과학기술정보통신부 WEB ACCESSIBILITY 마크(웹 접근성 품질인증 마크)"/></a>
+						</div>
+						<div class="family pc">
+							<a href="#familyList" class="btn_familyView" title="관련 사이트 보기">Family Site<span class="ico"><span class="txt blind">열기</span></span></a>
+							<ul class="list_family" id="familyList">
+								<li><a href="http://www.skinnovation.com" target="_blank" title="새 창 열림">SK이노베이션</a></li>
+								<li><a href="http://www.sktelecom.com/" target="_blank" title="새 창 열림">SK텔레콤</a></li>
+								<li><a href="https://www.sknetworks.co.kr/" target="_blank" title="새 창 열림">SK네트웍스</a></li>
+								<li><a href="http://www.skhynix.com/" target="_blank" title="새 창 열림">SK하이닉스</a></li>
+								<li><a href="https://www.skchemicals.com/main.do?lang=ko" target="_blank" title="새 창 열림">SK케미칼</a></li>
+								<li><a href="http://www.skc.kr/" target="_blank" title="새 창 열림">SKC</a></li>
+								<li><a href="http://www.skec.co.kr/" target="_blank" title="새 창 열림">SK건설</a></li>
+								<li><a href="http://www.skshipping.com/" target="_blank" title="새 창 열림">SK해운</a></li>
+								<li><a href="http://www.sks.co.kr/renewal/company2013/index.html" target="_blank" title="새 창 열림">SK증권</a></li>
+								<li><a href="http://www.skens.com/" target="_blank" title="새 창 열림">SK E&amp;S</a></li>
+								<li><a href="https://www.skgas.co.kr/" target="_blank" title="새 창 열림">SK가스</a></li>
+								<li><a href="http://www.skenergy.com/" target="_blank" title="새 창 열림">SK에너지</a></li>
+								<li><a href="http://www.skglobalchemical.com/" target="_blank" title="새 창 열림">SK종합화학</a></li>
+								<li><a href="http://www.sklubricants.com" target="_blank" title="새 창 열림">SK루브리컨츠</a></li>
+								<li><a href="http://www.skplanet.com/" target="_blank" title="새 창 열림">SK플래닛</a></li>
+								<li><a href="http://www.skbroadband.com/" target="_blank" title="새 창 열림">SK브로드밴드</a></li>
+								<li><a href="http://www.sktelesys.com/" target="_blank" title="새 창 열림">SK텔레시스</a></li>
+								<li><a href="http://www.sktelink.com/" target="_blank" title="새 창 열림">SK텔링크</a></li>
+								<li><a href="http://www.skcomms.co.kr/" target="_blank" title="새 창 열림">SK컴즈</a></li>
+							</ul>
+						</div>
+						<!-- // family pc -->
+					</div>
+					<!-- // footerR -->
+				</div>
+				<!-- // footer_wrap -->
+	        </div>
+			<!-- // footer pc -->
+			<div class="btn_top show">			
+				<a href="javascript:scollTopStart();" class="inner"><span>상단으로 이동</span></a>				
+			</div>
+			<!-- // btn_top show -->
+		</section>
+	</div>
+	<!-- // wrap -->
+</body>
+</html>
+
+    

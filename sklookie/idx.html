@@ -1,0 +1,779 @@
+<!doctype html>
+<html lang="ko">
+ <head>
+ <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+ <title>[WSG]LOOKIE FRONT</title>
+<style type="text/css">
+
+* {margin:0; padding:0; font-family:'malgungothic'; font-size:12px; line-height:14px; color:#666;}
+body {padding:0;}
+a {text-decoration:none;}
+a:hover {color:#dd2777;}
+
+h1 {margin-bottom: 0; font-size:20px; font-weight:bold; text-align:left; padding:20px; color: #fff; background-color: #dd2777; border-bottom: 1px solid #c52169;}
+h2 {font-size:14px;	color:#000;	font-weight:bold; text-align:left; padding:0 0 0 0;}
+h2 + p{margin-top: 10px;}
+
+table {border-collapse:collapse; margin:20px 0; width:100%; border-bottom:1px solid #ccc;}
+table caption {display:none;}
+table th {background-color:#f0f0f0;	border:1px solid #ccc; border-bottom:double #ccc; padding:5px;}
+table td {border:1px solid #ccc; padding:5px 5px 5px 10px;}
+table td.date {text-align:center; font-family:"verdana"; font-size:11px;}
+table td.date strong {font-size:11px;}
+table td.date span {font-family:"verdana"; font-size:11px;}
+
+strong {font-family:"verdana"; font-weight:bold; color:#F00;}
+
+em {font-family:"verdana"; font-style:normal; color:#ff0000; font-size:11px;}
+em.today {font-family:"verdana"; font-style:normal; font-weight:bold; color:#ff0000; font-size:11px;}
+
+span {font-style:normal; color:#ff0000;}
+
+table td.date span, table td.date span em {display:block; margin-top:3px;}
+table td.note {text-align:left;}
+
+.wrap{padding: 20px;}
+.gab {height:5px; padding:0}
+.cg {color:#ff0000;}
+.nop {color:green;}
+
+.bg{background: #fffed5;}
+</style>
+</head>
+<body>
+<h1>[LOOKIE - FRONT]</h1>
+<div class="wrap">
+  <h2>* FRONT - WEB *</h2>
+	
+	<table border="0" cellspacing="0" cellpadding="0" summary="FRONT Coding List">
+		<caption>FRONT Coding List</caption>
+		<colgroup>
+			<col width="3%" />
+			<col width="7%" />
+			<col width="10%" />
+			<col width="10%" />
+			<col width="10%" />
+			<col width="10%" />
+			<col width="15%" />
+			<col width="*" />
+		</colgroup>
+		<thead>
+			<tr>
+				<th scope="col">완료</th>
+				<th scope="col">1depth</th>
+				<th scope="col">2depth</th>
+				<th scope="col">3depth</th>
+				<th scope="col">4depth</th>
+				<th scope="col">5depth</th>
+				<th scope="col">화면ID</th>
+				<th scope="col">description</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr>
+				<td>&nbsp;</td>
+				<td>메인</td>
+				<td>&nbsp;</td>
+				<td>&nbsp;</td>
+				<td>&nbsp;</td>
+				<td>&nbsp;</td>
+				<td class="file bg"><a href="main.html" target="_blank">main.html</a></td>
+				<td>&nbsp;</td>
+			</tr>
+			<tr>
+			  <td>&nbsp;</td>
+			  <td rowspan="6">LOOKIE</td>
+			  <td>루키소개</td>
+			  <td>&nbsp;</td>
+			  <td>&nbsp;</td>
+			  <td>&nbsp;</td>
+			  <td class="file bg"><a href="intro.html" target="_blank">intro.html</a></td>
+			  <td>&nbsp;</td>
+		  	</tr>
+			<tr>
+			  <td>&nbsp;</td>
+			  <td>비전</td>
+			  <td>&nbsp;</td>
+			  <td>&nbsp;</td>
+			  <td>&nbsp;</td>
+			  <td class="file bg"><a href="vision.html" target="_blank">vision.html</a></td>
+			  <td>* 숨김처리</td>
+          	</tr>
+			<tr>
+			  <td>&nbsp;</td>
+			  <td>활동소개</td>
+			  <td>&nbsp;</td>
+			  <td>&nbsp;</td>
+			  <td>&nbsp;</td>
+			  <td class="file bg"><a href="activity.html" target="_blank">activity.html</a></td>
+			  <td>&nbsp;</td>
+          	</tr>
+            <tr>
+			  <td>&nbsp;</td>
+			  <td>루키 인재 육성</td>
+			  <td>&nbsp;</td>
+			  <td>&nbsp;</td>
+			  <td>&nbsp;</td>
+			  <td class="file"><a href="promote.html" target="_blank">promote.html</a></td>
+			  <td>&nbsp;</td>
+          	</tr>
+			<tr>
+			  <td>&nbsp;</td>
+			  <td rowspan="2">루키 이야기</td>
+			  <td>리스트</td>
+			  <td>&nbsp;</td>
+			  <td>&nbsp;</td>
+			  <td class="file"><a href="storyList.html" target="_blank">storyList.html</a></td>
+			  <td>&nbsp;</td>
+          	</tr>
+			<tr>
+			  <td>&nbsp;</td>
+			  <td>상세보기</td>
+			  <td>&nbsp;</td>
+			  <td>&nbsp;</td>
+			  <td class="file"><a href="storyView.html" target="_blank">storyView.html</a></td>
+			  <td>&nbsp;</td>
+          	</tr>
+			<tr>
+			  <td>&nbsp;</td>
+			  <td rowspan="15">루키 활동</td>
+			  <td rowspan="3">루키 네트워킹</td>
+			  <td>리스트</td>
+			  <td>&nbsp;</td>
+			  <td>&nbsp;</td>
+			  <td class="file"><a href="networkingList.html" target="_blank">networkingList.html</a></td>
+			  <td>&nbsp;</td>
+		  	</tr>
+			<tr>
+			  <td>&nbsp;</td>
+			  <td>상세보기</td>
+			  <td>&nbsp;</td>
+			  <td>&nbsp;</td>
+			  <td class="file"><a href="networkingView.html" target="_blank">networkingView.html</a></td>
+			  <td>&nbsp;</td>
+		  	</tr>
+			<tr>
+			  <td>&nbsp;</td>
+			  <td>작성 & 수정</td>
+			  <td>&nbsp;</td>
+			  <td>&nbsp;</td>
+			  <td class="file"><a href="networkingWrite.html" target="_blank">networkingWrite.html</a></td>
+			  <td>&nbsp;</td>
+          	</tr>
+			<tr>
+			  <td>&nbsp;</td>
+			  <td rowspan="8">연합 활동</td>
+			  <td>리스트</td>
+			  <td>&nbsp;</td>
+			  <td>&nbsp;</td>
+			  <td class="file"><a href="allianceList.html" target="_blank">allianceList.html</a></td>
+			  <td>&nbsp;</td>
+          	</tr>
+			<tr>
+			  <td rowspan="2">&nbsp;</td>
+			  <td>상세보기</td>
+			  <td>&nbsp;</td>
+			  <td>&nbsp;</td>
+			  <td class="file"><a href="allianceView.html" target="_blank">allianceView.html</a></td>
+			  <td>&nbsp;</td>
+          	</tr>
+			<tr>
+			  <td>지원 & 수정</td>
+			  <td>&nbsp;</td>
+			  <td>&nbsp;</td>
+			  <td class="file"><a href="allianceApp.html" target="_blank">allianceApp.html</a></td>
+			  <td>&nbsp;</td>
+          </tr>
+			<tr>
+			  <td>&nbsp;</td>
+			  <td>활동 제안하기 &amp; 수정</td>
+			  <td>&nbsp;</td>
+			  <td>&nbsp;</td>
+			  <td class="file"><a href="proposal.html" target="_blank">proposal.html</a></td>
+			  <td>&nbsp;</td>
+          	</tr>
+			<tr>
+			  <td>&nbsp;</td>
+			  <td rowspan="4">활동 제안내역</td>
+			  <td>리스트</td>
+			  <td>&nbsp;</td>
+			  <td class="file"><a href="proposalList.html" target="_blank">proposalList.html</a></td>
+			  <td>&nbsp;</td>
+          	</tr>
+			<tr>
+			  <td>&nbsp;</td>
+			  <td>상세보기</td>
+			  <td>&nbsp;</td>
+			  <td class="file"><a href="proposalView.html" target="_blank">proposalView.html</a></td>
+			  <td>&nbsp;</td>
+          	</tr>
+			<tr>
+			  <td>&nbsp;</td>
+			  <td rowspan="2">지원자리스트</td>
+			  <td>리스트</td>
+			  <td class="file"><a href="applicantList.html" target="_blank">applicantList.html</a></td>
+			  <td>&nbsp;</td>
+          	</tr>
+			<tr>
+			  <td>&nbsp;</td>
+			  <td>상세보기</td>
+			  <td class="file"><a href="applicantView.html" target="_blank">applicantView.html</a></td>
+			  <td>&nbsp;</td>
+          	</tr>
+			<tr>
+			  <td>&nbsp;</td>
+			  <td rowspan="2">참가내역</td>
+			  <td>리스트</td>
+			  <td>&nbsp;</td>
+			  <td>&nbsp;</td>
+			  <td class="file"><a href="participateList.html" target="_blank">participateList.html</a></td>
+			  <td>&nbsp;</td>
+          	</tr>
+			<tr>
+			  <td>&nbsp;</td>
+			  <td>수정</td>
+			  <td>&nbsp;</td>
+			  <td>&nbsp;</td>
+			  <td class="file"><a href="participateMod.html" target="_blank">participateMod.html</a></td>
+			  <td>&nbsp;</td>
+          	</tr>
+			<tr>
+			  <td>&nbsp;</td>
+			  <td rowspan="2">활동 앨범</td>
+			  <td>리스트</td>
+			  <td>&nbsp;</td>
+			  <td>&nbsp;</td>
+			  <td class="file"><a href="photoList.html" target="_blank">photoList.html</a></td>
+			  <td>* 숨김처리</td>
+          	</tr>
+			<tr>
+			  <td>&nbsp;</td>
+			  <td>상세보기</td>
+			  <td>&nbsp;</td>
+			  <td>&nbsp;</td>
+			  <td class="file"><a href="photoView.html" target="_blank">photoView.html</a></td>
+			  <td>* 숨김처리</td>
+          	</tr>
+			<tr>
+			  <td>&nbsp;</td>
+			  <td rowspan="5">동아리 설립</td>
+			  <td rowspan="5">예비동아리 설립</td>
+			  <td>개요</td>
+			  <td>&nbsp;</td>
+			  <td>&nbsp;</td>
+			  <td class="file bg"><a href="foundClub.html" target="_blank">foundClub.html</a></td>
+			  <td>&nbsp;</td>
+          	</tr>
+			<tr>
+			  <td>&nbsp;</td>
+			  <td rowspan="4">예비동아리 신청</td>
+			  <td rowspan="2">1단계</td>
+			  <td>&nbsp;</td>
+			  <td class="file bg"><a href="clubApp01.html" target="_blank">clubApp01.html</a></td>
+			  <td>&nbsp;</td>
+          	</tr>
+			<tr>
+			  <td>&nbsp;</td>
+			  <td>아이디 조회(팝업)</td>
+			  <td class="file bg"><a href="popId.html" target="_blank">popId.html</a></td>
+			  <td>&nbsp;</td>
+          	</tr>
+			<tr>
+			  <td>&nbsp;</td>
+			  <td rowspan="2">2단계</td>
+			  <td>&nbsp;</td>
+			  <td class="file bg"><p><a href="clubApp02.html" target="_blank">clubApp02.html</a></p></td>
+			  <td>&nbsp;</td>
+          	</tr>
+			<tr>
+			  <td>&nbsp;</td>
+			  <td>학교검색(팝업)</td>
+			  <td class="file bg"><a href="popSchool.html" target="_blank">popSchool.html</a></td>
+			  <td>&nbsp;</td>
+          	</tr>
+			<tr>
+			  <td>&nbsp;</td>
+			  <td rowspan="19">동아리 활동</td>
+			  <td>동아리 소개</td>
+			  <td>&nbsp;</td>
+			  <td>&nbsp;</td>
+			  <td>&nbsp;</td>
+			  <td class="file bg"><a href="clubIntro.html" target="_blank">clubIntro.html</a></td>
+			  <td>&nbsp;</td>
+          	</tr>
+			<tr>
+			  <td>&nbsp;</td>
+			  <td rowspan="18">커뮤니티</td>
+			  <td rowspan="3">커뮤니티</td>
+			  <td>리스트</td>
+			  <td class="file">&nbsp;</td>
+			  <td class="file"><a href="commList.html" target="_blank">commList.html</a></td>
+			  <td>&nbsp;</td>
+		  	</tr>
+			<tr>
+			  <td>&nbsp;</td>
+			  <td>상세보기</td>
+			  <td class="file">&nbsp;</td>
+			  <td class="file"><a href="commView.html" target="_blank">commView.html</a></td>
+			  <td>&nbsp;</td>
+		  	</tr>
+			<tr>
+			  <td>&nbsp;</td>
+			  <td>작성 &amp; 수정</td>
+			  <td class="file">&nbsp;</td>
+			  <td class="file"><a href="commWrite.html" target="_blank">commWrite.html</a></td>
+			  <td>&nbsp;</td>
+         	 </tr>
+			<tr>
+			  <td>&nbsp;</td>
+			  <td rowspan="3">활동계획</td>
+			  <td>리스트</td>
+			  <td class="file">&nbsp;</td>
+			  <td class="file"><a href="commActivityPlanList.html" target="_blank" >commActivityPlanList.html</a></td>
+			  <td>&nbsp;</td>
+          	</tr>
+			<tr>
+			  <td>&nbsp;</td>
+			  <td>상세보기</td>
+			  <td class="file">&nbsp;</td>
+			  <td class="file"><a href="commActivityPlanView.html" target="_blank" >commActivityPlanView.html</a></td>
+			  <td>&nbsp;</td>
+          	</tr>
+			<tr>
+			  <td>&nbsp;</td>
+			  <td>작성 &amp; 수정</td>
+			  <td class="file">&nbsp;</td>
+			  <td class="file"><a href="commActivityPlanWrite.html" target="_blank">commActivityPlanWrite.html</a></td>
+			  <td>&nbsp;</td>
+          	</tr>
+			<tr>
+			  <td>&nbsp;</td>
+			  <td rowspan="3">활동보고</td>
+			  <td>리스트</td>
+			  <td class="file">&nbsp;</td>
+			  <td class="file"><a href="commActivityReportList.html" target="_blank">commActivityReportList.html</a></a></td>
+			  <td>&nbsp;</td>
+          	</tr>
+			<tr>
+			  <td>&nbsp;</td>
+			  <td>상세보기</td>
+			  <td class="file">&nbsp;</td>
+			  <td class="file"><a href="commActivityReportView.html" target="_blank">commActivityReportView.html</a></td>
+			  <td>&nbsp;</td>
+          	</tr>
+			<tr>
+			  <td>&nbsp;</td>
+			  <td>작성 &amp; 수정</td>
+			  <td class="file">&nbsp;</td>
+			  <td class="file"><a href="commActivityReportWrite.html" target="_blank">commActivityReportWrite.html</a></td>
+			  <td>&nbsp;</td>
+          	</tr>
+			<tr>
+			  <td>&nbsp;</td>
+			  <td rowspan="3">연간계획</td>
+			  <td>리스트</td>
+			  <td class="file">&nbsp;</td>
+			  <td class="file"><a href="commYearPlanList.html" target="_blank">commYearPlanList.html</a></td>
+			  <td>&nbsp;</td>
+          	</tr>
+			<tr>
+			  <td>&nbsp;</td>
+			  <td>상세보기</td>
+			  <td class="file">&nbsp;</td>
+			  <td class="file"><a href="commYearPlanView.html" target="_blank">commYearPlanView.html</a></td>
+			  <td>&nbsp;</td>
+          	</tr>
+			<tr>
+			  <td>&nbsp;</td>
+			  <td>작성 &amp; 수정</td>
+			  <td class="file">&nbsp;</td>
+			  <td class="file"><a href="commYearPlanWrite.html" target="_blank">commYearPlanWrite.html</a></td>
+			  <td>&nbsp;</td>
+          </tr>
+			<tr>
+			  <td>&nbsp;</td>
+			  <td rowspan="3">연간보고</td>
+			  <td>리스트</td>
+			  <td class="file">&nbsp;</td>
+			  <td class="file"><a href="commYearReportList.html" target="_blank">commYearReportList.html</a></td>
+			  <td>&nbsp;</td>
+          	</tr>
+			<tr>
+			  <td>&nbsp;</td>
+
+			  <td>상세보기</td>
+			  <td class="file">&nbsp;</td>
+			  <td class="file"><a href="commYearReportView.html" target="_blank">commYearReportView.html</a></td>
+			  <td>&nbsp;</td>
+          	</tr>
+			<tr>
+			  <td>&nbsp;</td>
+			  <td>작성 &amp; 수정</td>
+			  <td class="file">&nbsp;</td>
+			  <td class="file"><a href="commYearReportWrite.html" target="_blank">commYearReportWrite.html</a></td>
+			  <td>&nbsp;</td>
+          	</tr>
+			<tr>
+			  <td>&nbsp;</td>
+			  <td rowspan="3">정산</td>
+			  <td>리스트</td>
+			  <td class="file">&nbsp;</td>
+			  <td class="file"><a href="commCalculateList.html" target="_blank">commCalculateList.html</a></td>
+			  <td>&nbsp;</td>
+          	</tr>
+			<tr>
+			  <td>&nbsp;</td>
+			  <td>상세보기</td>
+			  <td class="file">&nbsp;</td>
+			  <td class="file"><a href="commCalculateView.html" target="_blank">commCalculateView.html</a></td>
+			  <td>&nbsp;</td>
+          	</tr>
+			<tr>
+			  <td>&nbsp;</td>
+			  <td>작성 &amp; 수정</td>
+			  <td class="file">&nbsp;</td>
+			  <td class="file"><a href="commCalculateWrite.html" target="_blank">commCalculateWrite.html</a></td>
+			  <td>&nbsp;</td>
+          	</tr>
+			<tr>
+			  <td>&nbsp;</td>
+			  <td rowspan="8">게시판</td>
+			  <td rowspan="2">공지사항</td>
+			  <td>리스트</td>
+			  <td>&nbsp;</td>
+			  <td>&nbsp;</td>
+			  <td class="file bg"><a href="noticeList.html" target="_blank">noticeList.html</a></td>
+			  <td>&nbsp;</td>
+		  	</tr>
+			<tr>
+			  <td>&nbsp;</td>
+			  <td>상세보기</td>
+			  <td>&nbsp;</td>
+			  <td>&nbsp;</td>
+			  <td class="file bg"><a href="noticeView.html" target="_blank">noticeView.html</a></td>
+			  <td>&nbsp;</td>
+		  	</tr>
+			<tr>
+			  <td>&nbsp;</td>
+			  <td>FAQ</td>
+			  <td>&nbsp;</td>
+			  <td>&nbsp;</td>
+			  <td>&nbsp;</td>
+			  <td class="file"><a href="faq.html" target="_blank">faq.html</a></td>
+			  <td>&nbsp;</td>
+          	</tr>
+			<tr>
+			  <td>&nbsp;</td>
+			  <td>Q&amp;A</td>
+			  <td>&nbsp;</td>
+			  <td>&nbsp;</td>
+			  <td>&nbsp;</td>
+			  <td class="file"><a href="qna.html" target="_blank">qna.html</a></td>
+			  <td>&nbsp;</td>
+          	</tr>
+			<tr>
+			  <td>&nbsp;</td>
+			  <td rowspan="2">설문조사</td>
+			  <td>리스트</td>
+			  <td>&nbsp;</td>
+			  <td>&nbsp;</td>
+			  <td class="file"><a href="surveyList.html" target="_blank">surveyList.html</a></td>
+			  <td>&nbsp;</td>
+		  	</tr>
+			<tr>
+			  <td>&nbsp;</td>
+			  <td>상세보기</td>
+			  <td>&nbsp;</td>
+			  <td>&nbsp;</td>
+			  <td class="file"><a href="surveyView.html" target="_blank">surveyView.html</a></td>
+			  <td>&nbsp;</td>
+		  	</tr>
+			<tr>
+			  <td>&nbsp;</td>
+			  <td rowspan="2">언론 보도</td>
+			  <td>리스트</td>
+			  <td>&nbsp;</td>
+			  <td>&nbsp;</td>
+			  <td class="file"><a href="mediaList.html" target="_blank">mediaList.html</a></td>
+			  <td>* 숨김처리</td>
+          	</tr>
+			<tr>
+			  <td>&nbsp;</td>
+			  <td>상세보기</td>
+			  <td>&nbsp;</td>
+			  <td>&nbsp;</td>
+			  <td class="file"><a href="mediaView.html" target="_blank">mediaView.html</a></td>
+			  <td>* 숨김처리</td>
+          	</tr>
+			<tr>
+			  <td>&nbsp;</td>
+			  <td rowspan="7">회원가입</td>
+			  <td>step1. 약관 동의</td>
+			  <td>&nbsp;</td>
+			  <td>&nbsp;</td>
+			  <td>&nbsp;</td>
+			  <td class="file bg"><a href="join01.html" target="_blank">join01.html</a></td>
+			  <td>&nbsp;</td>
+          	</tr>
+			<tr>
+			  <td>&nbsp;</td>
+			  <td>step2. 본인 인증</td>
+			  <td>&nbsp;</td>
+			  <td>&nbsp;</td>
+			  <td>&nbsp;</td>
+			  <td class="file bg"><a href="join02.html" target="_blank">join02.html</a></td>
+			  <td>&nbsp;</td>
+          	</tr>
+			<tr>
+			  <td>&nbsp;</td>
+			  <td rowspan="4">step3. 정보 입력</td>
+			  <td>&nbsp;</td>
+			  <td>&nbsp;</td>
+			  <td>&nbsp;</td>
+			  <td class="file bg"><a href="join03.html" target="_blank">join03.html</a></td>
+			  <td>&nbsp;</td>
+          	</tr>
+			<tr>
+			  <td>&nbsp;</td>
+			  <td>아이디 중복확인(팝업)</td>
+			  <td>&nbsp;</td>
+			  <td>&nbsp;</td>
+			  <td class="file bg"><a href="popIdOverlap.html" target="_blank">popIdOverlap.html</a></td>
+			  <td>&nbsp;</td>
+          	</tr>
+			<tr>
+			  <td>&nbsp;</td>
+			  <td>주소검색(팝업)</td>
+			  <td>&nbsp;</td>
+			  <td>&nbsp;</td>
+			  <td class="file bg"><a href="popAddr.html" target="_blank">popAddr.html</a></td>
+			  <td>&nbsp;</td>
+          	</tr>
+			<tr>
+			  <td>&nbsp;</td>
+			  <td>학교검색(팝업)</td>
+			  <td>&nbsp;</td>
+			  <td>&nbsp;</td>
+			  <td class="file bg"><a href="popSchool.html" target="_blank">popSchool.html</a></td>
+			  <td>&nbsp;</td>
+          	</tr>
+			<tr>
+			  <td>&nbsp;</td>
+			  <td>step4. 가입 완료</td>
+			  <td>&nbsp;</td>
+			  <td>&nbsp;</td>
+			  <td>&nbsp;</td>
+			  <td class="file bg"><a href="join04.html" target="_blank">join04.html</a></td>
+			  <td>&nbsp;</td>
+          	</tr>
+			<tr>
+			  <td>&nbsp;</td>
+			  <td rowspan="6">로그인</td>
+			  <td>&nbsp;</td>
+			  <td>&nbsp;</td>
+			  <td>&nbsp;</td>
+			  <td>&nbsp;</td>
+			  <td class="file bg"><a href="login.html" target="_blank">login.html</a></td>
+			  <td>&nbsp;</td>
+          	</tr>
+			<tr>
+			  <td>&nbsp;</td>
+			  <td rowspan="2">아이디찾기</td>
+			  <td rowspan="2">&nbsp;</td>
+			  <td rowspan="2">&nbsp;</td>
+			  <td rowspan="2">&nbsp;</td>
+			  <td class="file"><a href="idSearch01.html" target="_blank">idSearch01.html</a></td>
+			  <td>&nbsp;</td>
+          	</tr>
+			<tr>
+			  <td>&nbsp;</td>
+			  <td class="file"><a href="idSearch02.html" target="_blank">idSearch02.html</a></td>
+			  <td>&nbsp;</td>
+	      	</tr>
+			<tr>
+			  <td>&nbsp;</td>
+			  <td rowspan="2">비밀번호찾기</td>
+			  <td rowspan="2">&nbsp;</td>
+			  <td rowspan="2">&nbsp;</td>
+			  <td rowspan="2">&nbsp;</td>
+			  <td class="file"><a href="pwSearch01.html" target="_blank">pwSearch01.html</a></td>
+			  <td>&nbsp;</td>
+          	</tr>
+			<tr>
+			  <td>&nbsp;</td>
+			  <td class="file"><a href="pwSearch02.html" target="_blank">pwSearch02.html</a></td>
+			  <td>&nbsp;</td>
+	      	</tr>
+            <tr>
+			  <td>&nbsp;</td>
+			  <td>비밀번호변경</td>
+			  <td>&nbsp;</td>
+			  <td>&nbsp;</td>
+			  <td>&nbsp;</td>
+			  <td class="file"><a href="pwMod.html" target="_blank">pwMod.html</a></td>
+			  <td>&nbsp;</td>
+          	</tr>
+            <tr>
+			  <td>&nbsp;</td>
+			  <td rowspan="4">휴먼계정안내</td>
+			  <td>step1. 휴먼계정안내</td>
+			  <td>&nbsp;</td>
+			  <td>&nbsp;</td>
+			  <td>&nbsp;</td>
+			  <td class="file"><a href="account01.html" target="_blank">account01.html</a></td>
+			  <td>&nbsp;</td>
+          	</tr>
+            <tr>
+              <td>&nbsp;</td>
+              <td>step2.본인인증</td>
+              <td>&nbsp;</td>
+              <td>&nbsp;</td>
+              <td>&nbsp;</td>
+              <td class="file"><a href="account02.html" target="_blank">account02.html</a></td>
+              <td>&nbsp;</td>
+            </tr>
+            <tr>
+              <td>&nbsp;</td>
+              <td>step3. 비밀번호 변경</td>
+              <td>&nbsp;</td>
+              <td>&nbsp;</td>
+              <td>&nbsp;</td>
+              <td class="file"><a href="account03.html" target="_blank">account03.html</a></td>
+              <td>&nbsp;</td>
+            </tr>
+            <tr>
+              <td>&nbsp;</td>
+              <td>step4. 계정활성화 완료</td>
+              <td>&nbsp;</td>
+              <td>&nbsp;</td>
+              <td>&nbsp;</td>
+              <td class="file"><a href="account04.html" target="_blank">account04.html</a></td>
+              <td>&nbsp;</td>
+            </tr>
+			<tr>
+			  <td>&nbsp;</td>
+			  <td rowspan="4">마이페이지</td>
+			  <td>개인정보 변경</td>
+			  <td>&nbsp;</td>
+			  <td>&nbsp;</td>
+			  <td>&nbsp;</td>
+			  <td class="file bg"><a href="mypage_mod.html" target="_blank">mypage_mod.html</a></td>
+			  <td>&nbsp;</td>
+          	</tr>
+			<tr>
+			  <td rowspan="2">&nbsp;</td>
+			  <td rowspan="2">수료증발급</td>
+			  <td>&nbsp;</td>
+			  <td>&nbsp;</td>
+			  <td>&nbsp;</td>
+			  <td class="file"><a href="certificate.html" target="_blank">certificate.html</a></td>
+			  <td>&nbsp;</td>
+          	</tr>
+			<tr>
+			  <td>&nbsp;</td>
+			  <td>&nbsp;</td>
+			  <td>&nbsp;</td>
+			  <td class="file"><a href="certificatePrint.html" target="_blank">certificatePrint.html</a></td>
+			  <td>&nbsp;</td>
+          </tr>
+			<tr>
+			  <td>&nbsp;</td>
+			  <td>회원탈퇴</td>
+			  <td>&nbsp;</td>
+			  <td>&nbsp;</td>
+			  <td>&nbsp;</td>
+			  <td class="file"><a href="mypage_out.html" target="_blank">mypage_out</a>.html</td>
+			  <td>&nbsp;</td>
+          	</tr>
+			<tr>
+			  <td>&nbsp;</td>
+			  <td rowspan="4">메일폼</td>
+			  <td>임시비번</td>
+			  <td>&nbsp;</td>
+			  <td>&nbsp;</td>
+			  <td>&nbsp;</td>
+			  <td class="file"><a href="mail_pw.html" target="_blank">mail_pw.html</a></td>
+			  <td>&nbsp;</td>
+          	</tr>
+			<tr>
+			  <td>&nbsp;</td>
+			  <td>Q&amp;A 답변</td>
+			  <td>&nbsp;</td>
+			  <td>&nbsp;</td>
+			  <td>&nbsp;</td>
+			  <td class="file"><a href="mail_qna.html" target="_blank">mail_qna.html</a></td>
+			  <td>&nbsp;</td>
+		  	</tr>
+			<tr>
+			  <td>&nbsp;</td>
+			  <td>휴면계정안내</td>
+			  <td>&nbsp;</td>
+			  <td>&nbsp;</td>
+			  <td>&nbsp;</td>
+			  <td class="file"><a href="mail_account.html" target="_blank">mail_account.html</a></td>
+			  <td>&nbsp;</td>
+          	</tr>
+			<tr>
+			  <td>&nbsp;</td>
+			  <td>인증번호</td>
+			  <td>&nbsp;</td>
+			  <td>&nbsp;</td>
+			  <td>&nbsp;</td>
+			  <td class="file"><a href="mail_code.html" target="_blank">mail_code.html</a></td>
+			  <td>&nbsp;</td>
+          	</tr>
+			<tr>
+			  <td>&nbsp;</td>
+			  <td>에러페이지</td>
+			  <td>&nbsp;</td>
+			  <td>&nbsp;</td>
+			  <td>&nbsp;</td>
+			  <td>&nbsp;</td>
+			  <td class="file bg"><a href="error.html" target="_blank">error.html</a></td>
+			  <td>&nbsp;</td>
+          	</tr>
+          	<tr>
+			  <td>&nbsp;</td>
+			  <td>준비중페이지</td>
+			  <td>&nbsp;</td>
+			  <td>&nbsp;</td>
+			  <td>&nbsp;</td>
+			  <td>&nbsp;</td>
+			  <td class="file bg"><a href="pageReady.html" target="_blank">pageReady.html</a></td>
+			  <td>&nbsp;</td>
+          	</tr>
+			<tr>
+			  <td>&nbsp;</td>
+			  <td>이용약관</td>
+			  <td>&nbsp;</td>
+			  <td>&nbsp;</td>
+			  <td>&nbsp;</td>
+			  <td>&nbsp;</td>
+			  <td class="file bg"><a href="terms.html" target="_blank">terms.html</a></td>
+			  <td>&nbsp;</td>
+          	</tr>
+			<tr>
+			  <td>&nbsp;</td>
+			  <td>개인정보취급방침</td>
+			  <td>&nbsp;</td>
+			  <td>&nbsp;</td>
+			  <td>&nbsp;</td>
+			  <td>&nbsp;</td>
+			  <td class="file bg"><a href="personal.html" target="_blank">personal.html</a></td>
+			  <td>&nbsp;</td>
+          	</tr>
+			<tr>
+			  <td>&nbsp;</td>
+			  <td>이메일무단수집거부</td>
+			  <td>&nbsp;</td>
+			  <td>&nbsp;</td>
+			  <td>&nbsp;</td>
+			  <td>&nbsp;</td>
+			  <td class="file bg"><a href="email.html" target="_blank">email.html</a></td>
+			  <td>&nbsp;</td>
+          </tr>
+		</tbody>
+	</table>
+</div>
+</body>
+</html>

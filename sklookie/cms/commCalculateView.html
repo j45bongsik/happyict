@@ -1,0 +1,93 @@
+<!--#include file="inc/header.asp"--><jsp:include page="inc/header.asp"/>
+
+	<div id="contents" class="contents">
+		<header class="spot">
+			<h2 class="h-spot">정산 관리</h2>
+			<div class="breadcrumb">
+				<span class="ico_ home"></span>
+				<span class="txt">home</span>
+				<span class="txt">동아리 관리</span>
+				<span class="txt">정산 관리</span>
+			</div>
+		</header>
+		<!-- //header -->
+		<section class="sect-t01">
+			<table class="tbl-form">
+				<caption>정산 정보 (행사명, 수령자, 수령자 전화번호, 카드번호로 구성)</caption>
+				<colgroup>
+					<col class="w20">
+					<col>
+				</colgroup>
+				<tbody>
+					<tr>
+						<th scope="col"><label for="" class="txt-label">행사명</label></th>
+						<td>신입생 환영회</td>
+					</tr>
+					<tr>
+						<th scope="col"><label for="" class="txt-label">수령자</label></th>
+						<td>김루키</td>
+					</tr>
+					<tr>
+						<th scope="col"><label for="" class="txt-label">수령자 전화번호</label></th>
+						<td>010-1234-5675</td>
+					</tr>
+					<tr>
+						<th scope="col"><label for="" class="txt-label">카드번호</label></th>
+						<td>1234-****-****-5456</td>
+					</tr>
+				</tbody>
+			</table>
+			<!--//tbl-form -->
+		</section>
+		<section class="sect-t01">
+			<h3 class="h-t1">정산 결과</h3>
+			<table class="tbl-form type01">
+				<caption>정산 결과 상세정보 (사용금액, 잔액, 세부내역, 증빙서류로 구성)</caption>
+				<colgroup>
+					<col class="w20">
+					<col class="wf50">
+					<col class="wf150">
+					<col>
+					<col class="wf200">
+				</colgroup>
+				<tbody>
+					<tr>
+						<th scope="col">사용금액</th>
+						<td colspan="4">50,000</td>
+				    </tr>
+					<tr>
+						<th scope="col">잔액</td>
+						<td colspan="4">150,000</td>
+					</tr>
+					<tr class="center">
+						<th scope="col" rowspan="2">세부내역</th>
+						<td>1</td>
+						<td>2018.01.08</td>
+						<td>세부내역</td>
+						<td>25,000</td>
+					</tr>
+					<tr class="center">
+						<td>1</td>
+						<td>2018.01.08</td>
+						<td>세부내역</td>
+						<td>25,000</td>
+					</tr>
+					<tr>
+						<th scope="col">증빙서류</th>
+						<td colspan="4"><a href="#" class="link">증빙서류.doc</a></td>
+				    </tr>
+				</tbody>
+			</table>
+			<!--//tbl-form -->
+		</section>
+		<div class="wrap_btn02">
+			<div class="aside">
+				<a href="commCalculateList.html" class="btn1-m-slight">삭제</a>
+			</div>
+			<a href="commCalculateList.html" class="btn1-m-slight2">목록</a>
+		</div>
+	</div>
+	<!--//contents -->
+<!--#include file="inc/footer.asp"--><jsp:include page="inc/footer.asp"/>
+
+

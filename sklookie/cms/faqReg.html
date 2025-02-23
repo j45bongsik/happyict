@@ -1,0 +1,60 @@
+<!--#include file="inc/header.asp"--><jsp:include page="inc/header.asp"/>
+
+	<div id="contents" class="contents">
+		<header class="spot">
+			<h2 class="h-spot">FAQ</h2>
+			<div class="breadcrumb">
+				<span class="ico_ home"></span>
+				<span class="txt">home</span>
+				<span class="txt">게시판 관리</span>
+				<span class="txt">FAQ</span>
+			</div>
+		</header>
+		<!-- //header -->
+		<section class="sect-t01">
+			<table class="tbl-form">
+				<caption>FAQ 정보 (질문 제목, 질문 답변, 게시여부 구성)</caption>
+				<colgroup>
+					<col class="wf200 m-w25">
+					<col>
+				</colgroup>
+				<tbody>
+					<tr>
+						<th scope="col"><label for="" class="txt-label">질문 제목</label></th>
+						<td><input type="text" id="" class="input-m w100" title="질문 제목"></td>
+					</tr>
+					<tr>
+						<th scope="col"><label for="" class="txt-label">질문 답변</label></th>
+						<td>
+							<textarea name="" id="" class="textarea-m w100 hf200" title="질문 답변"></textarea>
+						</td>
+					</tr>
+					<tr>
+						<th scope="row"><label for="">게시여부</label></th>
+						<td>
+							<div class="inner w50">
+								<span class="wrap-radio wf100 m-w45">
+									<input type="radio" id="" title="사용여부:예" class="radio-m">
+									<label for="" class=""> Y</label>
+								</span>
+								<span class="wrap-radio wf100 m-w45">
+									<input type="radio" id="" title="사용여부:아니요" class="radio-m">
+									<label for="" class=""> N</label>
+								</span>
+							</div>
+						</td>
+					</tr>
+				</tbody>
+			</table>
+			<div class="wrap_btn02">
+				<div class="aside">
+					<a href="" class="btn1-m-slight">삭제</a>
+				</div>
+				<a href="" class="btn1-m-weight">저장</a>
+				<a href="" class="btn1-m-weight">수정</a>
+				<a href="faqList.html" class="btn1-m-slight2">목록</a>
+			</div>
+		</section>
+	</div>
+	<!--//contents -->	
+<!--#include file="inc/footer.asp"--><jsp:include page="inc/footer.asp"/>

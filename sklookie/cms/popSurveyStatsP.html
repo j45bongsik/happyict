@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="ko" class="pop-survey">
+
+<head>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1">
+    <meta charset="UTF-8" />
+    <title>LOOKIE 관리자</title>
+    <link rel="stylesheet" href="resources/css/admin.css" />
+    <script type="text/javascript" src="resources/js/jquery-1.9.1.min.js"></script>
+    <script type="text/javascript" src="resources/js/admin.js"></script>
+    <!--[if lt IE 9]>
+		<script type="text/javascript" src="resources/js/html5.js"></script>
+	<![endif]-->
+</head>
+
+<body>
+    <div class="wrap-survey">
+        <div class="wrap_btn02">
+            <a href="javascript:noUse();" class="btn1-m-weight wf80" style="margin-top: 20px;">통계제외</a>
+        </div>
+
+        <div class="survey-title">
+            <h1>복수선택 가능 테스트_복사본_2017년 하반기</h1>
+            <p class="ex01">복수선택 가능 테스트 </p>
+        </div>
+        <div class="inner">
+            <h2>그룹1</h2>
+            <div class="survey-view">
+                <h4>복수선택형 <span class="em-weight">*</span></h4>
+                <p class="ex04">2개필수 3개가능</p>
+                <ul class="list-A">
+                    <li><input type="checkbox" title="" name="P0101" value="1" onclick=""> <label for="">복수선택형1</label></li>
+                    <li><input type="checkbox" title="" name="P0101" value="2" onclick=""> <label for="">복수선택형2</label></li>
+                    <li><input type="checkbox" title="" name="P0101" value="3" onclick=""> <label for="">복수선택형3</label></li>
+                    <li><input type="checkbox" title="" name="P0101" value="4" onclick=""> <label for="">복수선택형4</label></li>
+                </ul>
+            </div>
+            <div class="survey-view">
+                <h4>단일 선택형 <span class="em-weight">*</span></h4>
+                <p class="ex04">단일 선택형 한개문 가능</p>
+                <ul class="list-A">
+                    <li><input type="radio" title="" name="P0102" value="1" onclick=""> <label for="">단일 1</label></li>
+                    <li><input type="radio" title="" name="P0102" value="2" onclick=""> <label for="">단일 2</label></li>
+                </ul>
+            </div>
+            <div class="survey-view">
+                <h4>주관식 단답형 <span class="em-weight">*</span></h4>
+                <p class="ex04">주관식 단답형</p>
+                <div class="list-A"><input type="text" name="ansType2" class="input w100" title="답변 입력"></div>
+            </div>
+            <div class="survey-view">
+                <h4>주관식 장문형 <span class="em-weight">*</span></h4>
+                <p class="ex04">주관식 장문형</p>
+                <div class="list-A"><textarea name="ansType2" cols="30" rows="10" class="textarea w100 hf100" title="답변 입력"></textarea></div>
+            </div>
+            <div class="survey-view">
+                <h4>선호도형 </h4>
+                <p class="ex04">선호도형 1 필수아님</p>
+                <div class="list-A">
+                    <table class="tbl-survey-data01" style="width: 100%;">
+                        <colgroup>
+                            <col class="colw12">
+                            <col class="">
+                            <col class="">
+                            <col class="">
+                            <col class="">
+                            <col class="">
+                            <col class="">
+                            <col class="">
+                            <col class="colw16">
+                        </colgroup>
+                        <tr>
+                            <th rowspan="2" scope="col">좋아</th>
+                            <th scope="col"><label for="">1</label></th>
+                            <th scope="col"><label for="">2</label></th>
+                            <th scope="col"><label for="">3</label></th>
+                            <th scope="col"><label for="">4</label></th>
+                            <th scope="col"><label for="">5</label></th>
+                            <th scope="col"><label for="">6</label></th>
+                            <th scope="col"><label for="">7</label></th>
+                            <th rowspan="2" scope="col">싫어</th>
+                        </tr>
+                        <tr>
+                            <td><input type="radio" title="" name="" value="1"></td>
+                            <td><input type="radio" title="" name="" value="2"></td>
+                            <td><input type="radio" title="" name="" value="3"></td>
+                            <td><input type="radio" title="" name="" value="4"></td>
+                            <td><input type="radio" title="" name="" value="5"></td>
+                            <td><input type="radio" title="" name="" value="6"></td>
+                            <td><input type="radio" title="" name="" value="7"></td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+            <div class="survey-view">
+                <h4>표형 <span class="em-weight">*</span></h4>
+                <p class="ex04">표형 3X5</p>
+                <div class="list-A">
+                    <table class="tbl-survey-data02">
+                        <thead>
+                            <tr>
+                                <th scope="col" class="title"></th>
+                                <th scope="col">열 111</th>
+                                <th scope="col">열 222</th>
+                                <th scope="col">열 333</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <th scope="row">행 111</th>
+                                <td><input type="radio" title="" name="" value="1"></td>
+                                <td><input type="radio" title="" name="" value="2"></td>
+                                <td><input type="radio" title="" name="" value="3"></td>
+                            </tr>
+                            <tr>
+                                <th scope="row">행 222</th>
+                                <td><input type="radio" title="" name="" value="1"></td>
+                                <td><input type="radio" title="" name="" value="2"></td>
+                                <td><input type="radio" title="" name="" value="3"></td>
+                            </tr>
+
+                            <tr>
+                                <th scope="row">행 333</th>
+                                <td><input type="radio" title="" name="" value="1"></td>
+                                <td><input type="radio" title="" name="" value="2"></td>
+                                <td><input type="radio" title="" name="" value="3"></td>
+                            </tr>
+                            <tr>
+                                <th scope="row">행 444</th>
+                                <td><input type="radio" title="" name="" value="1"></td>
+                                <td><input type="radio" title="" name="" value="2"></td>
+                                <td><input type="radio" title="" name="" value="3"></td>
+                            </tr>
+                            <tr>
+                                <th scope="row">행 555</th>
+                                <td><input type="radio" title="" name="" value="1"></td>
+                                <td><input type="radio" title="" name="" value="2"></td>
+                                <td><input type="radio" title="" name="" value="3"></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+            <div class="survey-view">
+                <h4>그룸이동 <span class="em-weight">*</span></h4>
+                <p class="ex04">그룹이동2 , 3</p>
+                <ul class="list-A">
+                    <li>
+                        <input type="hidden" value="P02">
+                        <input type="hidden" value="P04">
+                        <input type="radio" title=""  name="" value="1" onclick=""> <label for="">2번</label>
+                    </li>
+                    <li>
+                        <input type="hidden" value="P03">
+                        <input type="hidden" value="P04">
+                        <input type="radio" title=""  name="" value="2" onclick=""> <label for="">3번</label>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="inner">
+            <h2>그룹2</h2>
+            <div class="survey-view">
+                <h4>2번그룹 </h4>
+                <p class="ex04">2번그룹</p>
+                <div class="list-A"><input type="text" name="ansType2" class="input w100" title="답변 입력"></div>
+            </div>
+        </div>
+    </div>
+    <div class="loading" style="display: none;" id="modalLayer">
+        <div class="box-loading" id="modalLayerCont">
+            <span class="ico_ loadimg"></span>
+            <span id="modalLayerText">처리중입니다.</span>
+        </div>
+    </div>
+    <!-- //설문조사 팝업 -->
+</body>
+<table>
+    <tr style="background-color: #444444"></tr>
+</table>
+
+</html>

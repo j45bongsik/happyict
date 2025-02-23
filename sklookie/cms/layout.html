@@ -1,0 +1,325 @@
+<!doctype html>
+<html lang="ko-KR">
+<head>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1">
+  <meta charset="UTF-8" />
+  <title>LOOKIE 관리자</title>
+  <link rel="stylesheet" href="resources/css/admin.css" />
+  <script type="text/javascript" src="resources/js/jquery-1.9.1.min.js"></script>
+  <script type="text/javascript" src="resources/js/admin.js"></script>
+  <!--[if lt IE 9]>
+		<script type="text/javascript" src="resources/js/html5.js"></script>
+	<![endif]-->
+</head>
+<body>
+<div class="wrap">
+	<header class="header">
+		<h1 class="logo"><a href="account_lanager_list.html"><img src="resources/img/common/adminlogo.jpg" alt=""></a></h1>
+		<div class="gnb">
+			<p class="txtGreeting"><strong class="em-weight">LOOKIE관리자</strong>님! 안녕하세요.</p>
+			<a href="login.html" class="btn1-xs-slight2">로그아웃</a>
+		</div>
+		<!-- //gnb -->
+	<hr />
+	</header>
+	<!-- //header -->
+
+	<nav class="lnb">
+		<ul>
+			<li class="depth01 menu01">
+				<a href="managerList.html">계정 관리</a>
+				<ul class="depth02">
+					<li><a href="managerList.html" class="on">관리자 계정</a></li>
+					<li><a href="memberList.html">회원 계정</a></li>
+				</ul>
+			</li>
+			<li class="depth01 menu02">
+				<a href="">메인 관리</a>
+				<ul class="depth02">
+					<li><a href="">메인 배너</a></li>
+					<li><a href="">서브 배너</a></li>
+					<li><a href="">동영상 관리</a></li>
+				</ul>
+			</li>
+			<li class="depth01 menu03">
+				<a href="noticeList.html">게시판 관리</a>
+				<ul class="depth02">
+					<li><a href="noticeList.html">공지사항</a></li>
+					<li><a href="">Q&A</a></li>
+					<li><a href="">FAQ</a></li>
+					<li><a href="">언론 보도</a></li>
+					<li><a href="">루키 이야기</a></li>
+					<li><a href="">활동 앨범</a></li>
+					<li><a href="">루키 네트워킹</a></li>
+				</ul>
+			</li>
+			<li class="depth01 menu04">
+				<a href="">연합활동 관리</a>
+				<ul class="depth02">
+					<li><a href="">연합활동 관리</a></li>
+					<li><a href="">지원자 관리</a></li>
+				</ul>
+			</li>
+			<li class="depth01 menu05">
+				<a href="">설문조사 관리</a>
+				<ul class="depth02">
+					<li><a href="">설문조사</a></li>
+					<li><a href="">비로그인용 설문조사</a></li>
+				</ul>
+			</li>
+			<li class="depth01 menu06">
+				<a href="">수료증 발급 관리</a>
+				<ul class="depth02">
+					<li><a href="">수료증 발급</a></li>
+				</ul>
+			</li>
+			<li class="depth01 menu07">
+				<a href="">코드관리</a>
+				<ul class="depth02">
+					<li><a href="">코드관리</a></li>
+				</ul>
+			</li>
+			<li class="depth01 menu08">
+				<a href="foundClubList.html">예비 동아리 관리</a>
+				<ul class="depth02">
+					<li><a href="foundClubList.html">예비 동아리 관리</a></li>
+				</ul>
+			</li>
+			<li class="depth01 menu09">
+				<a href="clubList.html">동아리 관리</a>
+				<ul class="depth02">
+					<li><a href="clubList.html">동아리 관리</a></li>
+					<li><a href="">동아리 커뮤니티 관리</a></li>
+					<li><a href="">활동 계획 관리</a></li>
+					<li><a href="">활동 보고 관리</a></li>
+					<li><a href="">연간 계획 관리</a></li>
+					<li><a href="">연간 보고 관리</a></li>
+					<li><a href="">정산 관리</a></li>
+					<li><a href="clubMemberList.html">동아리 회원 관리</a></li>
+					<li><a href="clubAppList.html">동아리 신청 관리</a></li>
+				</ul>
+			</li>
+		</ul>
+	</nav>
+	<hr />
+	<!-- //lnb -->
+
+	<div id="contents" class="contents">
+		<header class="spot">
+			<h2 class="h-spot">레이아웃</h2>
+			<div class="breadcrumb">
+				<span class="ico_ home"></span>
+				<span class="txt">home</span>
+				<span class="txt">계정 관리</span>
+				<span class="txt">관리자 계정</span>
+			</div>
+		</header>
+		<!-- //header -->
+
+		<section class="sect-t01">
+		
+		<h3 class="h-t1">리스트 폼 </h3>
+
+		<div class="topSerch">
+			<div class="box-topSrch">
+				<ul>
+					<li>
+						<label for="">프로그램명</label>
+						<input type="text" class="input-m w70" title="-- 이름 입력">
+					</li>
+					<li>
+						<label for="">아이디</label>
+						<input type="text" class="input-m w70" title="-- 아이디 입력">
+					</li>
+					<li>
+						<label for="">사용여부</label>
+						<select id="" class="select-m w70" title="사용여부 선택">
+						<option value="" selected="selected">전체</option>
+						</select>
+					</li>
+					<li>
+						<label for="">기간</label>
+						<input type="text" class="input-m wf120" title="시작날짜 입력"> <a href="" class="ico_ date">날짜 검색</a>
+						<span class="txt-wave">~</span>
+						<input type="text" class="input-m wf120" title="종료날짜 입력"> <a href="" class="ico_ date">날짜 검색</a>
+					</li>
+				</ul>
+			</div>
+			<div class="wrap_btnSrch">
+				<a href="" class="btn1-s-weight wf100" title="검색(관리자 계정)">검색</a>
+			</div>
+		</div>
+		<!-- //topSerch 상단 검색창 -->
+
+		<div class="wrap_btn">
+			<a href="" class="btn1-s-slightier wf40" title="15줄 보기">15</a>
+			<a href="" class="btn1-s-slight wf40" title="50줄 보기">50</a>
+			<a href="" class="btn1-s-slight wf40" title="100줄 보기">100</a>
+			<a href="" class="btn1-s-ex wf40" title="Excel 다운받기"><span class="ico_ ex">Excel 다운받기</span></a>
+
+			<div class="aside">
+				<a href="" class="btn1-s-normal wf100" title="등록(관리자 계정)">등록</a>
+			</div>
+		</div>
+		<!--//wrap_btn 리스트 상단 버튼-->
+
+		<table class="tbl-list">
+			<caption>관리자 계정 정보 (번호, 이름, 아이디, 연락처, 등록일, 사용여부로 구성)</caption>
+			<colgroup>
+				<col class="wf100">
+				<col class="">
+				<col class="">
+				<col class="wf200">
+				<col class="wf150">
+				<col class="wf150">
+			</colgroup>
+			<thead>
+			<tr>
+				<th scope="col">번호</th>
+				<th scope="col">이름</th>
+				<th scope="col">아이디</th>
+				<th scope="col">연락처</th>
+				<th scope="col">등록일</th>
+				<th scope="col">사용여부</th>
+			</tr>
+			</thead>
+			<tbody>
+			<tr>
+				<td>1000</td>
+				<td><a href="#" class="link">김루키</a></td>
+				<td>abc11</td>
+				<td>010-1234-5678</td>
+				<td>2017.12.04</td>
+				<td><span class="btn1-xs-weight wf30">Y</span> <span class="btn1-xs-slight wf30">N</span></td>
+			</tr>
+			<tr>
+				<td>1000</td>
+				<td><a href="#" class="link">김루키</a></td>
+				<td>abc11</td>
+				<td>010-1234-5678</td>
+				<td>2017.12.04</td>
+				<td><span class="btn1-xs-weight wf30">Y</span> <span class="btn1-xs-slight wf30">N</span></td>
+			</tr>
+			</tbody>
+		</table>
+		<!--//tbl-list -->
+
+		<div class="paging-t1">
+			<div class="inner_num">
+				<button class="btn-pageFirst"><span class="blind">처음으로</span></button>
+				<button class="btn-pagePrev"><span class="blind">이전 페이지</span></button>
+				<a href="javascript:void(0);" class="on" title="현재 페이지">1</a>
+				<a href="javascript:void(0);">2</a>
+				<a href="javascript:void(0);">3</a>
+				<a href="javascript:void(0);">4</a>
+				<a href="javascript:void(0);">5</a>
+				<button class="btn-pageNext"><span class="blind">다음 페이지</span></button>
+				<button class="btn-pageLast"><span class="blind">마지막 페이지</span></button>
+			</div>
+		</div>
+		<!--//paging-t1 -->
+		</section>
+
+		<section class="sect-t01">
+
+		<h3 class="h-t1">등록 및 상세보기 폼 <div class="aside"><a href="" class="btn1-s-ex wf40" title="Excel 다운받기"><span class="ico_ ex">Excel 다운받기</span></a></div></h3>
+
+		<table class="tbl-form">
+			<caption>관리자 계정 폼 (아이디, 이름, 비밀번호, 비밀번호 확인, 연락처, 이메일, 사용가능여부로 구성)</caption>
+			<colgroup>
+				<col class="w20">
+				<col>
+			</colgroup>
+			<tbody>
+				<tr>
+					<th scope="row"><label for="">버튼</label></th>
+					<td>
+						<span class="wrap_input">
+							<a href="javascript: PopOpenEvt('popAddr.html', 650, 700);" class="btn1-s-slight wf100">우편번호 찾기</a>
+							<a href="javascript: PopOpenEvt('popSchool.html', 650, 500);" class="btn1-s-slight wf100">학교검색</a>
+						</span>
+					</td>
+				</tr>
+				<tr>
+					<th scope="row"><label for="">아이디</label></th>
+					<td><input type="text" id="" class="input-m wf200" title="아이디 입력"></td>
+				</tr>
+				<tr>
+					<th scope="row"><label for="">이름</label></th>
+					<td>김루키</td>
+				</tr>
+				<tr>
+					<th scope="row"><label for="">비밀번호</label></th>
+					<td><input type="password" id="" class="input-m wf200" title="비밀번호 입력"></td>
+				</tr>
+				<tr>
+					<th scope="row"><label for="">비밀번호 확인</label></th>
+					<td>
+						<input type="password" id="" class="input-m wf200" title="비밀번호 확인 입력">
+					</td>
+				</tr>
+				<tr>
+					<th scope="row"><label for="">연락처</label></th>
+					<td>
+						<div class="wrap-input">
+							<select name="" id="" class="select-m _fl wf110 m-w30" title="연락처 앞자리">
+								<option value="">선택하세요</option>
+							</select>
+							<span class="txt-blank wf16 m-w5">-</span>
+							<input type="text" id="" class="input-m _fl wf110 m-w30" title="연락처 중간자리">
+							<span class="txt-blank wf16 m-w5">-</span>
+							<input type="text" id="" class="input-m _fl wf110 m-w30" title="연락처 끝자리">
+						</div>
+					</td>
+				</tr>
+				<tr>
+					<th scope="row">
+						<label for="">이메일</label>
+					</th>
+					<td>
+						<div class="wrap-input">
+							<input type="text" id="" class="input-m _fl wf190" title="이메일 아이디">
+							<span class="txt-blank wf25">@</span>
+							<input type="text" id="" class="input-m _fl wf190" title="이메일 도메인 직접입력">
+							<span class="txt-blank wf10"></span>
+							<select name="" id="" class="select-m _fl wf190" title="이메일 도메인 선택">
+								<option value="">선택하세요</option>
+							</select>
+						</div>
+					</td>
+				</tr>
+				<tr>
+					<th scope="row"><label for="">사용가능여부</label></th>
+					<td>
+						<span class="wrap-radio wf100">
+							<input type="radio" id="1" title="Y" class="radio-m">
+							<label for="1" class=""> Y</label>
+						</span>
+						<span class="wrap-radio wf100">
+							<input type="radio" id="2" title="N" class="radio-m">
+							<label for="2" class=""> N</label>
+						</span>
+					</td>
+				</tr>
+			</tbody>
+		</table>
+		<!--//tbl-form -->
+		</section>
+
+		<div class="wrap_btn02">
+			<div class="aside">
+				<a href="" class="btn1-m-slight">삭제</a>
+			</div>
+			<a href="" class="btn1-m-weight">저장</a>
+			<a href="" class="btn1-m-weight">승인</a>
+			<a href="" class="btn1-m-weight">미승인</a>
+			<a href="" class="btn1-m-weight">탈퇴</a>
+			<a href="" class="btn1-m-slight2">목록</a>
+		</div>
+		<!--//wrap_btn02 폼 하단 버튼-->
+
+	</div>
+	<!--//contents -->
+</div>
+</body>
+</html>

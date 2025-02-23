@@ -1,0 +1,121 @@
+<!--#include file="inc/header.asp"--><jsp:include page="inc/header.asp"/>
+
+	<div id="contents" class="contents">
+		<header class="spot">
+			<h2 class="h-spot">수료증 발급</h2>
+			<div class="breadcrumb">
+				<span class="ico_ home"></span>
+				<span class="txt">home</span>
+				<span class="txt">수료증 발급 관리</span>
+				<span class="txt">수료증 발급</span>
+			</div>
+		</header>
+		<!-- //header -->
+		<section class="sect-t01">
+			<h3 class="h-t1">기본 정보</h3>
+			<table class="tbl-form">
+				<caption>수료증 발급 기본 정보 폼 (아이디, 이름, 대학교, 활동 동아리, 활동기간, 신청일, 상태로 구성)</caption>
+				<colgroup>
+					<col class="w20">
+					<col>
+				</colgroup>
+				<tbody>
+					<tr>
+						<th scope="row"><label for="">이름</label></th>
+						<td>김루키</td>
+					</tr>
+					<tr>
+						<th scope="row"><label for="">아이디</label></th>
+						<td>abc333</td>
+					</tr>
+					<tr>
+						<th scope="row"><label for="">대학교</label></th>
+						<td>고려대학교</td>
+					</tr>
+					<tr>
+						<th scope="row"><label for="">활동 동아리</label></th>
+						<td>경희대학교(PHILIA)</td>
+					</tr>
+					<tr>
+						<th scope="row"><label for="">활동기간</label></th>
+						<td>2017.01.01 ~ 2017.12.31</td>
+					</tr>
+					<tr>
+						<th scope="row"><label for="">신청일</label></th>
+						<td>2018.03.01</td>
+					</tr>
+					<tr>
+						<th scope="row">
+							<label for="">상태</label>
+						</th>
+						<td>
+							<div class="wrap-input">
+								미승인
+							</div>
+						</td>
+					</tr>
+				</tbody>
+			</table>
+			<!--//tbl-form -->
+			<div class="wrap_btn02">
+				<a href="" class="btn1-m-weight">승인</a>
+				<a href="" class="btn1-m-weight">반려</a>
+				<a href="certificateList.html" class="btn1-m-slight2">목록</a>
+			</div>
+		</section>
+
+		<!--//wrap_btn02 폼 하단 버튼-->
+		<section class="sect-t01">
+			<h3 class="h-t1">연합활동 참가 이력</h3>
+			<table class="tbl-list">
+				<caption>연합활동 참가 이력 정보 (번호, 활동명, 활동기간, 상태로 구성)</caption>
+				<colgroup>
+					<col class="wf100">
+					<col class="">
+					<col class="wf200">
+					<col class="wf200">
+					<col class="wf150">
+				</colgroup>
+				<thead>
+				<tr>
+					<th scope="col">번호</th>
+					<th scope="col">활동명</th>
+					<th scope="col">활동기간</th>
+					<th scope="col">상태</th>
+				</tr>
+				</thead>
+				<tbody>
+				<tr>
+					<td>1000</td>
+					<td>2019 하반기 LOOKIE 예비동아리 3차 교육워크숍</td>
+					<td>2018.01.01 ~ 2018.01.01</td>
+					<td>최종합격</td>
+				</tr>
+				<tr>
+					<td>1000</td>
+					<td>2019 하반기 LOOKIE 예비동아리 3차 교육워크숍</td>
+					<td>2018.01.01 ~ 2018.01.01</td>
+					<td>불합격</td>
+				</tr>
+				</tbody>
+			</table>
+		<!--//tbl-list -->
+
+		<div class="paging-t1">
+			<div class="inner_num">
+				<button class="btn-pageFirst"><span class="blind">처음으로</span></button>
+				<button class="btn-pagePrev"><span class="blind">이전 페이지</span></button>
+				<a href="javascript:void(0);" class="on" title="현재 페이지">1</a>
+				<a href="javascript:void(0);">2</a>
+				<a href="javascript:void(0);">3</a>
+				<a href="javascript:void(0);">4</a>
+				<a href="javascript:void(0);">5</a>
+				<button class="btn-pageNext"><span class="blind">다음 페이지</span></button>
+				<button class="btn-pageLast"><span class="blind">마지막 페이지</span></button>
+			</div>
+		</div>
+		<!--//paging-t1 -->
+		</section>
+	</div>
+	<!--//contents -->
+<!--#include file="inc/footer.asp"--><jsp:include page="inc/footer.asp"/>

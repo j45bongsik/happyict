@@ -1,0 +1,203 @@
+<!--#include file="inc/header.asp"--><jsp:include page="inc/header.asp"/>
+
+	<div id="contents" class="contents clubreg">
+		<header class="spot">
+			<h2 class="h-spot">동아리 정보 관리</h2>
+			<div class="breadcrumb">
+				<span class="ico_ home"></span>
+				<span class="txt">home</span>
+				<span class="txt">동아리 관리</span>
+				<span class="txt">동아리 정보 관리</span>
+			</div>
+		</header>
+		<!-- //header -->
+		<section class="sect-t01">
+			<h3 class="h-t1">고려대학교 / 동아리명 <span class="aside txt-tblGuide"><span class="em-weight">*</span> 필수 입력항목입니다. </span></h3>
+			<table class="tbl-form">
+				<caption>동아리 정보 폼 (학교명, 동아리명, 인원 수, 동아리 활동 이미지, 동아리 소개, 현재 진행 프로젝트, 하고 싶은 말, 첨부파일, 동아리 화장, 이메일, 게시여부로 구성)</caption>
+				<colgroup>
+					<col class="w20">
+					<col class="w35">
+					<col class="w15">
+					<col class="w30">
+				</colgroup>
+				<tbody>
+					<tr>
+						<th scope="row">학교명</th>
+						<td colspan="3">고려대학교</td>
+					</tr>
+					<tr>
+						<th scope="row"><label for=""><strong class="em-weight">*</strong> 동아리명</label></th>
+						<td colspan="3"><input type="text" id="" class="input-m w100" title="동아리명 입력"></td>
+					</tr>
+					<tr>
+						<th scope="row">인원 수</th>
+						<td colspan="3">30명</td>
+					</tr>
+					<tr>
+						<th scope="row"><label for="">동아리 활동 이미지</label></th>
+						<td colspan="3">
+							<div class="wrap_fileSearch">
+								<span class="input-m w60 fileName"></span>
+								<a href="#file01" class="btn1-s-slight wf100" title="첨부파일선택">파일선택</a>
+								<input type="file" id="file01" class="input _file" title="파일선택">
+							</div>
+							<div class="wrap_fileRemove">
+								<p class="txt-guide01">JPG, GIF, BMP, PNG 파일만 첨부가 가능합니다.(2MB 미만)</p>
+								<a href="#file01" class="btn1-s-slight wf100" title="삭제">삭제</a>
+							</div>
+							<div class="wrap_pcimg">
+								<img src="resources/img/common/tbl_ex.jpg" alt="">
+							</div>	
+						</td>
+					</tr>
+					<tr>
+						<th scope="row"><label for="">동아리 활동 이미지 설명</label></th>
+						<td colspan="3"><textarea name="" id="" class="textarea-m w100 hf100" title="동아리 활동 이미지 설명 입력"></textarea></td>
+					</tr>
+					<tr>
+						<th scope="row"><label for="">현재 진행 프로젝트<br />(200자)</label></th>
+						<td colspan="3"><textarea name="" id="" class="textarea-m w100 hf100" title="현재 진행 프로젝트 입력"></textarea></td>
+					</tr>
+					<tr>
+						<th scope="row"><label for="">하고 싶은 말<br />(200자)</label></th>
+						<td colspan="3"><textarea name="" id="" class="textarea-m w100 hf100" title="하고 싶은 말 입력"></textarea></td>
+					</tr>
+					<tr>
+						<th scope="row"><label for="">첨부파일<br />(최대5개)</label></th>
+						<td colspan="3">
+							<p class="txt-guide01">hwp, word, ppt, pdf 파일만 첨부가 가능합니다. (1개당 10MB 미만. 총 50MB를 초과하지 못합니다.)</p>
+							<div class="wrap_fileSearch wrap-input">
+								<span class="input-m w60 fileName"></span>
+								<a href="#file02" class="btn1-s-slight wf100" title="첨부파일선택">파일선택</a>
+								<input type="file" id="file02" class="input _file" title="파일선택">
+							</div>
+						</td>
+					</tr>
+					<tr>
+						<th scope="row"><label for=""><strong class="em-weight">*</strong> 동아리 회장</label></th>
+						<td><input type="text" id="" class="input-m w50" title="동아리 회장" value="김루키"> <a href="javascript: PopOpenEvt('popId.html', 700, 500);" class="btn1-s-slight wf100 m-w40">조회</a> <a href="javascript: PopOpenEvt('popIdChange2.html', 700, 500);" class="btn1-s-slight wf100 m-w40">변경</a></td>
+						<th scope="row">이메일</th>
+						<td>lookie@lookie.com</td>
+					</tr>
+					<tr>
+						<th scope="row"><label for=""><strong class="em-weight">*</strong> 게시여부</label></th>
+						<td colspan="3">
+							<span class="wrap-radio wf100">
+								<input type="radio" id="1" title="Y" class="radio-m">
+								<label for="1" class=""> Y</label>
+							</span>
+							<span class="wrap-radio wf100">
+								<input type="radio" id="2" title="N" class="radio-m">
+								<label for="2" class=""> N</label>
+							</span>
+						</td>
+					</tr>
+					<tr>
+						<th scope="row"><label for=""><strong class="em-weight">*</strong> 모집여부</label></th>
+						<td colspan="3">
+							<span class="wrap-radio wf100">
+								<input type="radio" id="1" title="Y" class="radio-m">
+								<label for="1" class=""> Y</label>
+							</span>
+							<span class="wrap-radio wf100">
+								<input type="radio" id="2" title="N" class="radio-m">
+								<label for="2" class=""> N</label>
+							</span>
+						</td>
+					</tr>
+				</tbody>
+			</table>
+			<!--//tbl-form -->
+		</section>
+		<section class="sect-t1">
+			<h3 class="h-t1">동아리 지원 질문 등록</h3>
+			<table class="tbl-form">
+				<caption>동아리 지원 질문 입력폼 (질문 등록,미등록 선택)</caption>
+				<colgroup>
+					<col class="w20">
+					<col>
+				</colgroup>
+				<tbody>
+					<tr>
+						<th scope="row"><label for=""><strong class="em-weight">*</strong> 질문 </label></th>
+						<td>
+							<span class="wrap-check wf150">
+								<input type="radio" id="birth03" title="등록" class="radio-m" name="que">
+								<label for="birth03" class=""> 등록</label>
+							</span>
+							<span class="wrap-check wf150">
+								<input type="radio" id="birth04" title="미등록" class="radio-m" name="que">
+								<label for="birth04" class=""> 미등록</label>
+							</span>
+						</td>
+					</tr>
+				</tbody>
+			</table>
+			<!--//tbl-form -->
+			<table class="tbl-form2">
+				<caption>동아리 지원 질문 입력폼 (번호,질문내용으로 구성)</caption>
+				<colgroup>
+					<col class="w15">
+					<col>
+				</colgroup>
+				<thead>
+					<tr>
+						<th scope="col">번호</th>
+						<th scope="col">질문내용 (5개까지 등록가능)</th>
+					</tr>	
+				</thead>	
+				<tbody>
+					<tr>
+						<td>1</td>
+						<td class="a-l">
+							<div class="wrap-input">
+								<div class="inner _3 w75 m-w60 mm-w75">
+									<input type="text" class="input-m w100" title="질문내용 입력">
+								</div>
+								<div class="inner _3">
+									<select name="" id="" class="select-m wf100 mm-w75" title="답변 글자수 선택">
+										<option value="">100자</option>
+									</select>
+								</div>
+							</div>
+							<div class="box-lay-aside">
+								<button class="btn-plus"><span class="blind">추가</span></button>
+								<button class="btn-minus"><span class="blind">삭제</span></button>
+							</div>
+						</td>
+					</tr>
+					<tr>
+						<td>2</td>
+						<td class="a-l">
+							<div class="wrap-input">
+								<div class="inner _3 w75 m-w60 mm-w75">
+									<input type="text" class="input-m w100" title="질문내용 입력">
+								</div>
+								<div class="inner _3">
+									<select name="" id="" class="select-m wf100 mm-w75" title="답변 글자수 선택">
+										<option value="">100자</option>
+									</select>
+								</div>
+							</div>
+							<div class="box-lay-aside">
+								<button class="btn-plus"><span class="blind">추가</span></button>
+								<button class="btn-minus"><span class="blind">삭제</span></button>
+							</div>
+						</td>
+					</tr>
+				</tbody>
+			</table>
+			<!--//tbl-form -->
+		</section>
+		<div class="wrap_btn02">
+			<div class="aside">
+				<a href="" class="btn1-m-slight">삭제</a>
+			</div>
+			<a href="" class="btn1-m-weight">저장</a>
+			<a href="mainBannerList.html" class="btn1-m-slight2">목록</a>
+		</div>
+	</div>
+	<!--//contents -->
+
+<!--#include file="inc/footer.asp"--><jsp:include page="inc/footer.asp"/>

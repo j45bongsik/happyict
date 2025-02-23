@@ -1,0 +1,333 @@
+<!doctype html>
+<html lang="ko">
+ <head>
+ <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+ <title>[WSG]ENSI ADMIN</title>
+<style type="text/css">
+
+* {margin:0; padding:0; font-family:'malgungothic'; font-size:12px; line-height:14px; color:#666;}
+body {padding:0;}
+a {text-decoration:none;}
+a:hover {color:#dd2777;}
+
+h1 {margin-bottom: 0; font-size:20px; font-weight:bold; text-align:left; padding:20px; color: #fff; background-color: #c93b49; border-bottom: 1px solid #c93b49;}
+h2 {font-size:14px;	color:#000;	font-weight:bold; text-align:left; padding:0 0 0 0;}
+h2 + p{margin-top: 10px;}
+
+table {border-collapse:collapse; margin:20px 0; width:100%; border-bottom:1px solid #ccc;}
+table caption {display:none;}
+table th {background-color:#f0f0f0;	border:1px solid #ccc; border-bottom:double #ccc; padding:5px;}
+table td {border:1px solid #ccc; padding:5px 5px 5px 10px;}
+table td.date {text-align:center; font-family:"verdana"; font-size:11px;}
+table td.date strong {font-size:11px;}
+table td.date span {font-family:"verdana"; font-size:11px;}
+
+strong {font-family:"verdana"; font-weight:bold; color:#F00;}
+
+em {font-family:"verdana"; font-style:normal; color:#ff0000; font-size:11px;}
+em.today {font-family:"verdana"; font-style:normal; font-weight:bold; color:#ff0000; font-size:11px;}
+
+span {font-style:normal; color:#ff0000;}
+
+table td.date span, table td.date span em {display:block; margin-top:3px;}
+table td.note {text-align:left;}
+
+.wrap{padding: 20px;}
+.gab {height:5px; padding:0}
+.cg {color:#ff0000;}
+.nop {color:green;}
+
+.bg{background: #fffed5;}
+</style>
+</head>
+<body>
+<h1>[ensi - ADMIN]</h1>
+<div class="wrap">
+  <h2>* ADMIN - WEB *</h2>
+	
+	<table border="0" cellspacing="0" cellpadding="0" summary="ADMIN Coding List">
+		<caption>ADMIN Coding List</caption>
+		<colgroup>
+			<col width="3%" />
+			<col width="7%" />
+			<col width="10%" />
+			<col width="10%" />
+			<col width="10%" />
+			<col width="10%" />
+			<col width="15%" />
+			<col width="*" />
+		</colgroup>
+		<thead>
+			<tr>
+				<th scope="col">완료</th>
+				<th scope="col">1depth</th>
+				<th scope="col">2depth</th>
+				<th scope="col">3depth</th>
+				<th scope="col">4depth</th>
+				<th scope="col">5depth</th>
+				<th scope="col">화면ID</th>
+				<th scope="col">description</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr>
+				<td>&nbsp;</td>
+				<td>로그인</td>
+				<td>&nbsp;</td>
+				<td>&nbsp;</td>
+				<td>&nbsp;</td>
+				<td>&nbsp;</td>
+				<td class="file bg"><a href="login.html" target="_blank">login.html</a></td>
+				<td>&nbsp;</td>
+			</tr>
+			<tr>
+				<td>&nbsp;</td>
+				<td>에러</td>
+				<td>&nbsp;</td>
+				<td>&nbsp;</td>
+				<td>&nbsp;</td>
+				<td>&nbsp;</td>
+				<td class="file bg"><a href="error.html" target="_blank">error.html</a></td>
+				<td>&nbsp;</td>
+			</tr>
+            <tr>
+				<td>&nbsp;</td>
+				<td rowspan="6">계정 관리</td>
+				<td rowspan="3">관리자 계정</td>
+				<td>리스트</td>
+				<td>&nbsp;</td>
+				<td>&nbsp;</td>
+				<td class="file bg"><a href="managerList.html" target="_blank">managerList.html</a></td>
+				<td>&nbsp;</td>
+			</tr>
+            <tr>
+			  <td>&nbsp;</td>	
+              <td>본인 (등록 / 수정 / 상세)</td>
+              <td>&nbsp;</td>
+              <td>&nbsp;</td>
+              <td class="file bg"><a href="managerStats.html" target="_blank">managerStats.html</a></td>
+              <td>&nbsp;</td>
+            </tr>
+            <tr>
+			  <td>&nbsp;</td>	
+              <td>전체 (등록 / 수정 / 상세)</td>
+              <td>&nbsp;</td>
+              <td>&nbsp;</td>
+              <td class="file bg"><a href="managerReg.html" target="_blank">managerReg.html</a></td>
+              <td>&nbsp;</td>
+            </tr>
+            <tr>
+              <td>&nbsp;</td>
+              <td rowspan="3">회원 계정</td>
+              <td>리스트</td>
+              <td>&nbsp;</td>
+              <td>&nbsp;</td>
+              <td class="file bg"><a href="memberList.html" target="_blank">memberList.html</a></td>
+              <td>&nbsp;</td>
+            </tr>
+            <tr>
+			  <td>&nbsp;</td>
+              <td>상세</td>
+              <td>&nbsp;</td>
+              <td>&nbsp;</td>
+              <td class="file bg"><a href="memberView.html" target="_blank">memberView.html</a></td>
+              <td>&nbsp;</td>
+            </tr>
+            <tr>
+			  <td>&nbsp;</td>
+              <td>&nbsp;</td>
+              <td>우편번호 찾기(팝업)</td>
+              <td>&nbsp;</td>
+              <td class="file bg"><a href="popAddr.html" target="_blank">popAddr.html</a></td>
+              <td>&nbsp;</td>
+            </tr>
+            <tr>
+              <td rowspan="2">&nbsp;</td>
+              <td rowspan="4">배너 관리</td>
+              <td rowspan="2">메인 배너</td>
+              <td>리스트</td>
+              <td>&nbsp;</td>
+              <td>&nbsp;</td>
+              <td class="file"><a href="mainBannerList.html" target="_blank">mainBannerList.html</a></td>
+              <td rowspan="2">&nbsp;</td>
+            </tr>
+            <tr>
+              <td>등록 / 수정 / 상세</td>
+              <td>&nbsp;</td>
+              <td>&nbsp;</td>
+              <td class="file"><a href="mainBannerReg.html" target="_blank">mainBannerReg.html</a></td>
+            </tr>
+            <tr>
+              <td rowspan="2">&nbsp;</td>
+              <td rowspan="2">서브 배너</td>
+              <td>&nbsp;</td>
+              <td>&nbsp;</td>
+              <td>&nbsp;</td>
+              <td class="file"><a href="subBannerList.html" target="_blank">subBannerList.html</a></td>
+              <td rowspan="2">&nbsp;</td>
+            </tr>
+            <tr>
+              <td>&nbsp;</td>
+              <td>&nbsp;</td>
+              <td>&nbsp;</td>
+              <td class="file"><a href="subBannerReg.html" target="_blank">subBannerReg.html</a></td>
+            </tr>
+            <tr>
+              <td rowspan="2">&nbsp;</td>
+              <td rowspan="4">연구공모 관리</td>
+              <td rowspan="2">연구공모 관리</td>
+              <td>리스트</td>
+              <td>&nbsp;</td>
+              <td>&nbsp;</td>
+              <td class="file"><a href="competitionList.html" target="_blank">competitionList.html</a></td>
+              <td rowspan="2">&nbsp;</td>
+            </tr>
+            <tr>
+              <td>등록 / 수정 / 상세</td>
+              <td>&nbsp;</td>
+              <td>&nbsp;</td>
+              <td class="file"><a href="competitionReg.html" target="_blank">competitionReg.html</a></td>
+            </tr>
+            <tr>
+              <td rowspan="2">&nbsp;</td>
+              <td rowspan="2">지원자 관리</td>
+              <td>&nbsp;</td>
+              <td>&nbsp;</td>
+              <td>&nbsp;</td>
+              <td class="file"><a href="applicantList.html" target="_blank">applicantList.html</a></td>
+              <td rowspan="2">&nbsp;</td>
+            </tr>
+            <tr>
+              <td>&nbsp;</td>
+              <td>&nbsp;</td>
+              <td>&nbsp;</td>
+              <td class="file"><a href="applicantView.html" target="_blank">applicantView.html</a></td>
+            </tr>
+            <tr>
+              <td>&nbsp;</td>
+              <td rowspan="8">자료 관리</td>
+              <td rowspan="2">연구 논문 관리</td>
+              <td>리스트</td>
+              <td>&nbsp;</td>
+              <td>&nbsp;</td>
+              <td class="file bg"><a href="papersList.html" target="_blank">papersList.html</a></td>
+              <td>&nbsp;</td>
+            </tr>
+            <tr>
+              <td>&nbsp;</td>
+              <td>등록 / 수정 / 상세</td>
+              <td>&nbsp;</td>
+              <td>&nbsp;</td>
+              <td class="file bg"><a href="papersReg.html" target="_blank">papersReg.html</a></td>
+              <td>&nbsp;</td>
+            </tr>
+            <tr>
+              <td>&nbsp;</td>
+              <td rowspan="2">ENSI 인사이트 관리</td>
+              <td>리스트</td>
+              <td>&nbsp;</td>
+              <td>&nbsp;</td>
+              <td class="file"><a href="insightsList.html" target="_blank">insightsList.html</a></td>
+              <td>&nbsp;</td>
+            </tr>
+            <tr>
+              <td>&nbsp;</td>
+              <td>상세 / 댓글</td>
+              <td>&nbsp;</td>
+              <td>&nbsp;</td>
+              <td class="file"><a href="insightsReg.html" target="_blank">insightsReg.html</a></td>
+              <td>&nbsp;</td>
+            </tr>
+            <tr>
+              <td>&nbsp;</td>
+              <td rowspan="2">교육 과정 관리</td>
+              <td>리스트</td>
+              <td>&nbsp;</td>
+              <td>&nbsp;</td>
+              <td class="file"><a href="curriculumList.html" target="_blank">curriculumList.html</a></td>
+              <td>&nbsp;</td>
+            </tr>
+            <tr>
+              <td>&nbsp;</td>
+              <td>등록 / 수정 / 상세</td>
+              <td>&nbsp;</td>
+              <td>&nbsp;</td>
+              <td class="file"><a href="curriculumReg.html" target="_blank">curriculumReg.html</a></td>
+              <td>&nbsp;</td>
+            </tr>
+            <tr>
+              <td>&nbsp;</td>
+              <td rowspan="2">교육 자료 관리</td>
+              <td>리스트</td>
+              <td>&nbsp;</td>
+              <td>&nbsp;</td>
+              <td class="file"><a href="materialList.html" target="_blank">materialList.html</a></td>
+              <td>&nbsp;</td>
+            </tr>
+            <tr>
+              <td>&nbsp;</td>
+              <td>등록 / 수정 / 상세</td>
+              <td>&nbsp;</td>
+              <td>&nbsp;</td>
+              <td class="file"><a href="materialReg.html" target="_blank">materialReg.html</a></td>
+              <td>&nbsp;</td>
+            </tr>
+            <tr>
+              <td>&nbsp;</td>
+              <td rowspan="4">Community 관리</td>
+              <td rowspan="2">공지사항 관리</td>
+              <td>리스트</td>
+              <td>&nbsp;</td>
+              <td>&nbsp;</td>
+              <td class="file bg"><a href="noticeList.html" target="_blank">noticeList.html</a></td>
+              <td>&nbsp;</td>
+            </tr>
+            <tr>
+              <td>&nbsp;</td>
+              <td>등록 / 수정 / 상세</td>
+              <td>&nbsp;</td>
+              <td>&nbsp;</td>
+              <td class="file bg"><a href="noticeReg.html" target="_blank">noticeReg.html</a></td>
+              <td>&nbsp;</td>
+            </tr>
+            <tr>
+              <td>&nbsp;</td>
+              <td rowspan="2">Conatact 관리</td>
+              <td>리스트</td>
+              <td>&nbsp;</td>
+              <td>&nbsp;</td>
+              <td class="file"><a href="contactList.html" target="_blank">contactList.html</a></td>
+              <td>&nbsp;</td>
+            </tr>
+            <tr>
+              <td>&nbsp;</td>
+              <td>상세 / 댓글</td>
+              <td>&nbsp;</td>
+              <td>&nbsp;</td>
+              <td class="file"><a href="contactReg.html" target="_blank">contactReg.html</a></td>
+              <td>&nbsp;</td>
+            </tr>
+            <tr>
+              <td>&nbsp;</td>
+              <td rowspan="3">통계</td>
+              <td>회원 현황</td>
+              <td>리스트</td>
+              <td>&nbsp;</td>
+              <td>&nbsp;</td>
+              <td class="file"><a href="memberStats.html" target="_blank">memberStats.html</a></td>
+              <td>&nbsp;</td>
+            </tr>
+            <tr>
+              <td>&nbsp;</td>
+              <td>기타 통계</td>
+              <td>바로가기</td>
+              <td>&nbsp;</td>
+              <td>&nbsp;</td>
+              <td class="file"><a href="memberAnalytics.html" target="_blank">memberAnalytics.html</a></td>
+              <td>&nbsp;</td>
+            </tr>
+		</tbody>
+	</table>
+</div>
+</body>
+</html>

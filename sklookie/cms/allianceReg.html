@@ -1,0 +1,329 @@
+<!--#include file="inc/header.asp"--><jsp:include page="inc/header.asp"/>
+
+	<div id="contents" class="contents">
+		<header class="spot">
+			<h2 class="h-spot">연합활동 관리</h2>
+			<div class="breadcrumb">
+				<span class="ico_ home"></span>
+				<span class="txt">home</span>
+				<span class="txt">연합활동 관리</span>
+				<span class="txt">연합활동 관리</span>
+			</div>
+		</header>
+		<!-- //header -->
+		<section class="sect-t01">
+			<h3 class="h-t1">연합활동 정보 <span class="aside txt-tblGuide"><span class="em-weight">*</span> 필수 입력항목입니다. </span></h3>
+			<table class="tbl-form">
+				<caption>연합활동정보 입력 폼(연합활동명, 대표사진, 활동장소, 연합활동설명, 상세소개, 유의사항, 기타, 모집기간, 활동기간, 합격자 발표일, 모집인원, 지원자격, 모집방법, 예산으로 구성)</caption>
+				<colgroup>
+					<col class="w20">
+					<col>
+				</colgroup>	
+				<tbody>
+					<tr>
+						<th scope="row"><label for=""><strong class="em-weight">*</strong> 연합<span class="txt-flow">활동명</span></label></th>
+						<td>
+							<span class="txt-tblGuide">15자 미만으로 작성해주세요.</span>
+							<input id="" type="text" class="input-m w100" title="연합활동명">
+						</td>
+					</tr>
+					<tr>
+						<th scope="row">URL</th>
+						<td>http://www.sklookie.com/activity/allianceList/no.1234.do</td>
+					</tr>
+					<tr>
+						<th scope="row"><label for=""><strong class="em-weight">*</strong> 대표사진<span class="txt-flow">(490 * 312)</span></label></th>
+						<td>
+							<div class="wrap_fileSearch">
+								<span class="input-m w60 mm-w70 fileName"></span>
+								<a href="#file01" class="btn1-s-slight wf100  mm-w25" title="첨부파일선택">파일선택</a>
+								<input type="file" id="file01" class="input _file" title="파일선택">
+							</div>
+						</td>
+					</tr>
+					<tr>
+						<th scope="row"><label for=""><strong class="em-weight">*</strong> 활동장소</label></th>
+						<td>
+							<div class="wrap-input">
+								<input id="" type="text" class="input-m _fl w20 m-w55" title="">
+								<span class="txt-blank wf10"></span>
+								<a href="javascript: PopOpenEvt('popAddr.html', 650, 700);" class="btn1-s-slight wf100 m-w40">우편번호 찾기</a>
+							</div>
+							<div class="wrap-input">
+								<label for="" class="lb-t1 wf60">기본 주소</label>
+								<span class="txt-blank wf10 m-w0"></span>
+								<input type="text" id="" class="input-m w90 m-w70" title="기본 주소 입력">
+							</div>
+							<div class="wrap-input">
+								<label for="" class="lb-t1 wf60">상세 주소</label>
+								<span class="txt-blank wf10 m-w0"></span>
+								<input type="text" id="" class="input-m w90 m-w70" title="상세 주소 입력">
+							</div>
+						</td>
+					</tr>
+					<tr>
+						<th scope="row"><label for=""><strong class="em-weight">*</strong> 연합활동<span class="txt-flow">설명</span></label></th>
+						<td>
+							<span class="txt-tblGuide">300자 미만으로 작성해주세요.</span>
+							<textarea name="" id="" class="textarea-m w100 hf100" title="연합활동설명 입력"></textarea>
+						</td>
+					</tr>
+					<tr>
+						<th scope="row"><label for="">상세소개</label></th>
+						<td>
+							<span class="txt-tblGuide">300자 미만으로 작성해주세요.</span>
+							<textarea name="" id="" class="textarea-m w100 hf100" title="상세소개 입력"></textarea>
+						</td>
+					</tr>
+					<tr>
+						<th scope="row"><label for="">유의사항</label></th>
+						<td>
+							<span class="txt-tblGuide">300자 미만으로 작성해주세요.</span>
+							<textarea name="" id="" class="textarea-m w100 hf100" title="유의사항 입력"></textarea>
+						</td>
+					</tr>
+					<tr>
+						<th scope="row"><label for="">기타</label></th>
+						<td>
+							<span class="txt-tblGuide">300자 미만으로 작성해주세요.</span>
+							<textarea name="" id="" class="textarea-m w100 hf100" title="기타 입력"></textarea>
+						</td>
+					</tr>
+					<tr>
+						<th scope="row"><label for=""><strong class="em-weight">*</strong> 모집기간</label></th>
+						<td>
+							<div class="wrap-input">
+								<div class="inner _2 m-w100">
+									<input type="text" class="input-m bg wf150 mm-w60" title="시작날짜 입력"> <a href="" class="ico_ date">날짜 검색</a>
+									<span class="txt-dash">~</span>
+								</div>
+								<div class="inner _2 m-w100">
+								<input type="text" class="input-m bg wf150 mm-w60" title="종료날짜 입력"> <a href="" class="ico_ date">날짜 검색</a>
+								</div>
+							</div>
+						</td>
+					</tr>
+					<tr>
+						<th scope="row"><label for=""><strong class="em-weight">*</strong> 활동기간</label></th>
+						<td>
+							<div class="wrap-input">
+								<div class="inner _2 m-w100">
+									<input type="text" class="input-m bg wf150 mm-w60" title="시작날짜 입력"> <a href="" class="ico_ date">날짜 검색</a>
+									<span class="txt-dash">~</span>
+								</div>
+								<div class="inner _2 m-w100">
+								<input type="text" class="input-m bg wf150 mm-w60" title="종료날짜 입력"> <a href="" class="ico_ date">날짜 검색</a>
+								</div>
+							</div>
+						</td>
+					</tr>
+					<tr>
+						<th scope="row"><label for=""><strong class="em-weight">*</strong> 합격자 <span class="txt-flow">발표일</span></label></th>
+						<td>
+							<span class="txt-tblGuide _2">시간입력은 24시간 기준, 1530형식으로 해주세요.</span>
+							<div class="wrap-input">
+								<div class="inner _2 wf215 m-w100">
+									<input type="text" class="input-m bg wf150 mm-w60" title="시작날짜 입력"> <a href="" class="ico_ date">날짜 검색</a>
+								</div>
+								<div class="inner _2 m-w100">
+									<input type="text" class="input-m wf150 mm-w60" title="시간 입력" placeholder="ex)1530">
+								</div>
+						</td>
+					</tr>
+					<tr>
+						<th scope="row"><label for=""><strong class="em-weight">*</strong> 모집인원</label></th>
+						<td>
+							<input id="" type="text" class="input-m wf100" title="모집인원 입력"> 명
+						</td>
+					</tr>
+					<tr>
+						<th scope="row"><label for=""><strong class="em-weight">*</strong> 지원자격</label></th>
+						<td>
+							<span class="wrap-check wf150">
+								<input type="checkbox" id="" title="루키" class="check-m">
+								<label for="" class=""> 루키</label>
+							</span>
+							<span class="wrap-check wf150">
+								<input type="checkbox" id="" title="일반 대학생" class="check-m">
+								<label for="" class=""> 일반 대학생</label>
+							</span>
+						</td>
+					</tr>
+					<tr>
+						<th scope="row"><label for=""><strong class="em-weight">*</strong> 모집방법</label></th>
+						<td>
+							<span class="wrap-check wf150">
+								<input type="radio" id="" title="합격자발표" class="radio-m" name="come">
+								<label for="" class=""> 합격자발표</label>
+							</span>
+							<span class="wrap-check wf150">
+								<input type="radio" id="" title="선착순" class="radio-m" name="come">
+								<label for="" class=""> 선착순</label>
+							</span>
+						</td>
+					</tr>
+					<tr>
+						<th scope="row"><label for=""><strong class="em-weight">*</strong> 예산</label></th>
+						<td>
+							<div class="wrap-input">
+								<div class="inner _2 w60 m-w100">
+									<input id="" type="text" class="input-m w100" title="항목 입력" placeholder="항목을 입력해주세요.">
+								</div>
+								<div class="inner _2 m-w100">													
+									<input id="" type="text" class="input-m wf200 mm-w60" title="금액 입력" placeholder="금액을 입력해주세요."> 원
+								</div>
+								<div class="box-lay-aside">
+									<button class="btn-plus"><span class="blind">추가</span></button>
+									<button class="btn-minus"><span class="blind">삭제</span></button>
+								</div>
+							</div>
+							<div class="wrap-input">
+								<div class="inner _2 w60 m-w100">
+									<input id="" type="text" class="input-m w100" title="항목 입력" placeholder="항목을 입력해주세요.">
+								</div>
+								<div class="inner _2 m-w100">													
+									<input id="" type="text" class="input-m wf200 mm-w60" title="금액 입력" placeholder="금액을 입력해주세요."> 원
+								</div>
+								<div class="box-lay-aside">
+									<button class="btn-plus"><span class="blind">추가</span></button>
+									<button class="btn-minus"><span class="blind">삭제</span></button>
+								</div>
+							</div>
+						</td>
+					</tr>						
+				</tbody>
+			</table>
+			<!--//tbl-form -->
+		</section>
+		<section class="sect-t1">
+			<h3 class="h-t1">지원서 등록</h3>
+			<table class="tbl-form">
+				<caption>지원서 입력폼 (질문 등록,미등록 선택)</caption>
+				<colgroup>
+					<col class="w20">
+					<col>
+				</colgroup>
+				<tbody>
+					<tr>
+						<th scope="row"><label for=""><strong class="em-weight">*</strong> 질문 </label></th>
+						<td>
+							<span class="wrap-check wf150">
+								<input type="radio" id="birth03" title="등록" class="radio-m" name="que">
+								<label for="birth03" class=""> 등록</label>
+							</span>
+							<span class="wrap-check wf150">
+								<input type="radio" id="birth04" title="미등록" class="radio-m" name="que">
+								<label for="birth04" class=""> 미등록</label>
+							</span>
+						</td>
+					</tr>
+				</tbody>
+			</table>
+			<!--//tbl-form -->
+			<table class="tbl-form2">
+				<caption>지원서 입력폼 (번호,질문내용으로 구성)</caption>
+				<colgroup>
+					<col class="w15">
+					<col>
+				</colgroup>
+				<thead>
+					<tr>
+						<th scope="col">번호</th>
+						<th scope="col">질문내용 (10개까지 등록가능)</th>
+					</tr>	
+				</thead>	
+				<tbody>
+					<tr>
+						<td>1</td>
+						<td class="a-l">
+							<div class="wrap-input">
+								<div class="inner _3 w75 m-w60 mm-w75">
+									<input type="text" class="input-m w100" title="질문내용 입력">
+								</div>
+								<div class="inner _3">
+									<select name="" id="" class="select-m wf100 mm-w75" title="답변 글자수 선택">
+										<option value="">100자</option>
+									</select>
+								</div>
+							</div>
+							<div class="box-lay-aside">
+								<button class="btn-plus"><span class="blind">추가</span></button>
+								<button class="btn-minus"><span class="blind">삭제</span></button>
+							</div>
+						</td>
+					</tr>
+					<tr>
+						<td>2</td>
+						<td class="a-l">
+							<div class="wrap-input">
+								<div class="inner _3 w75 m-w60 mm-w75">
+									<input type="text" class="input-m w100" title="질문내용 입력">
+								</div>
+								<div class="inner _3">
+									<select name="" id="" class="select-m wf100 mm-w75" title="답변 글자수 선택">
+										<option value="">100자</option>
+									</select>
+								</div>
+							</div>
+							<div class="box-lay-aside">
+								<button class="btn-plus"><span class="blind">추가</span></button>
+								<button class="btn-minus"><span class="blind">삭제</span></button>
+							</div>
+						</td>
+					</tr>
+				</tbody>
+			</table>
+			<!--//tbl-form -->
+		</section>
+		<section>
+			<h3 class="h-t1">게시여부</h3>
+			<table class="tbl-form">
+				<caption>게시여부 폼 (게시 여부, 상태로 구성)</caption>
+				<colgroup>
+					<col class="wf200">
+					<col>
+				</colgroup>
+				<tbody>
+					<tr>
+						<th scope="row"><label for="">게시 여부</label></th>
+						<td>
+							<span class="wrap-radio wf100">
+								<input type="radio" id="1" title="Y" class="radio-m">
+								<label for="1" class=""> Y</label>
+							</span>
+							<span class="wrap-radio wf100">
+								<input type="radio" id="2" title="N" class="radio-m">
+								<label for="2" class=""> N</label>
+							</span>
+						</td>
+					</tr>
+					<tr>
+					<th scope="row">
+						<label for="">상태</label>
+					</th>
+					<td>
+						<div class="wrap-input">
+							<select name="" id="" class="select-m _fl wf190" title="상태 선택">
+								<option value="">심사중</option>
+							</select>
+						</div>
+					</td>
+				</tr>
+				</tbody>
+			</table>
+			<!--//tbl-form -->
+		</section>
+		<div class="wrap_btn02">
+			<div class="aside">
+				<a href="" class="btn1-m-slight">삭제</a>
+			</div>
+			<a href="" class="btn1-m-weight">취소</a>
+			<a href="" class="btn1-m-weight">등록</a>
+			<a href="" class="btn1-m-weight">수정</a>
+			<a href="allianceList.html" class="btn1-m-slight2">목록</a>
+		</div>
+
+
+	</div>
+	<!--//contents -->
+<!--#include file="inc/footer.asp"--><jsp:include page="inc/footer.asp"/>

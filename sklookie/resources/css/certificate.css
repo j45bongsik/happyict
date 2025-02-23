@@ -1,0 +1,14 @@
+.wrapcertificate {font-size:10px;}
+.wrapcertificate .first {padding:0 0 10px 0;}
+.wrapcertificate .title {padding: 50px 0; font-size: 30px; font-weight: normal; text-align: center; letter-spacing: 1px;}
+.wrapcertificate .title02 {font-size:16px; font-weight: bold;}
+.wrapcertificate .listcont {width:100%;}
+.wrapcertificate .listcont td {padding-left: 50px; width:100%; padding-bottom: 15px;}
+.wrapcertificate .wrapsign {width:100%; text-align: center;}
+.wrapcertificate .sign01 td {padding-top: 50px; font-size:18px;} 
+.wrapcertificate .imgbox {text-align: center; padding:0 0 30px 0;}
+.wrapcertificate .num01{width:250px;}
+.wrapcertificate .num02{width:365px;}
+.wrapsign td {display:block; padding-bottom: 30px;}
+.wrapcertificate .t-l {text-align:left; padding-top: 100px; }
+.wrapcertificate table + table {margin-top: 10px;	}

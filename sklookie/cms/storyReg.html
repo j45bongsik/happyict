@@ -1,0 +1,140 @@
+<!--#include file="inc/header.asp"--><jsp:include page="inc/header.asp"/>
+
+	<div id="contents" class="contents">
+		<header class="spot">
+			<h2 class="h-spot">루키 이야기</h2>
+			<div class="breadcrumb">
+				<span class="ico_ home"></span>
+				<span class="txt">home</span>
+				<span class="txt">게시판 관리</span>
+				<span class="txt">루키 이야기</span>
+			</div>
+		</header>
+		<!-- //header -->
+		<section class="sect-t01">
+			<table class="tbl-form">
+				<caption>루키 이야기 정보 (제목, 첨부파일, 내용, 게시여부 구성)</caption>
+				<colgroup>
+					<col class="w20">
+					<col>
+					<col class="w20">
+					<col>
+				</colgroup>
+				<tbody>
+					<tr>
+						<th scope="col"><label for="" class="txt-label">제목</label></th>
+						<td colspan="3"><input type="text" id="" class="input-m w100" title="제목"></td>
+					</tr>
+					<tr>
+						<th scope="col"><label for="">첨부파일</label></th>
+						<td colspan="3">
+							<div class="wrap_fileSearch">
+								<span class="input-m w60 fileName"></span>
+								<a href="#file01" class="btn1-s-slight wf100" title="첨부파일선택">파일선택</a>
+								<input type="file" id="file01" class="input _file" title="파일선택">
+							</div>
+						</td>
+					</tr>
+					<tr>
+						<th scope="row"><label for="">게시여부</label></th>
+						<td>
+							<div class="inner">
+								<span class="wrap-radio wf100 m-w45">
+									<input type="radio" id="" title="사용여부:예" class="radio-m">
+									<label for="" class=""> Y</label>
+								</span>
+								<span class="wrap-radio wf100 m-w45">
+									<input type="radio" id="" title="사용여부:아니요" class="radio-m">
+									<label for="" class=""> N</label>
+								</span>
+							</div>
+						</td>
+						<th scope="row"><label for="">메인노출여부</label></th>
+						<td>
+							<div class="inner">
+								<span class="wrap-radio wf100">
+									<input type="radio" id="" title="메인노출여부:예" class="radio-m">
+									<label for="" class=""> Y</label>
+								</span>
+								<span class="wrap-radio wf100">
+									<input type="radio" id="" title="메인노출여부:아니요" class="radio-m">
+									<label for="" class=""> N</label>
+								</span>
+							</div>
+						</td>
+					</tr>
+					<tr>
+						<th scope="col"><label for="">내용</label></th>
+						<td colspan="3">
+							<textarea name="" id="" class="textarea-m w100 hf200" title="내용"></textarea>
+						</td>
+					</tr>
+					<tr>
+						<th scope="row"><label for="">썸네일등록<br>(470 * 376)</label></th>
+						<td colspan="3">
+							<div class="wrap_fileSearch">
+								<span class="input-m w60 fileName"></span>
+								<a href="#file01" class="btn1-s-slight wf100" title="첨부파일선택">파일선택</a>
+								<input type="file" id="file01" class="input _file" title="파일선택">
+							</div>
+							<div class="wrap_fileRemove">
+								<p class="txt-guide01">JPG, GIF, BMP, PNG 파일만 첨부가 가능합니다.(2MB 미만)</p>
+								<a href="#file01" class="btn1-s-slight wf100" title="삭제">삭제</a>
+							</div>
+							<div class="wrap_pcimg">
+								<img src="resources/img/common/tbl_ex.jpg" alt="">
+							</div>	
+						</td>
+					</tr>
+					<tr>
+						<th scope="col"><label for="">해시 태그</label></th>
+						<td colspan="3" class="td-check">
+							<p class="txt-tblGuide">해시 태그는 최소 1개 이상, 최대 5개까지 선택 가능</p>
+							<span class="wrap-check w24">
+								<input type="checkbox" id="" title="루키이야기" class="check-m">
+								<label for="" class=""> 루키이야기</label>
+							</span>
+							<span class="wrap-check w24">
+								<input type="checkbox" id="" title="LOOKIE" class="check-m">
+								<label for="" class=""> LOOKIE</label>
+							</span>
+							<span class="wrap-check w24">
+								<input type="checkbox" id="" title="LOOKIEZONE" class="check-m">
+								<label for="" class=""> LOOKIEZONE</label>
+							</span>
+							<span class="wrap-check w24">
+								<input type="checkbox" id="" title="루키이야기루키이야기기" class="check-m">
+								<label for="" class=""> 루키이야기루키이야기기</label>
+							</span>
+							<span class="wrap-check w24">
+								<input type="checkbox" id="" title="루키이야기" class="check-m">
+								<label for="" class=""> 루키이야기</label>
+							</span>
+							<span class="wrap-check w24">
+								<input type="checkbox" id="" title="LOOKIE" class="check-m">
+								<label for="" class=""> LOOKIE</label>
+							</span>
+							<span class="wrap-check w24">
+								<input type="checkbox" id="" title="LOOKIEZONE" class="check-m">
+								<label for="" class=""> LOOKIEZONE</label>
+							</span>
+							<span class="wrap-check w24">
+								<input type="checkbox" id="" title="루키이야기루키이야기기" class="check-m">
+								<label for="" class=""> 루키이야기루키이야기기</label>
+							</span>
+						</td>
+					</tr>
+				</tbody>
+			</table>
+			<div class="wrap_btn02">
+				<div class="aside">
+					<a href="" class="btn1-m-slight">삭제</a>
+				</div>
+				<a href="" class="btn1-m-weight">저장</a>
+				<a href="" class="btn1-m-weight">수정</a>
+				<a href="storyList.html" class="btn1-m-slight2">목록</a>
+			</div>
+		</section>
+	</div>
+	<!--//contents -->	
+<!--#include file="inc/footer.asp"--><jsp:include page="inc/footer.asp"/>

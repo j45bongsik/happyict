@@ -1,0 +1,239 @@
+/*---------- contents ----------*/
+
+/*== 회원가입 ==*/
+.join01 .txt-t1 {margin: 25px 0;}
+.join01 .txt-t1._2{margin: 0; font-size: 12px;}
+.join01 .term {margin-bottom: 40px;}
+.join01 .textarea-m{font-size: 13px;}
+
+.join02 .wrap-ln {padding: 30px; padding-left: 180px;}
+.join02 .box-line {margin-top: 60px;}
+
+.join03 .wrap-check {margin: 7px 0;}
+
+
+/*== 로그인 ==*/
+.login .inner-cont {max-width: 490px;}
+.login .spot {height: 220px;}
+.login .spot .tit {margin-top: 70px; margin-bottom: 10px;}
+.login input {margin-bottom: 10px;}
+
+/*== ID/PW 찾기 ==*/
+.idSearch .ico {display: block; margin: 0 auto 25px auto;}
+
+.pwSearch .wrap-ln._2 {display: table; width: 100%; vertical-align: middle;}
+.pwSearch .lay-l4, .pwSearch .lay-r4 {display: table-cell; vertical-align: middle;}
+.pwSearch .ico {display: block; margin: 0 auto 25px auto;}
+
+/*== 마이페이지 ==*/
+.mypage_mod .wrap-check {margin: 7px 0;}
+
+/*== 비밀번호 변경 ==*/
+.pwMod .spot {height: 290px;}
+.pwMod .spot .tit {font-size: 32px; margin-bottom: 15px; margin-top: 40px;}
+.pwMod .spot .tit span {display: block; font-size: 22px; font-weight: normal;}
+.pwMod .wrap-input + .wrap-input{margin-top: 10px;}
+.pwMod .box-etc .txt-t1{margin-top: 30px;}
+
+/*== 개인정보처리방침 ==*/
+.personal .sect-t1{margin-top: 50px;}
+.personal .dl-t1 .box-t3._2 {padding: 25px; margin-top: 30px;}
+
+/*== 이용약관 ==*/
+.terms .sect-terms {margin-bottom: 60px;}
+.terms .sect-t1 {margin-top: 35px;}
+.terms .list-t1{padding: 25px; background-color: #f8f8f8; margin-top: 10px;}
+.terms .list-t1 li {padding-left: 10px; font-size: 15px; line-height: 32px; color: #727272;}
+.terms .list-number2{padding: 25px; background-color: #f8f8f8; margin: 10px 0;}
+
+/*== 수료증 발급 ==*/
+.wrap-certificate {position: relative; width: 794px; margin: 0 auto; }
+
+.wrap-certificate .txt{font-size: 13px;}
+.box-certificate{position: relative; width: 100%; margin: 20px auto; border: 1px solid #adadad; }
+.box-certificate h1{padding: 50px 0; font-size: 30px; font-weight: normal; text-align: center; letter-spacing: 1px;}
+.certi-num{position: absolute; top: 8px; left: 8px; height: 30px; padding-right: 10px; line-height: 30px; border: 1px solid #d1d1d1; font-size: 13px;}
+.certi-num span{display: inline-block; margin-right: 10px; padding: 0 10px; border-right: 1px solid #d1d1d1;}
+.box-certificate .cont{position: relative; border: 1px #d1d1d1; border-style: solid none; padding: 50px; min-height: 450px;}
+.box-certificate .cont .logo{position: absolute; top: 50%; left: 50%; margin: -45px 0 0 -125px; display: block; width: 250px; height: 90px; z-index: -1;}
+.box-certificate .cont h2{padding: 30px 0 10px; font-size: 16px; font-weight: normal;}
+.box-certificate .cont .list-cont li {position: relative; min-height: 30px; padding-left: 60px; line-height: 30px; font-size: 13px;}
+.box-certificate .cont .list-cont .title {position: absolute; top: 0; left: 0; display: block; width: 85px; text-align: justify; letter-spacing: 2px; font-weight: normal;}
+.box-certificate .cont .list-cont .title .cut1 {display: inline-block; width: 41px;}
+.box-certificate .cont .list-cont .data {position: relative; display: block; padding-left: 20px;}
+.wrap-sign{position: relative; padding: 50px 0; text-align: center;}
+.wrap-sign p{font-size: 18px;}
+
+.wrap-sign2{position: relative; padding: 50px 0 50px; text-align: center; font-size: 13px;}
+.sign{padding: 0 0 20px 0;}
+
+.wrap-sign .sign{position: absolute; top: 88px; right: 20px;}
+.wrap-sign .sign span{position: absolute; top: -62px; right: 0; display: block; width: 106px; height: 106px; z-index: -1;}
+.wrap-sign .name01{margin-top: 15px; text-align: right;}
+.wrap-sign .name01 strong{margin: 0 10px; font-family: '궁서', serif; font-size: 15px; letter-spacing: 2px;}
+.wrap-sign .name02{margin-top: 26px;}
+.wrap-sign .name02 strong{margin-left: 10px; font-family: '궁서', serif; font-size: 15px; letter-spacing: 1px;}
+.wrap-sign + .wrap-sign{height: 136px;}
+.list-type01 input[type="radio"]{margin-left: 30px;}
+.btn_wrap{margin: 5px 0 12px;}
+.btn_wrap .btn{margin-top: 5px;}
+
+
+/*== LOOKIE ==*/
+/* 루키소개 */
+.intro.content {padding-bottom: 0;}
+.intro .h-t5 {margin-bottom: 30px;}
+.intro .box_intro {margin-bottom: 50px;}
+.intro .box_intro .a-l {margin-top: 30px; margin-bottom: 70px;}
+.intro .sect-ln1 {padding: 75px 0 90px;}
+
+/* 활동 소개 */
+.activity .ac_line {display:none;}
+
+/* 루키 인재 육성*/
+.promote.content {padding-bottom: 0;}
+.promote .sect-ln1 {padding: 90px 0 130px;}
+
+/*== 루키활동 ==*/
+/* 지원자 리스트 */
+.applicantList .check-m + label{padding-left: 20px;}
+
+/*== 동아리 설립 ==*/
+/* 예비동아리 설립 */
+.clubApp .box-applicantList .check-m + label{padding-left: 20px;}
+
+/*== 동아리 활동 ==*/
+
+
+
+/* 커뮤니티 - 정산 */
+.commActivityReportWrite{}
+.commActivityReportView{}
+
+
+/*== 게시판 ==*/
+
+
+/*========== media screen == 1024 ==========*/
+@media screen and (max-width: 1024px){
+/*---------- contents ----------*/
+/*== 회원가입 ==*/
+.join01 .term .check-m + label {font-size: 13px; height: auto;}
+
+.join02 .wrap-ln{padding: 20px 0;}
+.join02 .box-line{margin-top: 30px;}
+
+.join04 .wrap-ln{padding: 30px 0;}
+
+/*== 개인정보처리방침 ==*/
+.personal .sect-t1{margin-top: 25px;}
+.personal .dl-t1 .box-t3._2 {padding: 10px 15px; margin-top: 15px;}
+
+/*== 이용약관 ==*/
+.terms .sect-terms {margin-bottom: 30px;}
+.terms .sect-t1 {margin-top: 20px;}
+.terms .list-t1{padding: 10px 15px; background-color: #f8f8f8; margin-top: 10px;}
+.terms .list-t1 li {padding-left: 10px; font-size: 13px; line-height: 25px; color: #727272;}
+.terms .list-number2{padding: 10px 15px; background-color: #f8f8f8; margin: 10px 0;}
+
+/*== LOOKIE ==*/
+/* 루키소개 */
+.intro .h-t5 {margin-bottom: 25px;}
+.intro .sect-ln1 {padding: 25px 0 35px;}
+
+/* 비전 */
+.vision .box-vision .img_con.y_2017 {width:100%; background: url(../img/common/img_vision02_m.png) no-repeat; background-size:cover;}
+.vision .box-vision .img_con.y_2018 {width:100%; background: url(../img/common/img_vision03_m.png) no-repeat; background-size:cover;}
+.vision .box-vision .img_con.y_2019 {width:100%; background: url(../img/common/img_vision04_m.png) no-repeat; background-size:cover;}
+.vision .box-vision .img_con:after { content:""; display:block; padding-bottom: 43%; height: auto;} 
+
+/* 활동 소개 */
+.activity .ac_line {display:block; margin:0 25% 0; width:51%;}
+
+/* 루키 인재 육성*/
+.promote .sect-ln1 {padding: 45px 0 60px;}
+
+/*== 루키 활동 ==*/
+/*연합 활동*/
+.proposal .budget + .budget {border-top: 1px dotted #dedede;}
+
+
+/*== 동아리 설립 ==*/
+
+/*== 동아리 활동 ==*/
+/* 커뮤니티 - 정산 */
+.commAccountWrite .wrap-input + .wrap-input{border-top: 1px dotted #dedede;}
+.commAccountWrite .wrap-input + .wrap-input .box-lay-aside{top: 15px;}
+
+.commAccountView .wrap-input + .wrap-input{border-top: 1px dotted #dedede;}
+
+/*== 게시판 ==*/
+
+}
+
+
+/*========== media screen == 780 ==========*/
+@media screen and (max-width: 780px){
+/*---------- contents ----------*/
+/*== 로그인 ==*/
+.login .spot{height: 180px;}
+.login .spot .tit {margin-top: 0; margin-bottom: 0;}
+/*== ID/PW 찾기 ==*/
+.pwSearch .lay-l4, .pwSearch .lay-r4 {display: block;}
+
+/*== 비밀번호 변경 ==*/
+.pwMod .box-etc .ico {margin-right: 0; margin-bottom: 30px;}
+.pwMod .box-etc .cont {display: block; text-align: center;}
+
+/* 루키소개 */
+.intro .sect-ln1 {padding: 25px 0 0px;}
+
+}
+
+
+/*========== media screen == 640 ==========*/
+@media screen and (max-width: 640px){
+/*---------- contents ----------*/
+/*== 마이페이지 ==*/
+.mypage_out .box-etc .cont{max-width: 290px; width: 100%; margin: 0 auto;}
+.mypage_out .box-etc .list-t1{text-align: left;}
+
+/*== 비밀번호 변경 ==*/
+.pwMod .spot .tit {font-size: 22px; margin-top: 20px;}
+.pwMod .spot .tit span {font-size: 15px;}
+
+/*== LOOKIE ==*/
+/* 루키소개 */
+/* 비전 */
+/* 활동 소개 */
+.activity .ac_line {display:none;}
+
+/*== 동아리 설립 ==*/
+.foundClub .lay-aside{top: -7px;}
+.foundClub .box-info .txt-t5.f-l {float: none !important;}
+.foundClub .box-info .txt-t5.lay-aside {position: relative; margin-top: 10px;}
+
+.clubApp .box-clubApp .h-t2{padding-right: 80px; font-size: 15px;}
+
+/*== 동아리 활동 ==*/
+.commAccountView .wrap-input .inner._3{margin-top: 5px;}
+.commAccountView .tbl-form3 td .em-weight.f-r{margin-left: 10px;}
+} 
+
+/*========== media screen == 480 ==========*/
+@media screen and (max-width: 480px){
+/*== LOOKIE ==*/
+
+
+}
+
+/*========== media screen == 320 ==========*/
+@media screen and (max-width: 320px){
+/*== 동아리 설립 ==*/
+.clubApp .lb-t2.m-w20{width: 26%;}
+
+/*== 동아리 활동 ==*/
+.clubIntro .btn2-xs-slight.mm-w55{width: 40%;}
+.clubIntro .btn2-xs-slight.mm-w25{width: 30%;}
+}
+

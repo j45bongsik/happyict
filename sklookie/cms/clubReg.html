@@ -1,0 +1,158 @@
+<!--#include file="inc/header.asp"--><jsp:include page="inc/header.asp"/>
+
+	<div id="contents" class="contents clubReg">
+		<header class="spot">
+			<h2 class="h-spot">동아리 관리</h2>
+			<div class="breadcrumb">
+				<span class="ico_ home"></span>
+				<span class="txt">home</span>
+				<span class="txt">동아리 관리</span>
+				<span class="txt">동아리 관리</span>
+			</div>
+		</header>
+		<!-- //header -->
+		<section class="sect-t01">
+			<h3 class="h-t1">동아리 정보 <span class="aside txt-tblGuide"><span class="em-weight">*</span> 모든 항목 필수 입력 입니다. </span></h3>
+			<table class="tbl-form">
+				<caption>이 표는 정보 폼을 제공하며 구분, 대학교, 동아리회장, 대학교코드, 회원수, 예산, 로고 이미지, 동아리명, 사용가능여부로 구성되어 있습니다.</caption>
+				<colgroup>
+					<col class="wf200 m-w25">
+					<col>
+				</colgroup>
+				<tbody>
+					<tr>
+						<th scope="col"><label for="" class="txt-label">구분</label></th>
+						<td>
+							<div class="wrap-input">
+								<select name="" id="" class="select-m _fl wf110 m-w45" title="구분 선택">
+									<option value="">일반</option>
+									<option value="">일반</option>
+								</select>
+							</div>
+						</td>
+					</tr>
+					<tr>
+						<th scope="row">대학교</th>
+						<td>
+							<div class="wrap-input">
+								<input id="" name="" type="text" class="input-m _fl w40" title="학교명 조회">
+								<span class="txt-blank wf10"></span>
+								<a href="javascript: PopOpenEvt('popSchool.html', 700, 500);" class="btn1-s-slight wf100 m-w40 _fl">조회</a>
+							</div>
+						</td>
+					</tr>
+					<tr>
+						<th scope="row">동아리회장</th>
+						<td>
+							<div class="wrap-input">
+								<div class="inner _2 w40">
+									<input id="" type="text" class="input-m w40" title="이름 입력" placeholder="이름">
+									<input id="" type="text" class="input-m w55" title="아이디 입력" placeholder="아이디">
+								</div>
+								<div class="inner _2  w50">													
+									<input type="text" id="" class="input-m w30" title="이메일 아이디">
+									<span class="wf25 m-w10">@</span>
+									<input type="text" id="" class="input-m w30" title="이메일 도메인">
+									<a href="javascript: PopOpenEvt('popId.html', 700, 500);" class="btn1-s-slight wf100">조회</a>
+								</div>
+								<div class="box-lay-aside">
+									<button class="btn-plus"><span class="blind">추가</span></button>
+									<button class="btn-minus"><span class="blind">삭제</span></button>
+								</div>
+							</div>
+
+							<div class="wrap-input">
+								<div class="inner _2 w40">
+									<input id="" type="text" class="input-m w40" title="이름 입력" placeholder="이름">
+									<input id="" type="text" class="input-m w55" title="아이디 입력" placeholder="아이디">
+								</div>
+								<div class="inner _2  w50">													
+									<input type="text" id="" class="input-m w30" title="이메일 아이디">
+									<span class="wf25 m-w10">@</span>
+									<input type="text" id="" class="input-m w30" title="이메일 도메인">
+									<a href="javascript: PopOpenEvt('popIdChange.html', 700, 500);" class="btn1-s-slight wf100">변경</a>
+								</div>
+								<div class="box-lay-aside">
+									<button class="btn-plus"><span class="blind">추가</span></button>
+									<button class="btn-minus"><span class="blind">삭제</span></button>
+								</div>
+							</div>
+
+						</td>
+					</tr>
+					<tr>
+						<th scope="row">대학교코드</th>
+						<td>7007</td>
+					</tr>
+					<tr>
+						<th scope="row">회원수</th>
+						<td>
+							<input id="" name="" type="text" class="input-m _fl wf100" title="회원수">
+							<span class="txt-blank wf10"></span>
+							<span class="txt-guide02 _fl">명</span>
+						</td>
+					</tr>
+					<tr>
+						<th>예산</th>
+						<td>
+							<div class="wrap-input">
+								<input id="" name="" type="text" class="input-m _fl wf200" title="예산">
+								<span class="txt-blank wf10"></span>
+								<span class="txt-guide02 _fl">원</span>
+							</div>
+						</td>
+					</tr>
+					<tr>
+						<th scope="col"><label for="" class="txt-label">로고 이미지<br />(85 * 85)</label></th>
+						<td>
+							<div class="wrap_fileSearch">
+								<span class="input-m w60 fileName"></span>
+								<a href="#file01" class="btn1-s-slight wf100" title="첨부파일선택">파일선택</a>
+								<input type="file" id="file01" class="input _file" title="파일선택">
+							</div>
+							<div class="wrap_fileRemove">
+								<p class="txt-guide01">JPG, GIF, BMP, PNG 파일만 첨부가 가능합니다.(2MB 미만)</p>
+								<a href="#file01" class="btn1-s-slight wf100" title="삭제">삭제</a>
+							</div>
+							<div class="wrap_pcimg">
+								<img src="resources/img/common/tbl_ex.jpg" alt="">
+							</div>	
+						</td>
+					</tr>
+					<tr>
+						<th scope="col"><label for="" class="txt-label">동아리명</label></th>
+						<td><input type="text" id="" class="input-m w100" title="동아리명"></td>
+					</tr>
+					<tr>
+						<th scope="row"><label for="">사용가능여부</label></th>
+						<td>
+							<div class="inner w50">
+								<span class="wrap-radio wf100 m-w45">
+									<input type="radio" id="" title="사용가능여부:예" class="radio-m">
+									<label for="" class=""> Y</label>
+								</span>
+								<span class="wrap-radio wf100 m-w45">
+									<input type="radio" id="" title="사용가능여부:아니요" class="radio-m">
+									<label for="" class=""> N</label>
+								</span>
+							</div>
+						</td>
+					</tr>
+				</tbody>
+			</table>
+			<div class="wrap_btn02">
+				<div class="aside">
+					<a href="" class="btn1-m-slight">삭제</a>
+				</div>
+				<a href="" class="btn1-m-weight">저장</a>
+				<a href="" class="btn1-m-weight">수정</a>
+				<a href="" class="btn1-m-slight2">목록</a>
+			</div>
+		</section>
+		
+		
+
+	</div>
+	<!--//contents -->
+
+<!--#include file="inc/footer.asp"--><jsp:include page="inc/footer.asp"/>

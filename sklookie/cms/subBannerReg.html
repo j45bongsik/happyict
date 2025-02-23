@@ -1,0 +1,75 @@
+<!--#include file="inc/header.asp"--><jsp:include page="inc/header.asp"/>
+
+	<div id="contents" class="contents">
+		<header class="spot">
+			<h2 class="h-spot">서브 배너</h2>
+			<div class="breadcrumb">
+				<span class="ico_ home"></span>
+				<span class="txt">home</span>
+				<span class="txt">메인 관리</span>
+				<span class="txt">서브 배너</span>
+			</div>
+		</header>
+		<!-- //header -->
+		<section>
+
+			<table class="tbl-form">
+				<caption>서브배너 폼 (제목, 이미지등록, 이미지 설명, 게시여부로 구성)</caption>
+				<colgroup>
+					<col class="w20">
+					<col>
+				</colgroup>
+				<tbody>
+					<tr>
+						<th scope="row"><label for="">제목</label></th>
+						<td><input type="text" id="" class="input-m w100" title="제목 입력"></td>
+					</tr>
+					<tr>
+						<th scope="row"><label for="">이미지등록<br />(590 * 360)</label></th>
+						<td>
+							<div class="wrap_fileSearch">
+								<span class="input-m w60 fileName"></span>
+								<a href="#file01" class="btn1-s-slight wf100" title="첨부파일선택">파일선택</a>
+								<input type="file" id="file01" class="input _file" title="파일선택">
+							</div>
+							<div class="wrap_fileRemove">
+								<p class="txt-guide01">JPG, GIF, BMP, PNG 파일만 첨부가 가능합니다.(2MB 미만)</p>
+								<a href="#file01" class="btn1-s-slight wf100" title="삭제">삭제</a>
+							</div>
+							<div class="wrap_pcimg">
+								<img src="resources/img/common/tbl_ex.jpg" alt="">
+							</div>	
+						</td>
+					</tr>
+					<tr>
+						<th scope="row"><label for="">이미지 설명</label></th>
+						<td><textarea name="" id="" class="textarea-m w100 hf100" title="이미지 설명"></textarea></td>
+					</tr>
+					<tr>
+						<th scope="row"><label for="">게시여부</label></th>
+						<td>
+							<span class="wrap-radio wf100">
+								<input type="radio" id="1" title="Y" class="radio-m">
+								<label for="1" class=""> Y</label>
+							</span>
+							<span class="wrap-radio wf100">
+								<input type="radio" id="2" title="N" class="radio-m">
+								<label for="2" class=""> N</label>
+							</span>
+						</td>
+					</tr>
+				</tbody>
+			</table>
+			<!--//tbl-form -->
+		</section>
+		<div class="wrap_btn02">
+			<div class="aside">
+				<a href="" class="btn1-m-slight">삭제</a>
+			</div>
+			<a href="" class="btn1-m-weight">저장</a>
+			<a href="subBannerList.html" class="btn1-m-slight2">목록</a>
+		</div>
+	</div>
+	<!--//contents -->
+
+<!--#include file="inc/footer.asp"--><jsp:include page="inc/footer.asp"/>

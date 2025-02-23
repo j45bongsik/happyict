@@ -1,0 +1,323 @@
+<!--#include file="inc/header.asp"--><jsp:include page="inc/header.asp"/>
+
+	<div id="contents" class="contents">
+		<header class="spot">
+			<h2 class="h-spot">비로그인용 설문조사</h2>
+			<div class="breadcrumb">
+				<span class="ico_ home"></span>
+				<span class="txt">home</span>
+				<span class="txt">설문조사 관리</span>
+				<span class="txt">비로그인용 설문조사</span>
+			</div>
+		</header>
+		<!-- //header -->
+		<section class="sect-t01">
+			<table class="tbl-form">
+				<caption>비로그인용 설문조사 폼 (제목, 설명, 대상, 기간, 이미지 등록, 이미지 설명으로 구성)</caption>
+				<colgroup>
+					<col class="w20">
+					<col>
+				</colgroup>
+				<tbody>
+					<tr>
+						<th scope="row"><label for="">제목</label></th>
+						<td><input type="text" id="" class="input-m w100" title="제목 입력"></td>
+					</tr>
+					<tr>
+						<th scope="row"><label for="">설명</label></th>
+						<td><input type="text" id="" class="input-m w100" title="설명 입력"></td>
+					</tr>
+					<tr>
+						<th scope="row">
+							<label for="">대상</label>
+						</th>
+						<td>
+							<div class="wrap-input">
+								<select name="" id="" class="select-m _fl wf190" title="대상 선택">
+									<option value="">루키</option>
+								</select>
+								<span class="txt-blank wf16 m-w5"></span>
+								<select name="" id="" class="select-m _fl wf190" title="기수 선택">
+									<option value="">2017(1기)</option>
+								</select>
+							</div>
+						</td>
+					</tr>
+
+					<tr>
+						<th scope="row"><label for="">기간</label></th>
+						<td>
+							<input type="text" class="input-m wf120" title="시작날짜 입력"> <a href="" class="ico_ date">날짜 검색</a>
+							<span class="txt-wave">~</span>
+							<input type="text" class="input-m wf120" title="종료날짜 입력"> <a href="" class="ico_ date">날짜 검색</a>
+						</td>
+					</tr>
+					<tr>
+						<th scope="row"><label for="">이미지 등록<br/>(940 * 230)</label></th>
+						<td>
+							<div class="wrap_fileSearch">
+								<span class="input-m w60 fileName"></span>
+								<a href="#file01" class="btn1-s-slight wf100" title="첨부파일선택">파일선택</a>
+								<input type="file" id="file01" class="input _file" title="파일선택">
+							</div>
+							<div class="wrap_fileRemove">
+								<p class="txt-guide01">JPG, GIF, BMP, PNG 파일만 첨부가 가능합니다.(2MB 미만)</p>
+								<a href="#file01" class="btn1-s-slight wf100" title="삭제">삭제</a>
+							</div>
+							<div class="wrap_pcimg">
+								<img src="resources/img/common/tbl_ex.jpg" alt="">
+							</div>	
+						</td>
+					</tr>
+					<tr>
+						<th scope="col"><label for="" class="txt-label">이미지 설명</label></th>
+						<td>
+							<textarea name="" id="" class="textarea-m w100 hf100" title="이미지 설명"></textarea>
+						</td>
+					</tr>
+				</tbody>
+			</table>
+			<!--//tbl-form -->
+		</section>
+		<section class="sect-t01 box-survey">
+			<h3 class="h-t1">질문작성</h3>
+			<div class="box-survey-group">
+				<h4><label>그룹1</label> <input type="text" class="input w75" title="그룹명 입력"> <a href="#" class="btn1-xs-slight wf60">설명 +</a> <a href="#" class="btn1-xs-slight wf60">부연 +</a> <a href="#" class="btn1-xs-slightier wf60">그룹삭제</a></h4>
+				<div class="summary"><label>설명</label> <textarea name="" id="" cols="30" rows="10" class="textarea w90 hf50" title="설명 입력"></textarea> <a href="" class="btn_ minus"><span class="blind">삭제</span></a></div>
+				<div class="summary"><label>부연</label> <textarea name="" id="" cols="30" rows="10" class="textarea w90 hf50" title="설명 입력"></textarea> <a href="" class="btn_ minus"><span class="blind">삭제</span></a></div>
+
+				<h5><label>소제목</label> <input type="text" class="input w91" title="소그룹명 입력"> <a href="" class="btn_ minus"><span class="blind">삭제</span></a></h5>
+
+				<div class="box-survey-Q">
+					<div>
+						<label class="em-bold">유형</label>
+						<select id="" class="select wf100" title="유형 선택">
+							<option value="" selected="selected">단일 선택형</option>
+							<option value="">복수 선택형</option>
+							<option value="">주관식 단답형</option>
+							<option value="">주관식 장문형</option>
+							<option value="">선호도형</option>
+							<option value="">표형</option>
+						</select>
+						<input type="checkbox" title="필수선택"> 필수
+						<div class="box-right"><a href="#" class="btn1-xs-slightier wf60">삭제</a></div>
+					</div>
+					<div class="summary"><label>질문</label> <input type="text" class="input w95" title="질문 입력"></div>
+					<div class="summary"><label>설명</label> <input type="text" class="input w95" title="설명 입력"></div>
+					<ul class="list-Q">
+						<li>
+							<input type="radio" title="답변 1 선택">
+							<input type="text" class="input wf500" title="답변 1 입력">
+						</li>
+						<li>
+							<input type="radio" title="답변 2 선택">
+							<input type="text" class="input wf500" title="답변 2 입력"> <a href="" class="btn_ plus"><span class="blind">추가</span></a> <a href="" class="btn_ minus"><span class="blind">삭제</span></a> <a href="#" class="btn1-xs-slightier wf80">기타추가</a>
+						</li>
+						<li>
+							<input type="radio" title="답변 1 선택">
+							기타 <input type="text" class="input wf500" title="답변 1 입력"> <a href="" class="btn_ minus"><span class="blind">삭제</span></a>
+						</li>
+					</ul>
+				</div>
+				<div class="box-survey-Q">
+					<div>
+						<label class="em-bold">유형</label>
+						<select id="" class="select wf100" title="유형 선택">
+							<option value="" selected="selected">복수 선택형</option>
+							<option value="">복수 선택형</option>
+							<option value="">주관식 단답형</option>
+							<option value="">주관식 장문형</option>
+							<option value="">선호도형</option>
+							<option value="">표형</option>
+						</select>
+						<input type="checkbox" title="필수선택"> 필수
+
+						<div class="box-right">
+							<label>필수선택</label>
+							<select id="" class="select wf50" title="필수선택">
+								<option value="" selected="selected">1</option>
+							</select>
+
+							<label>최대선택</label>
+							<select id="" class="select wf50" title="최대선택">
+								<option value="" selected="selected">2</option>
+							</select>
+
+							<a href="#" class="btn1-xs-slightier wf60">삭제</a>
+							<a href="#" class="btn1-xs-slight wf60">복사</a>
+						</div>
+
+					</div>
+					<div class="summary"><label>질문</label> <input type="text" class="input w95" title="질문 입력"></div>
+					<div class="summary"><label>설명</label> <input type="text" class="input w95" title="설명 입력"></div>
+					<ul class="list-Q">
+						<li>
+							<input type="checkbox" title="답변 1 선택">
+							<input type="text" class="input wf500" title="답변 1 입력">
+						</li>
+						<li>
+							<input type="checkbox" title="답변 2 선택">
+							<input type="text" class="input wf500" title="답변 2 입력"> <a href="" class="btn_ plus"><span class="blind">추가</span></a> <a href="" class="btn_ minus"><span class="blind">삭제</span></a> <a href="#" class="btn1-xs-slightier wf80">기타추가</a>
+						</li>
+					</ul>
+				</div>
+				<div class="box-survey-Q">
+					<div>
+						<label class="em-bold">유형</label>
+						<select id="" class="select wf100" title="유형 선택">
+							<option value="" selected="selected">주관식 단답형</option>
+							<option value="">복수 선택형</option>
+							<option value="">주관식 단답형</option>
+							<option value="">주관식 장문형</option>
+							<option value="">선호도형</option>
+							<option value="">표형</option>
+						</select>
+						<input type="checkbox" title="필수선택"> 필수
+						<div class="box-right"><a href="#" class="btn1-xs-slightier wf60">삭제</a></div>
+					</div>
+					<div class="summary"><label>질문</label> <input type="text" class="input w95" title="질문 입력"></div>
+					<div class="summary"><label>설명</label> <input type="text" class="input w95" title="설명 입력"></div>
+					<div class="list-Q">
+						<input type="text" class="input w95" title="답변 입력">
+					</div>
+				</div>
+				<div class="box-survey-Q">
+					<div>
+						<label class="em-bold">유형</label>
+						<select id="" class="select wf100" title="유형 선택">
+							<option value="" selected="selected">주관식 장문형</option>
+							<option value="">복수 선택형</option>
+							<option value="">주관식 단답형</option>
+							<option value="">주관식 장문형</option>
+							<option value="">선호도형</option>
+							<option value="">표형</option>
+						</select>
+						<input type="checkbox" title="필수선택"> 필수
+						<div class="box-right">
+							<a href="#" class="btn1-xs-slightier wf60">삭제</a>
+							<a href="#" class="btn1-xs-slight wf60">복사</a>
+						</div>
+					</div>
+					<div class="summary"><label>질문</label> <input type="text" class="input w95" title="질문 입력"></div>
+					<div class="summary"><label>설명</label> <input type="text" class="input w95" title="설명 입력"></div>
+					<div class="list-Q">
+						<textarea name="" id="" cols="30" rows="10" class="textarea w95 hf100" title="답변 입력"></textarea>
+					</div>
+				</div>
+				<div class="box-survey-Q">
+					<div>
+						<label class="em-bold">유형</label>
+						<select id="" class="select wf100" title="유형 선택">
+							<option value="" selected="selected">선호도형</option>
+							<option value="">복수 선택형</option>
+							<option value="">주관식 단답형</option>
+							<option value="">주관식 장문형</option>
+							<option value="">선호도형</option>
+							<option value="">표형</option>
+						</select>
+						<input type="checkbox" title="필수선택"> 필수
+						<div class="box-right"><a href="#" class="btn1-xs-slightier wf60">삭제</a></div>
+					</div>
+					<div class="summary"><label>질문</label> <input type="text" class="input w95" title="질문 입력"></div>
+					<div class="summary"><label>설명</label> <input type="text" class="input w95" title="설명 입력"></div>
+					<div class="list-Q">
+						<input type="text" class="input wf150" title="시작값 입력">
+						<select id="" class="select wf50" title="최소값 선택">
+							<option value="" selected="selected">1</option>
+						</select>
+						~
+						<select id="" class="select wf50" title="최대값 선택">
+							<option value="" selected="selected">7</option>
+						</select>
+						<input type="text" class="input wf150" title="종료값 입력">
+						<input type="checkbox" title="필수선택"> 역순
+					</div>
+				</div>
+				<div class="box-survey-Q">
+				<div>
+					<label class="em-bold">유형</label>
+					<select id="" class="select wf100" title="유형 선택">
+						<option value="" selected="selected">표형</option>
+						<option value="">복수 선택형</option>
+						<option value="">주관식 단답형</option>
+						<option value="">주관식 장문형</option>
+						<option value="">선호도형</option>
+						<option value="">표형</option>
+					</select>
+					<input type="checkbox" title="필수선택"> 필수
+
+					<div class="box-right">
+						<label>열</label>
+						<input type="text" class="input wf50" title="열 입력">
+
+						<label>행</label>
+						<input type="text" class="input wf50" title="행 입력">
+						<a href="#" class="btn t_ss c_normal">확인</a>
+
+						<a href="#" class="btn1-xs-slightier wf60">삭제</a>
+						<a href="#" class="btn1-xs-slight wf60">복사</a>
+					</div>
+
+			</div>
+				<div class="summary"><label>질문</label> <input type="text" class="input w95" title="질문 입력"></div>
+				<div class="summary"><label>설명</label> <input type="text" class="input w95" title="설명 입력"></div>
+				<div class="list-Q">
+					<table class="tbl-form02" style="width: 98%;">
+						<thead>
+						<tr>
+							<th scope="col" style="width: 200px;"></th>
+							<th scope="col"><input type="text" class="input w100" title="열 입력"></th>
+							<th scope="col"><input type="text" class="input w100" title="열 입력"></th>
+							<th scope="col"><input type="text" class="input w100" title="열 입력"></th>
+							<th scope="col"><input type="text" class="input w100" title="열 입력"></th>
+							<th scope="col"><input type="text" class="input w100" title="열 입력"></th>
+							<th scope="col"><input type="text" class="input w100" title="열 입력"></th>
+							<th scope="col"><input type="text" class="input w100" title="열 입력"></th>
+						</tr>
+						</thead>
+						<tbody>
+						<tr>
+							<th><textarea name="" id="" cols="30" rows="10" class="textarea w100 hf35" title="행 입력"></textarea></th>
+							<td>&nbsp;</td>
+							<td>&nbsp;</td>
+							<td>&nbsp;</td>
+							<td>&nbsp;</td>
+							<td>&nbsp;</td>
+							<td>&nbsp;</td>
+							<td>&nbsp;</td>
+						</tr>
+						<tr>
+							<th><textarea name="" id="" cols="30" rows="10" class="textarea w100 hf35" title="행 입력"></textarea></th>
+							<td>&nbsp;</td>
+							<td>&nbsp;</td>
+							<td>&nbsp;</td>
+							<td>&nbsp;</td>
+							<td>&nbsp;</td>
+							<td>&nbsp;</td>
+							<td>&nbsp;</td>
+						</tr>
+						</tbody>
+					</table>
+				</div>
+			</div>
+		
+				
+				
+
+				<div class="wrap_btn02">
+					<a href="#" class="btn1-s-slight2 wf80">소제목 +</a> <a href="#" class="btn1-s-slight wf80">질문 +</a>
+				</div>
+			</div>
+
+
+			<div class="wrap_btn02">
+				<a href="#" class="btn1-s-weight wf100">그룹추가 +</a>
+			</div>
+		</section>
+		<div class="wrap_btn02">
+			<a href="" class="btn1-m-weight">저장</a>
+			<a href="noneSurveyList.html" class="btn1-m-slight2">목록</a>
+		</div>
+	</div>
+	<!--//contents -->
+<!--#include file="inc/footer.asp"--><jsp:include page="inc/footer.asp"/>

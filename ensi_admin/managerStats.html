@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta http-equiv="content-Type" content="text/html; charset=utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1">
+  <title>ENSI 관리자</title>
+  <link rel="stylesheet" href="resources/css/admin.css" />
+  <link rel="shortcut icon" href="resources/img/common/favicon.ico" type="image/x-icon">
+  <script type="text/javascript" src="resources/js/jquery-1.9.1.min.js"></script>
+  <script type="text/javascript" src="resources/js/admin.js"></script>
+  <!--[if lt IE 9]>
+		<script type="text/javascript" src="resources/js/html5.js"></script>
+	<![endif]-->
+</head>
+<body>
+<div class="wrap">
+	<header class="header">
+		<h1 class="logo"><a href="managerList.html"><img src="resources/img/common/adminlogo.png" alt=""></a></h1>
+		<div class="gnb">
+			<p class="txtGreeting"><strong class="em-weight">ENSI 관리자</strong>님! 안녕하세요.</p>
+			<a href="login.html" class="btn1-xs-slight2">로그아웃</a>
+		</div>
+		<!-- //gnb -->
+	<hr />
+	</header>
+	<!-- //header -->
+
+	<nav class="lnb">
+		<ul>
+			<li class="depth01 menu01">
+				<a href="managerList.html" class="d1">계정 관리</a>
+				<ul class="depth02">
+					<li><a href="managerList.html" class="on">관리자 계정</a></li>
+					<li><a href="memberList.html">회원 계정</a></li>
+				</ul>
+			</li>
+			<li class="depth01 menu02">
+				<a href="mainBannerList.html" class="d1">배너 관리</a>
+				<ul class="depth02">
+					<li><a href="mainBannerList.html">메인배너 관리</a></li>
+					<li><a href="recruitList.html">행사 모집 관리</a></li>
+				</ul>
+			</li>
+			<li class="depth01 menu03">
+				<a href="" class="d1">연구공모 관리</a>
+				<ul class="depth02">
+					<li><a href="competitionList.html">연구공모 관리</a></li>
+					<li><a href="applicantList.html">공모 지원자 관리</a></li>
+				</ul>
+			</li>
+			<li class="depth01 menu04">
+				<a href="noticeList.html" class="d1">자료 관리</a>
+				<ul class="depth02">
+					<li><a href="papersList.html">연구 논문 관리</a></li>
+					<li><a href="insightsList.html">ENSI Issue paper 관리</a></li>
+					<li><a href="curriculumList.html">교육 과정 관리</a></li>
+					<li><a href="materialList.html">교육 자료 관리</a></li>
+				</ul>
+			</li>
+			<li class="depth01 menu05">
+				<a href="surveyList.html" class="d1">Community 관리</a>
+				<ul class="depth02">
+					<li><a href="noticeList.html">공지사항 관리</a></li>
+					<li><a href="contactList.html">Conatact 관리</a></li>
+				</ul>
+			</li>
+			<li class="depth01 menu06">
+				<a href="clubList.html" class="d1">통계</a>
+				<ul class="depth02">
+					<li><a href="memberStats.html">회원 현황</a></li>
+					<li><a href="memberAnalytics.html">기타 통계</a></li>
+				</ul>
+			</li>
+		</ul>
+	</nav>
+	<hr />
+	<!-- //lnb -->
+	<div id="contents" class="contents">
+		<header class="spot">
+			<h2 class="h-spot">관리자 계정</h2>
+			<div class="breadcrumb">
+				<span class="ico_ home"></span>
+				<span class="txt">home</span>
+				<span class="txt">계정 관리</span>
+				<span class="txt">관리자 계정</span>
+			</div>
+		</header>
+		<!-- //header -->
+		<section class="sect-t1">
+			<table class="tbl-form">
+				<caption>관리자계정 정보 폼 (아이디, 이름, 비밀번호, 비밀번호 확인, 연락처, 이메일로 구성)</caption>
+				<colgroup>
+					<col class="w20">
+					<col>
+				</colgroup>	
+				<tbody>
+					<tr>
+						<th scope="row">아이디</th>
+						<td>admin123</td>
+					</tr>
+					<tr>
+						<th scope="row">이름</th>
+						<td>관리자</td>
+					</tr>
+					<tr>
+						<th scope="row">비밀번호</th>
+						<td>
+							<div class="wrap-input">
+								<input id="" type="password" class="input-m _fl w40" title="비밀번호">
+								<span class="txt-wave">6~16자리 영문 또는 숫자조합</span>
+							</div>
+						</td>
+					</tr>
+					<tr>
+						<th scope="row">비밀번호 확인</th>
+						<td>
+							<div class="wrap-input">
+								<input id="" type="password" class="input-m _fl w40" title="비밀번호 확인">
+								<span class="txt-wave">비밀번호가 일치합니다. 비밀번호가 일치하지 않습니다.</span>
+							</div>
+						</td>
+					</tr>
+					<tr>
+						<th scope="row">연락처</th>
+						<td>
+							<div class="wrap-input">
+								<select name="" id="" class="select-m _fl wf110 m-w30" title="연락처 앞자리">
+									<option value="">선택하세요</option>
+								</select>
+								<span class="txt-blank wf16 m-w5">-</span>
+								<input type="text" id="" class="input-m _fl wf110 m-w30" title="연락처 중간자리">
+								<span class="txt-blank wf16 m-w5">-</span>
+								<input type="text" id="" class="input-m _fl wf110 m-w30" title="연락처 끝자리">
+							</div>
+						</td>
+					</tr>
+					<tr>
+						<th scope="row">이메일</th>
+						<td>
+							<div class="wrap-input">
+								<input type="text" id="" class="input-m _fl wf190 m-w45" title="이메일 아이디">
+								<span class="txt-blank wf25 m-w10">@</span>
+								<input type="text" id="" class="input-m _fl wf190 m-w45" title="이메일 도메인 직접입력">
+								<span class="txt-blank wf10 m-w0"></span>
+								<select name="" id="" class="select-m _fl wf190 m-hide" title="이메일 도메인 선택">
+									<option value="">선택하세요</option>
+								</select>
+							</div>
+						</td>
+					</tr>
+				</tbody>
+			</table>
+		</section>
+		<!-- //관리자 계정 뷰단 -->	
+
+		<div class="wrap_btn02">
+			<a href="" class="btn1-m-weight">수정</a>
+			<a href="" class="btn1-m-slight2">목록</a>
+		</div>
+		<!--//wrap_btn02 폼 하단 버튼-->
+		
+
+	</div>
+	<!--//contents -->

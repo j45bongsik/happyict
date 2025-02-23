@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta http-equiv="content-Type" content="text/html; charset=utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1">
+  <title>ENSI 관리자</title>
+  <link rel="stylesheet" href="resources/css/admin.css" />
+  <link rel="shortcut icon" href="resources/img/common/favicon.ico" type="image/x-icon">
+  <script type="text/javascript" src="resources/js/jquery-1.9.1.min.js"></script>
+  <script type="text/javascript" src="resources/js/admin.js"></script>
+  <!--[if lt IE 9]>
+		<script type="text/javascript" src="resources/js/html5.js"></script>
+	<![endif]-->
+</head>
+<body>
+<div class="wrap">
+	<header class="header">
+		<h1 class="logo"><a href="managerList.html"><img src="resources/img/common/adminlogo.png" alt=""></a></h1>
+		<div class="gnb">
+			<p class="txtGreeting"><strong class="em-weight">ENSI 관리자</strong>님! 안녕하세요.</p>
+			<a href="login.html" class="btn1-xs-slight2">로그아웃</a>
+		</div>
+		<!-- //gnb -->
+	<hr />
+	</header>
+	<!-- //header -->
+
+	<nav class="lnb">
+		<ul>
+			<li class="depth01 menu01">
+				<a href="managerList.html" class="d1">계정 관리</a>
+				<ul class="depth02">
+					<li><a href="managerList.html" class="on">관리자 계정</a></li>
+					<li><a href="memberList.html">회원 계정</a></li>
+				</ul>
+			</li>
+			<li class="depth01 menu02">
+				<a href="mainBannerList.html" class="d1">배너 관리</a>
+				<ul class="depth02">
+					<li><a href="mainBannerList.html">메인배너 관리</a></li>
+					<li><a href="recruitList.html">행사 모집 관리</a></li>
+				</ul>
+			</li>
+			<li class="depth01 menu03">
+				<a href="" class="d1">연구공모 관리</a>
+				<ul class="depth02">
+					<li><a href="competitionList.html">연구공모 관리</a></li>
+					<li><a href="applicantList.html">공모 지원자 관리</a></li>
+				</ul>
+			</li>
+			<li class="depth01 menu04">
+				<a href="noticeList.html" class="d1">자료 관리</a>
+				<ul class="depth02">
+					<li><a href="papersList.html">연구 논문 관리</a></li>
+					<li><a href="insightsList.html">ENSI Issue paper 관리</a></li>
+					<li><a href="curriculumList.html">교육 과정 관리</a></li>
+					<li><a href="materialList.html">교육 자료 관리</a></li>
+				</ul>
+			</li>
+			<li class="depth01 menu05">
+				<a href="surveyList.html" class="d1">Community 관리</a>
+				<ul class="depth02">
+					<li><a href="noticeList.html">공지사항 관리</a></li>
+					<li><a href="contactList.html">Conatact 관리</a></li>
+				</ul>
+			</li>
+			<li class="depth01 menu06">
+				<a href="clubList.html" class="d1">통계</a>
+				<ul class="depth02">
+					<li><a href="memberStats.html">회원 현황</a></li>
+					<li><a href="memberAnalytics.html">기타 통계</a></li>
+				</ul>
+			</li>
+		</ul>
+	</nav>
+	<hr />
+	<!-- //lnb -->
+
+	<div id="contents" class="contents">
+		<header class="spot">
+			<h2 class="h-spot">지원자 관리</h2>
+			<div class="breadcrumb">
+				<span class="ico_ home"></span>
+				<span class="txt">home</span>
+				<span class="txt">연구공모 관리</span>
+				<span class="txt">지원자 관리</span>
+			</div>
+		</header>
+		<!-- //header -->
+		<section class="sect-t01">
+		<h3 class="h-t1">연구 공모 명 : 2018 ENSI 연구 공모</h3>
+			<table class="tbl-form">
+				<caption>연구공모정보 입력 폼(이름, 아이디, 논문제목, 구분, 전공분야, 첨부파일, 지원일로 구성)</caption>
+				<colgroup>
+					<col class="w20">
+					<col>
+				</colgroup>	
+				<tbody>
+					<tr>
+						<th scope="row">이름</th>
+						<td>오지석</td>
+					</tr>
+					<tr>
+						<th scope="row">아이디</th>
+						<td>abc333@email.com</td>
+					</tr>
+					<tr>
+						<th scope="row">논문제목</th>
+						<td>사회적 기업에 대한 성찰</td>
+					</tr>
+					<tr>
+						<th scope="row">구분</th>
+						<td>국내학술지/공동연구</td>
+					</tr>
+					<tr>
+						<th scope="row">전공분야</th>
+						<td>인문학</td>
+					</tr>
+					<tr>
+						<th scope="row">첨부파일</th>
+						<td>
+							<ul>
+								<li><a href="javascript:">연구공모 지원서.doc</a></li>
+								<li><a href="javascript:">연구공모 논문.pdf</a></li>
+								<li><a href="javascript:">연구공모 논문자료.doc</a></li>
+							</ul>
+						</td>
+					</tr>
+					<tr>
+						<th scope="row">지원일</th>
+						<td>2018.10.14</td>
+					</tr>
+				</tbody>
+			</table>
+			<!--//tbl-form -->
+		</section>
+
+		<div class="wrap_btn02">
+			<!-- <div class="aside">
+				<a href="" class="btn1-m-slight">삭제</a>
+			</div>
+			<a href="" class="btn1-m-weight">저장</a> -->
+			<a href="applicantList.html" class="btn1-m-slight2">목록</a>
+		</div>
+
+	</div>
+	<!--//contents -->

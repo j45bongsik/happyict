@@ -1,0 +1,74 @@
+<!--#include file="inc/header.asp"--><jsp:include page="inc/header.asp"/>
+
+	<div id="contents" class="contents">
+		<header class="spot">
+			<h2 class="h-spot">관리자 계정</h2>
+			<div class="breadcrumb">
+				<span class="ico_ home"></span>
+				<span class="txt">home</span>
+				<span class="txt">계정 관리</span>
+				<span class="txt">관리자 계정</span>
+			</div>
+		</header>
+		<!-- //header -->
+		<section class="sect-t1">
+			<table class="tbl-form">
+				<caption>관리자계정 정보 폼 (아이디, 이름, 연락처, 이메일, 사용여부로 구성)</caption>
+				<colgroup>
+					<col class="w20">
+					<col>
+				</colgroup>	
+				<tbody>
+					<tr>
+						<th scope="row">아이디</th>
+						<td>
+							<div class="wrap-input">
+								<input id="" type="text" class="input-m _fl w40" title="아이디 조회박스">
+								<span class="txt-blank wf10"></span>
+								<a href="javascript: PopOpenEvt('popId.html', 700, 500);" class="btn1-s-slight _fl wf100 m-w40">조회</a>
+							</div>
+						</td>
+					</tr>
+					<tr>
+						<th scope="row">이름</th>
+						<td>김루키</td>
+					</tr>
+					<tr>
+						<th scope="row">연락처</th>
+						<td>010-1234-5678</td>
+					</tr>
+					<tr>
+						<th scope="row">이메일</th>
+						<td>abc@email.com</td>
+					</tr>
+					<tr>
+						<th scope="row"><label for="">사용여부</label></th>
+						<td>
+							<div class="inner w50">
+								<span class="wrap-radio wf100 m-w45">
+									<input type="radio" id="" title="사용여부:예" class="radio-m">
+									<label for="" class=""> Y</label>
+								</span>
+								<span class="wrap-radio wf100 m-w45">
+									<input type="radio" id="" title="사용여부:아니요" class="radio-m">
+									<label for="" class=""> N</label>
+								</span>
+							</div>
+						</td>
+					</tr>
+				</tbody>
+			</table>
+		</section>
+		<!-- //관리자 계정 뷰단 -->	
+
+		<div class="wrap_btn02">
+			<a href="" class="btn1-m-weight">저장</a>
+			<a href="" class="btn1-m-slight2">목록</a>
+		</div>
+		<!--//wrap_btn02 폼 하단 버튼-->
+		
+
+	</div>
+	<!--//contents -->
+
+<!--#include file="inc/footer.asp"--><jsp:include page="inc/footer.asp"/>

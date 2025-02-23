@@ -1,0 +1,483 @@
+<!DOCTYPE html>
+<%
+	dim now_year, now_month, now_day, now_hour, now_minute, now_second, now_micro, queryString
+	now_year   = left(now(),4)
+	now_month  = mid(now(),6,2)
+	now_day    = mid(now(),9,2) 
+	now_hour   = right("0" & hour(now), 2)
+	now_minute = right("0" & minute(now), 2)
+	now_second = right("0" & second(now), 2)
+	now_micro  = right("000" & (timer * 1000) Mod 1000, 3)
+	 
+	queryString = now_year & now_month & now_day & now_hour & now_minute & now_second & now_micro
+%>
+<html lang="ko">
+	<head>
+		<meta content="text/html; charset=utf-8" http-equiv="Content-Type" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+		<meta name="viewport" content="width=device-width" />
+		<meta name="format-detection" content="telephone=no" />
+		<title>SK holdings</title>
+		<link href="/holdings/resources/css/font.css" rel="stylesheet" />
+		<link href="/holdings/resources/css/animate.css" rel="stylesheet" />
+		<link href="/holdings/resources/css/common.css" rel="stylesheet" />
+        <link href="/holdings/resources/css/main.css?<%=queryString%>" rel="stylesheet" />
+        <link href="/holdings/resources/css/sub.css?<%=queryString%>" rel="stylesheet" />
+        
+		<!-- <link href="/holdings/resources/path/favicon.ico" rel="shortcut icon" /> -->
+
+		<!--[if lt IE 9]>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.2/html5shiv.js"></script>
+		<![endif]-->
+
+        <script src="/holdings/resources/js/jquery-3.4.1.min.js"></script>
+        <script src="/holdings/resources/js/jquery-ui.min.js"></script>
+		<script src="/holdings/resources/js/jquery.ba-throttle-debounce.min.js"></script>
+		<script src="/holdings/resources/js/slick.js"></script>
+		<script src="/holdings/resources/js/common.js?<%=queryString%>"></script>
+		<script src="/holdings/resources/js/main.js?<%=queryString%>"></script>
+
+	</head>
+
+    <!-- 메인페이지 home 클래스 -->
+	<body class="home">
+	
+		<!-- 안내네비게이션 -->
+		<p id="skip-navi-info">현재 사이트는 반응형 웹사이트입니다. 화면의 크기에 따라 표시되는(보여지는) 콘텐츠가 다를 수 있습니다. 화면을 최대화하여 사용해 주시기 바랍니다.</p>
+
+		<!-- 스킵네비게이션 -->
+		<ul id="skip-navi">
+			<li><a href="#contents">본문 바로가기</a></li>
+		</ul>	
+
+		<!-- wrap -->
+		<div class="wrap">
+			<div id="header">
+				
+				<div class="top_gnb">
+                    <a href="javascript:;">SK(주) C&amp;C</a>
+                </div>
+
+				<!-- GNB 메뉴 -->
+				<div class="h_group">
+					<div>
+						<h1 class="top_logo">
+							<a href="/holdings/kr/main/main.html">SK holdings</a>
+						</h1>
+						<div id="gnb">
+							<button class="btn_menu" type="button">
+								<a class="menu-trigger" href="#" title="전체메뉴 열기">
+									<span></span>
+									<span></span>
+									<span></span>
+								</a> 
+							</button>
+							<div class="box">								
+								<button class="btn_close" type="button">
+									<a class="menu-trigger" href="#" title="전체메뉴 닫기">
+										<span></span>
+										<span></span>
+										<span></span>
+									</a> 
+								</button>
+								<div class="gnb_m_top">
+									<div class="top_logo_m">
+										<a href="/holdings/kr/main/main.html">SK holdings</a>
+									</div>
+									<div class="btn_lang_m">
+										<ul>
+											<li><a href="javascript:" target="_blank">ENG</a></li>
+											<li class="on"><a href="javascript:" target="_blank">KOR</a></li>
+										</ul>									
+									</div>										
+								</div>
+								<ul class="gnb_m">
+									<li>
+										<p class="depth_1"><a href="javascript:">회사소개</a></p>
+										<div class="sub_menu">
+											<div class="inner">
+												<ul class="depth_2">
+													<li><a href="/holdings/kr/about/overview.html">회사개요</a></li>
+													<li><a href="/holdings/kr/about/ceo.html">CEO Message</a></li>
+													<li><a href="/holdings/kr/about/strategy.html">사업 성장 전략</a></li>
+													<li><a href="/holdings/kr/about/portfolio.html">주요 新성장 Portfolio</a></li>
+												</ul>
+											</div>
+										</div>
+									</li>
+									<li>
+										<p class="depth_1"><a href="javascript:">투자정보</a></p>
+										<div class="sub_menu">
+											<div class="inner">
+												<ul class="depth_2">
+													<li>
+														<a href="javascript:">기업지배구조</a>
+														<ul class="depth_3">
+															<li><a href="javascript:">지배구조헌장</a></li>
+															<li><a href="javascript:">이사회</a></li>
+															<li><a href="javascript:">이사회 내 위원회</a></li>
+														</ul>
+													</li>
+													<li>
+														<a href="javascript:">재무정보</a>
+														<ul class="depth_3">
+															<li><a href="javascript:">주가정보</a></li>
+															<li><a href="/holdings/kr/ir/balanceSheet2018.html">주요재무제표</a></li>
+														</ul>
+													</li>
+													<li>
+														<a href="javascript:">공시정보</a>
+														<ul class="depth_3">
+															<li><a href="javascript:">전자공고</a></li>
+															<li><a href="javascript:">공시자료</a></li>
+															<li><a href="javascript:">공시정보 관리규정</a></li>
+														</ul>
+													</li>
+													<li>
+														<a href="javascript:">IR자료실</a>
+														<ul class="depth_3">
+															<li><a href="javascript:">Presentation</a></li>
+															<li><a href="javascript:">사업보고서</a></li>
+															<li><a href="javascript:">감사보고서</a></li>
+														</ul>
+													</li>
+												</ul>
+											</div>
+										</div>
+									</li>
+									<li>
+										<p class="depth_1"><a href="javascript:">사회적가치</a></p>
+										<div class="sub_menu">
+											<div class="inner">
+												<ul class="depth_2">
+													<li><a href="javascript:">사회적가치 제고활동</a></li>
+													<li>
+														<a href="javascript:">지속가능경영</a>
+														<ul class="depth_3">
+															<li><a href="javascript:">지속가능경영 전략</a></li>		
+															<li><a href="javascript:">지속가능경영 보고서</a></li>		
+															<li><a href="javascript:">윤리규범</a></li>	
+														</ul>
+													</li>
+												</ul>
+											</div>
+										</div>
+									</li>
+									<li>
+										<p class="depth_1"><a href="javascript:">미디어센터</a></p>
+										<div class="sub_menu">
+											<div class="inner">
+												<ul class="depth_2">
+													<li><a href="javascript:">보도자료</a></li>
+												</ul>
+											</div>
+										</div>
+									</li>
+								</ul>
+								<div class="gnb_banner_wrap">
+									<div class="gnb_banner">
+										<p>SK주식회사 C&C<span>Digital Innovation Leading Company </span></p>
+									</div>									
+								</div>
+							</div>
+							<!-- // box -->
+						</div>
+						<!-- // gnb -->
+						<div class="util_menu_pc">							
+							<div class="btn_lang">
+								<ul>
+									<li><a href="javascript:" target="_blank">ENG</a></li>
+									<li class="on"><a href="javascript:" target="_blank">KOR</a></li>
+								</ul>									
+							</div>
+							<div class="btn_sitemap">									
+								<div class="nav_area">
+									<div class="navbar_toggle" title="Menu">
+										<div class="menu_bar">
+											<div class="bar1"></div>
+											<div class="bar2"></div>
+											<div class="bar3"></div>
+										</div>
+									</div>
+									<div class="nav">
+										<nav class="nav_hide">
+											 <!-- 사이트맵 -->
+											<div class="sitemap_wrap">
+												<div class="sitemap">													
+													<div class="sitemap_ul">														
+														<p>회사소개</p>
+														<ul>
+															<li><a href="/holdings/kr/about/overview.html">회사개요</a></li>
+															<li><a href="/holdings/kr/about/ceo.html">CEO Message</a></li>
+															<li><a href="/holdings/kr/about/strategy.html">사업 성장 전략</a></li>
+															<li><a href="/holdings/kr/about/portfolio.html">주요 新성장 Portfolio</a></li>
+														</ul>
+													</div>
+													<div class="sitemap_ul">														
+														<p>투자정보</p>
+														<ul>
+															<li>
+																<a href="javascript:">기업지배구조</a>
+																<ul class="sitemap_depth_3">
+																	<li><a href="javascript:">지배구조헌장</a></li>
+																	<li><a href="javascript:">이사회</a></li>
+																	<li><a href="javascript:">이사회 내 위원회</a></li>
+																</ul>	
+															</li>
+															<li>
+																<a href="javascript:">재무정보</a>
+																<ul class="sitemap_depth_3">
+																	<li><a href="javascript:">주가정보</a></li>
+																	<li><a href="/holdings/kr/ir/balanceSheet2018.html">주요재무제표</a></li>
+																</ul>
+															</li>
+															<li>
+																<a href="javascript:">공시정보</a>
+																<ul class="sitemap_depth_3">
+																	<li><a href="javascript:">전자공고</a></li>
+																	<li><a href="javascript:">공시자료</a></li>
+																	<li><a href="javascript:">공시정보 관리규정</a></li>																	
+																</ul>
+															</li>
+															<li>
+																<a href="javascript:">IR자료실</a>
+																<ul class="sitemap_depth_3">
+																	<li><a href="javascript:">Presentation</a></li>		
+																	<li><a href="javascript:">사업보고서</a></li>		
+																	<li><a href="javascript:">감사보고서</a></li>	
+																</ul>
+															</li>
+														</ul>
+													</div>
+													<div class="sitemap_ul">														
+														<p>사회적가치</p>
+														<ul>
+															<li><a href="javascript:">사회적가치 제고활동</a></li>
+															<li>
+																<a href="javascript:">지속가능경영</a>
+																<ul class="sitemap_depth_3">
+																	<li><a href="javascript:">지속가능경영 전략</a></li>		
+																	<li><a href="javascript:">지속가능경영 보고서</a></li>		
+																	<li><a href="javascript:">윤리규범</a></li>	
+																</ul>
+															</li>
+															
+														</ul>
+													</div>
+													<div class="sitemap_ul">														
+														<p>미디어센터</p>
+														<ul>
+															<li><a href="javascript:">보도자료</a></li>
+														</ul>
+													</div>																									
+												</div>
+												<!-- // sitemap -->
+											</div>
+											<!-- // sitemap_wrap -->
+										</nav>
+									</div>
+									<!-- // nav -->
+								</div>
+							</div>							
+						</div>
+						<!-- // util_menu_pc -->
+					</div>
+				</div>
+				<!-- // h_group -->
+				
+			</div>
+			<!-- // header -->
+
+
+<div class="container">
+    <div class="content">
+
+		<!-- 메인배너 -->
+		<section class="box">
+			<div class="section_visual">
+				<div class="visual_wrap">
+					<div class="visual">
+						<div>
+							<div class="visual_web" style="background: url(/holdings/resources/img/banner_01.jpg) no-repeat center top; background-size: cover;"></div>
+							<div class="visual_m" style="background: url(/holdings/resources/img/banner_01_full.jpg) no-repeat center top; background-size: cover;"></div>
+							<div class="visual_cont">
+								<p class="textEB">SK주식회사</p>
+								<p class="textL">Deep Change를 통해</p>
+								<p class="textB">행복을 추구하는 투자형 지주회사</p>
+							</div>
+						</div>
+						<div>
+							<div class="visual_web" style="background: url(/holdings/resources/img/banner_02.jpg) no-repeat center top; background-size: cover;"></div>
+							<div class="visual_m" style="background: url(/holdings/resources/img/banner_02_full.jpg) no-repeat center top; background-size: cover;"></div>
+							<div class="visual_cont">
+								<p class="textEB">SK주식회사</p>
+								<p class="textB">Value 중심 Portfolio 기반 신성장 </p>
+								<p class="textL">사업을 발굴 육성</p>
+							</div>
+						</div>
+						<div>
+							<div class="visual_web" style="background: url(/holdings/resources/img/banner_03.jpg) no-repeat center top; background-size: cover;"></div>
+							<div class="visual_m" style="background: url(/holdings/resources/img/banner_03_full.jpg) no-repeat center top; background-size: cover;"></div>
+							<div class="visual_cont">
+								<p class="textEB">SK주식회사</p>
+								<p class="textL">이해 관계자의 행복 추구</p>
+								<p class="textB">주주, 고객, 사회와 함께 커가는 행복 추구</p>
+							</div>
+						</div>
+					</div>
+					<!-- // visual -->
+					<div class="visual_btn">
+						<button class="btn_play">정지</button>
+					</div>
+					<div>
+						<a href="javascript:" class="more_btn floating">
+							SCROLL
+							<span class="more_btn_img"><img src="/holdings/resources/img/more_btn.png" alt="More About Us" /></span>
+						</a>
+					</div>
+				</div>
+				<!-- // visual_wrap -->
+			</div>
+		</section>
+
+		<section class="box">
+			<div class="section-wrap">
+
+				<div class="pc-area">	
+					<ul class="section-1">
+						<li>
+							<a href="javascript:;">
+								<span class="figure"><img src="/holdings/resources/img/sec1_img1.jpg" alt=""></span>
+	                            <span class="figure_text">
+	                            	<p>회사소개앙</p>
+	                            </span>
+							</a>
+						</li>
+						<li>
+							<a href="javascript:;">
+								<span class="figure"><img src="/holdings/resources/img/sec1_img2.jpg" alt=""></span>
+	                            <span class="figure_text">
+	                            	<p>투자정보</p>
+	                            </span>
+							</a>
+						</li>
+						<li>
+							<a href="javascript:;">
+								<span class="figure"><img src="/holdings/resources/img/sec1_img3.jpg" alt=""></span>
+	                            <span class="figure_text">
+	                            	<p>사회적가치</p>
+	                            </span>
+							</a>
+						</li>
+					</ul>
+				</div>
+				<!-- // pc-area -->
+
+				<div class="mo-area">
+					<div class="img-slide">						
+						<div class="img" style="background: url(/holdings/resources/img/sec1_img1.jpg) no-repeat center center; background-size: cover;">
+							<p class="a-c">회사소개</p>
+                        	<!-- <p>행복한 미래를 위해 끊임없이 도전합니다.</p> -->
+						</div>
+						<div class="img" style="background: url(/holdings/resources/img/sec1_img2.jpg) no-repeat center center; background-size: cover;">
+							<p>투자정보</p>
+                        	<!-- <p>투명한 경영을 통해 성장하고 있습니다.</p> -->
+						</div>
+						<div class="img" style="background: url(/holdings/resources/img/sec1_img3.jpg) no-repeat center center; background-size: cover;">
+							<p>사회적가치</p>
+                        	<!-- <p>지속가능한 행복을 꿈꾸며 나아갑니다.</p> -->
+						</div>
+					</div>
+					<!-- // section-1 -->
+
+				</div>
+				<!-- // mo-area -->
+
+			</div>
+		</section>
+
+		<section class="box">
+			<div class="section-wrap">
+				<div class="title_area">
+					<p class="h1">미디어센터</p>					
+					<p class="btn_more"><a href="javascript:;">더보기</a></p>										
+				</div>
+				<ul class="section-2">
+					<li>						
+						<img src="/holdings/resources/img/sec2_img1.jpg" alt="">
+						<div class="text_box">
+							<p>
+								SK㈜, 글로벌 제약사<span class="br"></span>
+								아스트라제네카와 파트너십 강화
+							</p>
+							<button class="btn_page"></button>
+						</div>
+					</li>
+					<li>						
+						<img src="/holdings/resources/img/sec2_img2.jpg" alt="">
+						<div class="text_box">
+							<p>
+								SK㈜, 스마트 글라스 업체 1억불 투자<span class="br"></span>
+								에너지절감ㆍIoT 산업확장성 주목
+							</p>
+							<button class="btn_page"></button>
+						</div>
+					</li>
+				</ul>
+			</div>
+		</section>
+
+		<section class="box">
+			<div class="section-wrap">				
+				<ul class="section-3">
+					<li>
+						<a href="javascript:;">
+							<p class="title">
+								기업지배구조
+							</p>
+							<p class="text">
+								이사회 중심경영을 실천하기 위한<span class="br"></span>
+								시스템 구조를 확인하실 수 있습니다.
+							</p>
+						</a>
+					</li>
+					<li>
+						<a href="javascript:;">
+							<p class="title">
+								재무정보
+							</p>
+							<p class="text">
+								SK주식회사의 재무정보를<span class="br"></span>
+								한눈에 확인하실 수 있습니다.
+							</p>
+						</a>
+					</li>
+					<li>
+						<a href="javascript:;">
+							<p class="title">
+								공시정보
+							</p>
+							<p class="text">
+								SK주식회사의 공시정보를<span class="br"></span>
+								실시간으로 확인하실 수 있습니다.
+							</p>
+						</a>
+					</li>
+					<li>
+						<a href="javascript:;">
+							<p class="title">
+								IR자료실
+							</p>
+							<p class="text">
+								SK주식회사의 IR보고 및<span class="br"></span> 
+								공지사항을 확인하실 수 있습니다.
+							</p>
+						</a>
+					</li>
+				</ul>
+			</div>
+		</section>
+    </div>
+</div>
+
+<!--#include file="../inc/footer.asp"-->

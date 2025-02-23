@@ -1,0 +1,111 @@
+<!--#include file="inc/header.asp"--><jsp:include page="inc/header.asp"/>
+
+	<div id="contents" class="contents">
+		<header class="spot">
+			<h2 class="h-spot">관리자 계정</h2>
+			<div class="breadcrumb">
+				<span class="ico_ home"></span>
+				<span class="txt">home</span>
+				<span class="txt">계정 관리</span>
+				<span class="txt">관리자 계정</span>
+			</div>
+		</header>
+		<!-- //header -->
+
+		<section class="sect-t01">
+			<div class="topSerch">
+				<div class="box-topSrch">
+					<ul>
+						<li>
+							<label for="">이름</label>
+							<input type="text" class="input-m w70" title="관리자계정 이름 입력">
+						</li>
+						<li>
+							<label for="">아이디</label>
+							<input type="text" class="input-m w70" title="관리자계정 아이디 입력">
+						</li>
+						<li>
+							<label for="">사용여부</label>
+							<select id="" class="select-m w70" title="관리자계정 사용여부 선택">
+							<option value="" selected="selected">전체</option>
+							</select>
+						</li>
+					</ul>
+				</div>
+				<div class="wrap_btnSrch">
+					<a href="" class="btn1-s-weight wf100" title="조회(관리자 계정)">조회</a>
+				</div>
+			</div>
+			<!-- //topSerch 상단 검색창 -->
+
+			<div class="wrap_btn">
+				<a href="" class="btn1-s-slightier wf40" title="15줄 보기">15</a>
+				<a href="" class="btn1-s-slight wf40" title="50줄 보기">50</a>
+				<a href="" class="btn1-s-slight wf40" title="100줄 보기">100</a>
+				<div class="aside">
+					<a href="managerReg.html" class="btn1-s-normal wf100" title="등록(관리자 계정)">등록</a>
+				</div>
+			</div>
+			<!--//wrap_btn 리스트 상단 버튼-->
+
+			<table class="tbl-list">
+				<caption>관리자 계정 리스트 (번호, 이름, 아이디, 연락처, 등록일, 사용여부로 구성)</caption>
+				<colgroup>
+					<col class="wf150">
+					<col class="wf150">
+					<col class="wf200">
+					<col class="wf200">
+					<col class="wf150">
+					<col class="wf150">
+				</colgroup>
+				<thead>
+				<tr>
+					<th scope="col">번호</th>
+					<th scope="col">이름</th>
+					<th scope="col">아이디</th>
+					<th scope="col">연락처</th>
+					<th scope="col">등록일</th>
+					<th scope="col">사용여부</th>
+				</tr>
+				</thead>
+				<tbody>
+				<tr>
+					<td>1000</td>
+					<td><a href="managerReg.html" class="link">김루키</a></td>
+					<td>abc11</td>
+					<td>010-1234-5678</td>
+					<td>2017.12.04</td>
+					<td><span class="btn1-xs-weight wf30">Y</span> <span class="btn1-xs-slight wf30">N</span></td>
+				</tr>
+				<tr>
+					<td>1000</td>
+					<td><a href="managerReg.html" class="link">김루키</a></td>
+					<td>abc11</td>
+					<td>010-1234-5678</td>
+					<td>2017.12.04</td>
+					<td><span class="btn1-xs-weight wf30">Y</span> <span class="btn1-xs-slight wf30">N</span></td>
+				</tr>
+				</tbody>
+			</table>
+			<!--//tbl-list -->
+
+			<div class="paging-t1">
+				<div class="inner_num">
+					<button class="btn-pageFirst"><span class="blind">처음으로</span></button>
+					<button class="btn-pagePrev"><span class="blind">이전 페이지</span></button>
+					<a href="javascript:void(0);" class="on" title="현재 페이지">1</a>
+					<a href="javascript:void(0);">2</a>
+					<a href="javascript:void(0);">3</a>
+					<a href="javascript:void(0);">4</a>
+					<a href="javascript:void(0);">5</a>
+					<button class="btn-pageNext"><span class="blind">다음 페이지</span></button>
+					<button class="btn-pageLast"><span class="blind">마지막 페이지</span></button>
+				</div>
+			</div>
+		<!--//paging-t1 -->
+		</section>
+
+	</div>
+	<!--//contents -->
+
+<!--#include file="inc/footer.asp"--><jsp:include page="inc/footer.asp"/>

@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="ko" class="popup type02">
+<head>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1">
+  <meta charset="UTF-8" />
+  <title>LOOKIE 관리자</title>
+  <link rel="stylesheet" href="resources/css/admin.css" />
+  <script type="text/javascript" src="resources/js/jquery-1.9.1.min.js"></script>
+  <script type="text/javascript" src="resources/js/admin.js"></script>
+  <!--[if lt IE 9]>
+		<script type="text/javascript" src="resources/js/html5.js"></script>
+	<![endif]-->
+</head>
+<body>
+    <div>
+		<h1 class="tit">아이디 조회</h1>
+		<div class="inner popIdChange">	
+			<ul class="list-t3">
+				<li>변경 하고자하는 아이디를 선택해주세요.</li>
+			</ul>
+			<div class="box-topSrch">
+				<ul>
+					<li>현재 동아리 회장 : 김철수(asd1234) - 경영학과</li>
+					<li>변경되는 동아리 회장 : <input type="text" class="input-m w60" title="변경되는 회장 정보"> </li>
+				</ul>
+			</div>
+			<div class="wrap_btnSrch">
+				<a href="" class="btn1-s-weight wf100" title="변경(아이디 조회)">변경</a>
+			</div>
+			<div class="wrap_scroll">
+				<table class="tbl-list">
+					<caption>이 표는 회원 정보를 제공하며 번호, 아이디, 이름, 성별, 핸드폰 번호로 구성되어 있습니다.</caption>
+					<colgroup>
+						<col class="w20">
+						<col class="w20">
+						<col class="w20">
+						<col class="w20">
+						<col class="w20">
+					</colgroup>
+					<thead>
+						<th scope="col">번호</th>
+						<th scope="col">아이디</th>
+						<th scope="col">이름</th>
+						<th scope="col">성별</th>
+						<th scope="col">핸드폰번호</th>
+						
+					</thead>
+					<tbody>
+						<tr>
+							<td>1000</td>
+							<td><a href="#">abc123</a></td>
+							<td>김루키</td>
+							<td>여성</td>
+							<td>010-0000-0000</td>
+						</tr>
+						<tr>
+							<td>1000</td>
+							<td><a href="#">abc123</a></td>
+							<td>김루키</td>
+							<td>여성</td>
+							<td>010-0000-0000</td>
+						</tr>
+						<tr>
+							<td>1000</td>
+							<td><a href="#">abc123</a></td>
+							<td>김루키</td>
+							<td>여성</td>
+							<td>010-0000-0000</td>
+						</tr>
+					</tbody>
+				</table>
+				<!--//tbl-list -->
+			</div>
+
+			<!-- 검색 결과가 없을 때 노출 -->
+			<div class="paging-t1">
+				<div class="inner_num">
+					<button class="btn-pageFirst m-hide"><span class="blind">처음으로</span></button>
+					<button class="btn-pagePrev"><span class="blind">이전 페이지</span></button>
+					<a href="javascript:void(0);" class="on" title="현재 페이지">1</a>
+					<a href="javascript:void(0);">2</a>
+					<a href="javascript:void(0);">3</a>
+					<a href="javascript:void(0);">4</a>
+					<a href="javascript:void(0);">5</a>
+					<button class="btn-pageNext"><span class="blind">다음 페이지</span></button>
+					<button class="btn-pageLast m-hide"><span class="blind">마지막 페이지</span></button>
+				</div>
+			</div>
+			<!--// paging -->
+		</div>
+	</div>
+</body>
+</html>
+
+
