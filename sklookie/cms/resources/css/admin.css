@@ -228,7 +228,7 @@ select::-ms-expand {display: none;}
 .ico_.new{width: 17px; height: 17px; background-image: url(../img/common/ico_new.png);}
 .ico_.file{width: 14px; height: 14px; background-image: url(../img/common/ico_file.png);}
 .ico_.del{width: 33px; height: 33px; background-image: url(../img/common/ico_del.png);}
-.ico_._reply {width: 8px; height: 8px; background-position: -20px -90px; margin-right: 5px; background-image: url('../../../resources/img/common/img_common.png'); -webkit-background-size: 1500px 1500px; background-size: 1500px 1500px;}
+.ico_._reply {width: 8px; height: 8px; background-position: -20px -90px; margin-right: 5px; background-image: url('../../..../../resources/img/common/img_common.png'); -webkit-background-size: 1500px 1500px; background-size: 1500px 1500px;}
 /* .ico_.{width: px; height: px; background-image: url(../img/common/ico_.png);}
 .ico_.{width: px; height: px; background-image: url(../img/common/ico_.png);} */
 

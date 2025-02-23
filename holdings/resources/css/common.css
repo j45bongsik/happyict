@@ -73,7 +73,7 @@ input[type="password"] {border-radius: 0; outline-style: none; -webkit-appearanc
 #header .h_group > div {margin: 0 auto; padding: 0 40px;}
 #header .h_group > div:after {display: block; clear: both; content: ''}
 #header .h_group > div h1 {padding: 15px 0 0 0px; width: 140px; display: table-cell; vertical-align: top;}
-#header .h_group .top_logo a {background: url(../../resources/img/common/logo.png) no-repeat; width: 110px; height: 44px; background-size: 110px 44px; display: block; font-size: 31px; line-height: 90%; text-indent: -9999px;}
+#header .h_group .top_logo a {background: url(../..../../resources/img/common/logo.png) no-repeat; width: 110px; height: 44px; background-size: 110px 44px; display: block; font-size: 31px; line-height: 90%; text-indent: -9999px;}
 
 #gnb {width: 1530px; display: table-cell; vertical-align: top;}
 .btn_menu {display: none; overflow: hidden; position: absolute; top: 34px; right: 20px; width: 32px; height: 20px; background-size: 32px 20px;}
@@ -171,7 +171,7 @@ nav { position: fixed; top: 0px; right: 0;  text-align: center;  z-index: 10; wi
 .footer_wrap {position: relative; max-width: 1640px; margin: 0 auto; font-size: 0; padding: 0 20px;}
 
 .footer_wrap .footerL {display: inline-block; width: 50%; font-size: 0; line-height: 0; vertical-align: middle; text-align: left;}
-.footer_wrap .footerL .logo {display: inline-block; width: 250px; height: 48px; vertical-align: middle; background-image: url('../../resources/img/common/f_logo.png'); background-size: 100px 40px; background-repeat: no-repeat; font-size: 0; text-indent: -999px; background-position: left top;}
+.footer_wrap .footerL .logo {display: inline-block; width: 250px; height: 48px; vertical-align: middle; background-image: url('../..../../resources/img/common/f_logo.png'); background-size: 100px 40px; background-repeat: no-repeat; font-size: 0; text-indent: -999px; background-position: left top;}
 .footer_wrap .footerL .add {display: inline-block; vertical-align: middle;} 
 .footer_wrap .footerL .add .link_text {display: block; font-size: 15px; color: #c3c7ca; margin-bottom: 10px; line-height: 100%;}
 .footer_wrap .footerL .add .link_text span.middot {display: inline-block; margin: 6px 10px 0 10px; background-color: #c3c7ca; width: 3px; height: 3px; border-radius: 100%; vertical-align: top;}
@@ -188,8 +188,8 @@ nav { position: fixed; top: 0px; right: 0;  text-align: center;  z-index: 10; wi
 
 .footer_wrap .family {display: inline-block; vertical-align: middle; text-align: left; width: 200px; background: #1f1f21; border: 0;}
 .footer_wrap .family a {display: block; color: #797979; }
-.footer_wrap .family .btn_familyView {display: block; height: 40px; line-height: 40px; font-size: 15px; padding-left: 10px; width: auto; background: url('../../resources/img/common/ico_prev.png') center right 15px no-repeat; background-size: 9px 5px; padding: 0 15px;}
-.footer_wrap .family .btn_familyView.open {background-image: url('../../resources/img/common/ico_next.png');}
+.footer_wrap .family .btn_familyView {display: block; height: 40px; line-height: 40px; font-size: 15px; padding-left: 10px; width: auto; background: url('../..../../resources/img/common/ico_prev.png') center right 15px no-repeat; background-size: 9px 5px; padding: 0 15px;}
+.footer_wrap .family .btn_familyView.open {background-image: url('../..../../resources/img/common/ico_next.png');}
 .footer_wrap .family .list_family {display: none; position: absolute; padding: 0 10px; border: 1px solid #c2c2c2; background: #fff; z-index: 9999; bottom: 43px; width: 200px; padding: 10px 15px;}
 .footer_wrap .family .btn_familyView.open a {padding: 0;}
 .footer_wrap .family .list_family li {line-height: 2.2;}
@@ -200,7 +200,7 @@ nav { position: fixed; top: 0px; right: 0;  text-align: center;  z-index: 10; wi
 /* TopBtn */
 .btn_top {display: none; position: relative; z-index: 99; opacity: 0; -webkit-transition-duration: 0.4s; transition-duration: 0.4s; -webkit-transition-timing-function: ease-out; transition-timing-function: ease-out;}
 .btn_top.show {opacity: 1}
-.btn_top .inner {display: block; position: fixed; bottom: 174px; right: 5%; width: 65px; height: 65px; background: #fff url(../../resources/img/common/btn_top.png) center center no-repeat; border-radius: 100px; border: 1px solid #b6b6b6;}
+.btn_top .inner {display: block; position: fixed; bottom: 174px; right: 5%; width: 65px; height: 65px; background: #fff url(../..../../resources/img/common/btn_top.png) center center no-repeat; border-radius: 100px; border: 1px solid #b6b6b6;}
 .btn_top span {display: block; opacity: 0; font-size: 20px; line-height: 150%;}
 
 
@@ -212,18 +212,18 @@ nav { position: fixed; top: 0px; right: 0;  text-align: center;  z-index: 10; wi
 .en #gnb > .box > ul > li:nth-child(3) > .sub_menu {left: 60px;}
 .en #gnb > .box > ul > li:first-child > .sub_menu > .inner > ul.depth_2 > li {margin-right: 5%;}
 .en #gnb > .box > ul > li > .sub_menu > .inner > ul.depth_2 > li {margin-right: 5%; width: auto;}
-.en .footer_wrap .footerL .logo {background-image: url('../../resources/img/common/f_logo_en.png');}
-.en #header .h_group .top_logo a {background-image: url('../../resources/img/common/logo_en.png');}
+.en .footer_wrap .footerL .logo {background-image: url('../..../../resources/img/common/f_logo_en.png');}
+.en #header .h_group .top_logo a {background-image: url('../..../../resources/img/common/logo_en.png');}
 .en .sitemap {padding: 60px 0 120px 60px;}
 .en .sitemap .sitemap_ul > p {width: 290px;}
 .en .sitemap .sitemap_ul > ul > li {margin-right: 40px; width: 220px;}
 
 
 /* popup */
-#hold_popup {width: 640px; height: 500px; background: #fff url(../../resources/img/common/pop_bg.png) no-repeat 0 0;}
+#hold_popup {width: 640px; height: 500px; background: #fff url(../..../../resources/img/common/pop_bg.png) no-repeat 0 0;}
 .popup_logo {display: block; margin: 35px auto 0; text-align: center;}
 .popup_logo img {width: 110px;}
-.popup_close {position: absolute; top: 0; right: 3px; width: 37px; height: 37px; background: url(../../resources/img/common/pop_close.png) no-repeat 50% 50%; font-size:0;}
+.popup_close {position: absolute; top: 0; right: 3px; width: 37px; height: 37px; background: url(../..../../resources/img/common/pop_close.png) no-repeat 50% 50%; font-size:0;}
 
 .modal_overlay {opacity: 0; filter: alpha(opacity=0); position: absolute; top: 0; left: 0; z-index: 1000; width: 100%; height: 100%; background: #000 !important;}
 .modal_box {display: none; position: fixed; top: 42%; left: 50%; margin: -250px 0 0 -320px; z-index: 1100;}
@@ -301,9 +301,9 @@ nav { position: fixed; top: 0px; right: 0;  text-align: center;  z-index: 10; wi
 	#header .h_group > div h1 {padding-top: 20px;}
 
 	.gnb_m_top {display: block; height: 80px; border-bottom: 1px solid #d6d6d6; position: relative;}
-	.gnb_m_top .top_logo_m a {display: block; position: absolute; top: 20px; left: 30px; background: url(../../resources/img/common/logo.png) no-repeat; width: 108px; height: 45px; background-size: 108px 45px; font-size: 22px; line-height: 90%; text-indent: -9999px}
+	.gnb_m_top .top_logo_m a {display: block; position: absolute; top: 20px; left: 30px; background: url(../..../../resources/img/common/logo.png) no-repeat; width: 108px; height: 45px; background-size: 108px 45px; font-size: 22px; line-height: 90%; text-indent: -9999px}
 
-	.en .gnb_m_top .top_logo_m a {background-image: url('../../resources/img/common/logo_en.png');}
+	.en .gnb_m_top .top_logo_m a {background-image: url('../..../../resources/img/common/logo_en.png');}
 	
 	.gnb_m_top .btn_lang_m {font-size: 0; display: inline-block; text-align: left; position: absolute; top: 32px; right: 70px;}
 	.gnb_m_top .btn_lang_m ul {}
@@ -317,8 +317,8 @@ nav { position: fixed; top: 0px; right: 0;  text-align: center;  z-index: 10; wi
 	#gnb > .box {display: none; position: absolute; top: 0px; right: -100%; width: 100%; margin-top: 0; overflow-x: auto !important; z-index: 9999 !important;}
 	#gnb > .box > ul {width: 100%; display: inline-block; background: #fff; margin-bottom: 100px;}
 	#gnb > .box > ul > li {width: 100%; height: auto; background: #ebebeb; border-bottom: 1px solid #d6d6d6}
-	#gnb > .box > ul > li > p.depth_1 > a {padding: 25px 30px; background: #fff url(../../resources/img/common/bul_down.png) no-repeat center right  30px; -webkit-background-size: 24px; background-size: 24px; font-weight: 400; color: #111;  text-align: left; font-size: 24px; font-family: 'nanum-square-b';}
-	#gnb > .box > ul > li.current p.depth_1 > a {background: #e1002a url(../../resources/img/common/bul_up.png) no-repeat center right  30px; -webkit-background-size: 24px 24px; background-size: 24px 24px; color: #fff;}
+	#gnb > .box > ul > li > p.depth_1 > a {padding: 25px 30px; background: #fff url(../..../../resources/img/common/bul_down.png) no-repeat center right  30px; -webkit-background-size: 24px; background-size: 24px; font-weight: 400; color: #111;  text-align: left; font-size: 24px; font-family: 'nanum-square-b';}
+	#gnb > .box > ul > li.current p.depth_1 > a {background: #e1002a url(../..../../resources/img/common/bul_up.png) no-repeat center right  30px; -webkit-background-size: 24px 24px; background-size: 24px 24px; color: #fff;}
 	#gnb > .box > ul > li > p.depth_1 > a:before {content: " "; display: none}
 	#gnb > .box > ul > li > p.depth_1 > a:hover:before {width: 100%;}
 
@@ -329,11 +329,11 @@ nav { position: fixed; top: 0px; right: 0;  text-align: center;  z-index: 10; wi
 	#gnb > .box > ul > li > .sub_menu > .inner > ul.depth_2 > li > a {height: 60px; padding-left: 35px; line-height: 60px; font-size: 20px; text-align: left; color: #666; display: block; margin-bottom: 0; border-top: 1px solid #d6d6d6; font-family: "nanum-square-r", sans-serif}
 	#gnb > .box > ul > li > .sub_menu > .inner > ul.depth_2 > li.current > a {color: #e1002a;}
 
-	.gnb_m > li:nth-child(2) ul.depth_2 > li > a {background: url(../../resources/img/common/bul_down.png) no-repeat center right  30px; -webkit-background-size: 24px; background-size: 24px;}
-	.gnb_m > li:nth-child(2) ul.depth_2 > li.current > a {background: url(../../resources/img/common/bul_up_depth.png) no-repeat center right  30px; -webkit-background-size: 24px; background-size: 24px;}
+	.gnb_m > li:nth-child(2) ul.depth_2 > li > a {background: url(../..../../resources/img/common/bul_down.png) no-repeat center right  30px; -webkit-background-size: 24px; background-size: 24px;}
+	.gnb_m > li:nth-child(2) ul.depth_2 > li.current > a {background: url(../..../../resources/img/common/bul_up_depth.png) no-repeat center right  30px; -webkit-background-size: 24px; background-size: 24px;}
 
-	.gnb_m > li:nth-child(3) ul.depth_2 > li:nth-child(2) > a {background: url(../../resources/img/common/bul_down.png) no-repeat center right  30px; -webkit-background-size: 24px; background-size: 24px;}
-	.gnb_m > li:nth-child(3) ul.depth_2 > li:nth-child(2).current > a {background: url(../../resources/img/common/bul_up_depth.png) no-repeat center right  30px; -webkit-background-size: 24px; background-size: 24px;}
+	.gnb_m > li:nth-child(3) ul.depth_2 > li:nth-child(2) > a {background: url(../..../../resources/img/common/bul_down.png) no-repeat center right  30px; -webkit-background-size: 24px; background-size: 24px;}
+	.gnb_m > li:nth-child(3) ul.depth_2 > li:nth-child(2).current > a {background: url(../..../../resources/img/common/bul_up_depth.png) no-repeat center right  30px; -webkit-background-size: 24px; background-size: 24px;}
 
 	#gnb > .box > ul > li:nth-child(1) > .sub_menu,
 	#gnb > .box > ul > li:nth-child(2) > .sub_menu,
@@ -352,7 +352,7 @@ nav { position: fixed; top: 0px; right: 0;  text-align: center;  z-index: 10; wi
 	#gnb > .box > ul > li > .sub_menu > .inner > ul.depth_2 > li > ul.depth_3 > li:hover:before  {content: " "; background-color: #e1002a;}
 
 	#gnb > .box > .gnb_banner_wrap {display: block; padding: 0 40px}
-	#gnb > .box > .gnb_banner_wrap > .gnb_banner {background: url(../../resources/img/common/gnb_banner.jpg) no-repeat center center; width: auto; height: 80px; position: relative; background-size: cover; margin: 0 auto; text-align: center;}
+	#gnb > .box > .gnb_banner_wrap > .gnb_banner {background: url(../..../../resources/img/common/gnb_banner.jpg) no-repeat center center; width: auto; height: 80px; position: relative; background-size: cover; margin: 0 auto; text-align: center;}
 	#gnb > .box > .gnb_banner_wrap > .gnb_banner a {display: block; width: 100%; height: 100%;}
 	#gnb > .box > .gnb_banner_wrap > .gnb_banner p {position: absolute; top: 25px; left: 50%; transform: translateX(-50%); color: #fff; font-size: 20px; font-family: "nanum-square-b", sans-serif; width: 90%;}
 	#gnb > .box > .gnb_banner_wrap > .gnb_banner p span {font-size: 14px; font-family: "nanum-square-r", sans-serif; display: block; margin-top: 5px;}
@@ -449,11 +449,11 @@ nav { position: fixed; top: 0px; right: 0;  text-align: center;  z-index: 10; wi
 	.gnb_m_top .btn_lang_m ul li a {font-size: 13px; font-weight: bold}
 	.gnb_m_top .btn_lang_m ul li:nth-child(1):after {left: 40px; height: 12px; top: 4px}
 
-	#gnb > .box > ul > li > p.depth_1 > a {font-size: 18px; padding:  20px 20px; background: #fff url(../../resources/img/common/bul_down.png) no-repeat center right  22px; -webkit-background-size: 16px; background-size: 16px;}
-	#gnb > .box > ul > li.current p.depth_1 > a {background: #e1002a url(../../resources/img/common/bul_up.png) no-repeat center right  22px; -webkit-background-size: 16px; background-size: 16px;}
+	#gnb > .box > ul > li > p.depth_1 > a {font-size: 18px; padding:  20px 20px; background: #fff url(../..../../resources/img/common/bul_down.png) no-repeat center right  22px; -webkit-background-size: 16px; background-size: 16px;}
+	#gnb > .box > ul > li.current p.depth_1 > a {background: #e1002a url(../..../../resources/img/common/bul_up.png) no-repeat center right  22px; -webkit-background-size: 16px; background-size: 16px;}
 	#gnb > .box > ul > li > .sub_menu > .inner > ul.depth_2 > li > a {font-size: 16px; height: 50px; line-height: 50px; padding-left: 25px;}
-	.gnb_m > li:nth-child(2) ul.depth_2 > li > a {background: url(../../resources/img/common/bul_down.png) no-repeat center right 22px; -webkit-background-size: 16px; background-size: 16px;}
-	.gnb_m > li:nth-child(2) ul.depth_2 > li.current > a {background: url(../../resources/img/common/bul_up_depth.png) no-repeat center right 22px; -webkit-background-size: 16px; background-size: 16px;}
+	.gnb_m > li:nth-child(2) ul.depth_2 > li > a {background: url(../..../../resources/img/common/bul_down.png) no-repeat center right 22px; -webkit-background-size: 16px; background-size: 16px;}
+	.gnb_m > li:nth-child(2) ul.depth_2 > li.current > a {background: url(../..../../resources/img/common/bul_up_depth.png) no-repeat center right 22px; -webkit-background-size: 16px; background-size: 16px;}
 	
 	#gnb > .box > ul > li > .sub_menu > .inner > ul.depth_2 > li > ul.depth_3 {padding: 20px 20px 0 30px;}
 	#gnb > .box > ul > li > .sub_menu > .inner > ul.depth_2 > li > ul.depth_3 > li:before {top: 5px;}

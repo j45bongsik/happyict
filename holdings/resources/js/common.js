@@ -111,7 +111,7 @@ $(function() {
 				.siblings()
 				.css("height","auto");
 				$this.parents(".h_group").addClass('menu_hover');
-				$this.parents(".h_group").css("background","url(/resources/img/common/menu_bg.png)");
+				$this.parents(".h_group").css("background","url(../../resources/img/common/menu_bg.png)");
 				$("#gnb > .box > ul > li > a").css("color","#333");
 				$this.parents(".h_group").stop().animate({"height":"290px"}, 300);
 				$("#gnb .sub_menu").hide();
@@ -128,7 +128,7 @@ $(function() {
 					$("#gnb > .box > ul > li").siblings().children(".sub_menu").hide();
 
 					if($(".h_group").hasClass('affix')) {
-						$(this).css("background","url(/resources/img/common/menu_bg.png)");
+						$(this).css("background","url(../../resources/img/common/menu_bg.png)");
 						$("#gnb > .box > ul > li > a").css("color","#333");
 					} else {
 						if(!$(".h_group").hasClass('sub')) {
@@ -147,7 +147,7 @@ $(function() {
 				if($(".h_group").hasClass("on") == false) {
 					// $(this).css("height","332px");
 					$(this).parents(".h_group").addClass('menu_hover');
-					$(this).parents(".h_group").css("background","url(/resources/img/common/menu_bg.png)");
+					$(this).parents(".h_group").css("background","url(../../resources/img/common/menu_bg.png)");
 					$("#gnb > .box > ul > li > a").css("color","#333");
 					$(this).parents(".h_group").stop().animate({"height":"290px"}, 300);
 					$("#gnb").find(".sub_menu").hide();
@@ -195,7 +195,7 @@ $(function() {
 
 			if ( $(document).scrollTop() > fixed_offset.top ) {
 				$('.h_group').addClass('affix');
-				$('.h_group').css("background","url(/resources/img/common/menu_bg.png)");
+				$('.h_group').css("background","url(../../resources/img/common/menu_bg.png)");
 				$("#gnb > .box > ul > li > a").css("color","#333");
 			} else {
 				$('.h_group').removeClass('affix');

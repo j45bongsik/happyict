@@ -19,26 +19,26 @@
 	<meta name="viewport" content="width=device-width" />
 	<meta name="format-detection" content="telephone=no" />
 	<title>SK holdings</title>
-	<link href="/resources/css/font.css" rel="stylesheet" />
-	<link href="/resources/css/animate.css" rel="stylesheet" />
-	<link href="/resources/css/common.css" rel="stylesheet" />
-	<link href="/resources/css/main.css?<%=queryString%>" rel="stylesheet" />
-	<link href="/resources/css/sub.css?<%=queryString%>" rel="stylesheet" />
+	<link href="../../resources/css/font.css" rel="stylesheet" />
+	<link href="../../resources/css/animate.css" rel="stylesheet" />
+	<link href="../../resources/css/common.css" rel="stylesheet" />
+	<link href="../../resources/css/main.css?<%=queryString%>" rel="stylesheet" />
+	<link href="../../resources/css/sub.css?<%=queryString%>" rel="stylesheet" />
 
-	<!-- <link href="/resources/path/favicon.ico" rel="shortcut icon" /> -->
+	<!-- <link href="../../resources/path/favicon.ico" rel="shortcut icon" /> -->
 
 	<!--[if lt IE 9]>
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.2/html5shiv.js"></script>
 		<![endif]-->
 
-	<script src="/resources/js/jquery-3.4.1.min.js"></script>
-	<script src="/resources/js/jquery-ui.min.js"></script>
-	<script src="/resources/js/jquery.ba-throttle-debounce.min.js"></script>
-	<script src="/resources/js/slick.js"></script>
-	<script src="/resources/js/common.js?<%=queryString%>"></script>
-	<script src="/resources/js/main.js?<%=queryString%>"></script>
+	<script src="../../resources/js/jquery-3.4.1.min.js"></script>
+	<script src="../../resources/js/jquery-ui.min.js"></script>
+	<script src="../../resources/js/jquery.ba-throttle-debounce.min.js"></script>
+	<script src="../../resources/js/slick.js"></script>
+	<script src="../../resources/js/common.js?<%=queryString%>"></script>
+	<script src="../../resources/js/main.js?<%=queryString%>"></script>
 
-	<!-- <script src="/resources/js/popup.js"></script> -->
+	<!-- <script src="../../resources/js/popup.js"></script> -->
 
 </head>
 
@@ -63,7 +63,7 @@
 			</div>
 	
 			<span class="popup_logo">
-				<img src="http://222.236.61.86:81/resources/img/common/logo.png" alt="SK 주식회사">
+				<img src="http://222.236.61.86:81../../resources/img/common/logo.png" alt="SK 주식회사">
 			</span>
 	
 			<div class="close_wrap">

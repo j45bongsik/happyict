@@ -44,10 +44,10 @@
 .visual .slick-arrow {display: block; bottom: 26.2%; z-index: 1000;}
 
 .visual_btn {position: absolute;top: 601px; left: 260px; z-index: 88;}
-.btn_play {display: block; width: 6px; height: 10px; background: url('../../resources/img/visual_pause_icon.png') no-repeat center; text-indent: -9999px; cursor: pointer}
-.btn_play.on {background: url('../../resources/img/visual_play_icon.png') no-repeat center}
-.btn_play_eng {display: block; width: 6px; height: 10px; background: url('../../resources/img/visual_pause_icon.png') no-repeat center; text-indent: -9999px; cursor: pointer}
-.btn_play_eng.on {background: url('../../resources/img/visual_play_icon.png') no-repeat center}
+.btn_play {display: block; width: 6px; height: 10px; background: url('../..../../resources/img/visual_pause_icon.png') no-repeat center; text-indent: -9999px; cursor: pointer}
+.btn_play.on {background: url('../..../../resources/img/visual_play_icon.png') no-repeat center}
+.btn_play_eng {display: block; width: 6px; height: 10px; background: url('../..../../resources/img/visual_pause_icon.png') no-repeat center; text-indent: -9999px; cursor: pointer}
+.btn_play_eng.on {background: url('../..../../resources/img/visual_play_icon.png') no-repeat center}
 
 /* MoreBtn */
 .more_btn {display: block; position: absolute; bottom: 30px; left: 50%; z-index: 9; margin-left: -40px; color: #fff; font-family: 'Gotham', sans-serif; font-size: 13px; width: 80px; text-align: center;}
@@ -72,7 +72,7 @@
 .section-wrap .title_area {display: -webkit-box; display: flex; -webkit-flex-wrap: wrap; flex-wrap: wrap; justify-content: space-between;  margin: 50px 0 0px 0px; -webkit-align-items: center; align-items: center; }
 .section-wrap p.h1_both {font-size: 40px; font-family: "nanum-square-eb", sans-serif; color: #d0112b;text-align: left;}
 .section-wrap p.btn_more {padding-top: 30px;}
-.section-wrap p.btn_more a {display: inline-block; font-size: 20px; font-family: "nanum-square-b", sans-serif; color: #333; background: url('../../resources/img/btn_more.png') no-repeat bottom right; height: 20px; width: 80px;}
+.section-wrap p.btn_more a {display: inline-block; font-size: 20px; font-family: "nanum-square-b", sans-serif; color: #333; background: url('../..../../resources/img/btn_more.png') no-repeat bottom right; height: 20px; width: 80px;}
 
 .pc-area {display: inline-block;}
 .mo-area {display: none;}
@@ -105,7 +105,7 @@
 .section-wrap .section-2 li .text_box p span.br {display: block;}
 .box .section-wrap .section-2 li .text_box p {font-family: "nanum-square-b", sans-serif; color: #fff; font-size: 22px; line-height: 32px; opacity: 1;}
 .box.on .section-wrap .section-2 li .text_box p {opacity: 1; animation-name: fadeInLeft; -webkit-animation-name: fadeInLeft; animation-duration: 1s; -webkit-animation-duration: 1s; transition-delay: 0.1s; }
-.section-wrap .section-2 li .text_box .btn_page {position: absolute; top: 0; right: 0; height: 110px; width: 100px; border-left: 1px solid #706d6c; background: url('../../resources/img/arrow_R.png') center center no-repeat; background-size: 16px 29px;}
+.section-wrap .section-2 li .text_box .btn_page {position: absolute; top: 0; right: 0; height: 110px; width: 100px; border-left: 1px solid #706d6c; background: url('../..../../resources/img/arrow_R.png') center center no-repeat; background-size: 16px 29px;}
 
 
 /* section 3 */
@@ -120,19 +120,19 @@
 .box:nth-child(3) .img-slide-web .slick-list {height: 100%;}
 .box:nth-child(3) .img-slide-web .slick-track {overflow: hidden; height: 100%;}
 .box:nth-child(3) .img-slide-web .slick-arrow {width: 48px; height: 48px; background-color: #fff; border: 1px solid #bebebe; text-indent: -9999px !important; cursor: pointer; display: block; position: absolute; top: 40px; z-index: 8;}
-.box:nth-child(3) .img-slide-web .slick-prev.slick-arrow {background: #fff url('../../resources/img/slide_arrow_L.png') center center no-repeat; right: 150px;}
-.box:nth-child(3) .img-slide-web .slick-prev.slick-arrow:hover {background: #fff url('../../resources/img/slide_arrow_L_on.png') center center no-repeat; transition: all 0.7s;}
-.box:nth-child(3) .img-slide-web .slick-next.slick-arrow {background: #fff url('../../resources/img/slide_arrow_R.png') center center no-repeat; right: 90px;}
-.box:nth-child(3) .img-slide-web .slick-next.slick-arrow:hover {background: #fff url('../../resources/img/slide_arrow_R_on.png') center center no-repeat; transition: all 0.7s;}
+.box:nth-child(3) .img-slide-web .slick-prev.slick-arrow {background: #fff url('../..../../resources/img/slide_arrow_L.png') center center no-repeat; right: 150px;}
+.box:nth-child(3) .img-slide-web .slick-prev.slick-arrow:hover {background: #fff url('../..../../resources/img/slide_arrow_L_on.png') center center no-repeat; transition: all 0.7s;}
+.box:nth-child(3) .img-slide-web .slick-next.slick-arrow {background: #fff url('../..../../resources/img/slide_arrow_R.png') center center no-repeat; right: 90px;}
+.box:nth-child(3) .img-slide-web .slick-next.slick-arrow:hover {background: #fff url('../..../../resources/img/slide_arrow_R_on.png') center center no-repeat; transition: all 0.7s;}
 .box:nth-child(3) .section-wrap p.h1_both {margin-left: 30px; padding-top: 50px;}
 
 .news_btn {position: absolute;top: 40px; right: 30px; z-index: 99;}
-.news_btn_play {display: block; width: 48px; height: 48px; border: 1px solid #bebebe; background: #fff url('../../resources/img/news_pause_icon.png') no-repeat center center; text-indent: -9999px; cursor: pointer}
-.news_btn_play.on {background: #fff url('../../resources/img/news_play_icon.png') no-repeat center;}
+.news_btn_play {display: block; width: 48px; height: 48px; border: 1px solid #bebebe; background: #fff url('../..../../resources/img/news_pause_icon.png') no-repeat center center; text-indent: -9999px; cursor: pointer}
+.news_btn_play.on {background: #fff url('../..../../resources/img/news_play_icon.png') no-repeat center;}
 
 
 /* section 4 */
-section.box:last-child {background: url('../../resources/img/ir_bg.jpg') center center no-repeat; height: 520px; width: 100%; position: relative; font-size: 0; line-height: 100%;}
+section.box:last-child {background: url('../..../../resources/img/ir_bg.jpg') center center no-repeat; height: 520px; width: 100%; position: relative; font-size: 0; line-height: 100%;}
 section.box:last-child .conL {display: inline-block; vertical-align: top; margin: 200px 290px 0 70px;}
 section.box:last-child .conL p:nth-child(1) {font-size: 60px; color: #e0002a; line-height: 100%; margin-bottom: 30px; font-family: 'nanum-square-r';}
 section.box:last-child .conL p:nth-child(1) span {font-size: 60px; font-family: 'nanum-square-eb';}
@@ -147,12 +147,12 @@ section.box:last-child .conR ul li:last-child {margin-right: 0;}
 section.box:last-child .conR ul li a {display: inline-block; width: 215px; height: 215px; font-size: 24px; color: #fff; line-height: 100%; transition: all 0.3s; padding-top: 140px;}
 section.box:last-child .conR ul li a p {font-family: 'nanum-square-b';}
 section.box:last-child .conR ul li > div:hover {-webkit-transform: scale(1.1); transform: scale(1.1);}
-section.box:last-child .conR ul li:nth-child(1) > div {background-image: url('../../resources/img/ir_icon_1.png'); background-position: center top 62px; background-size: 39px 49px;}
-section.box:last-child .conR ul li:nth-child(2) > div {background-image: url('../../resources/img/ir_icon_2.png'); background-position: center top 58px; background-size: 50px 56px;}
-section.box:last-child .conR ul li:nth-child(3) > div {background-image: url('../../resources/img/ir_icon_3.png'); background-position: center top 70px; background-size: 44px 44px;}
-section.box:last-child .conR ul li:nth-child(1):hover > div {background-image: url('../../resources/img/ir_icon_1_hover.png'); background-size: 39px 49px;}
-section.box:last-child .conR ul li:nth-child(2):hover > div {background-image: url('../../resources/img/ir_icon_2_hover.png'); background-size: 50px 56px;}
-section.box:last-child .conR ul li:nth-child(3):hover > div {background-image: url('../../resources/img/ir_icon_3_hover.png'); background-size: 44px 44px;}
+section.box:last-child .conR ul li:nth-child(1) > div {background-image: url('../..../../resources/img/ir_icon_1.png'); background-position: center top 62px; background-size: 39px 49px;}
+section.box:last-child .conR ul li:nth-child(2) > div {background-image: url('../..../../resources/img/ir_icon_2.png'); background-position: center top 58px; background-size: 50px 56px;}
+section.box:last-child .conR ul li:nth-child(3) > div {background-image: url('../..../../resources/img/ir_icon_3.png'); background-position: center top 70px; background-size: 44px 44px;}
+section.box:last-child .conR ul li:nth-child(1):hover > div {background-image: url('../..../../resources/img/ir_icon_1_hover.png'); background-size: 39px 49px;}
+section.box:last-child .conR ul li:nth-child(2):hover > div {background-image: url('../..../../resources/img/ir_icon_2_hover.png'); background-size: 50px 56px;}
+section.box:last-child .conR ul li:nth-child(3):hover > div {background-image: url('../..../../resources/img/ir_icon_3_hover.png'); background-size: 44px 44px;}
 
 section.box:last-child .conL p {opacity: 0;}
 section.box:last-child.on .conL p {opacity: 1; animation-name: fadeInLeft; -webkit-animation-name: fadeInLeft; animation-duration: 1s; -webkit-animation-duration: 1s; transition-delay: 0.1s;}
@@ -189,7 +189,7 @@ section.box:last-child .conR ul li:nth-child(3) > div {background-position: cent
 	.box:nth-child(3) .section-wrap {padding: 0; margin: 0 0px;}
 	.box:nth-child(3) .slick-track > li {width: inherit; margin: 0 0px; }
 
-	section.box:last-child {height: 700px; background: url(../../resources/img/ir_bg.jpg) center center no-repeat; background-size: cover; padding: 0 20px;}
+	section.box:last-child {height: 700px; background: url(../..../../resources/img/ir_bg.jpg) center center no-repeat; background-size: cover; padding: 0 20px;}
 	section.box:last-child .conL p {opacity: 1;}
 	section.box:last-child .conL, .en section.box:last-child .conL {margin: 100px 0 0 0px; width: 100%; text-align: center;}
 	section.box:last-child .conR {width: 100%; text-align: center; margin: 0 auto;}
@@ -248,7 +248,7 @@ section.box:last-child .conR ul li:nth-child(3) > div {background-position: cent
 
 	.section-wrap {padding: 0 20px}
 	.section-wrap p.h1 {font-size: 36px;}
-	.section-wrap p.btn_more a {padding-top: 10px;  background: url(../../resources/img/btn_more.png) no-repeat top 15px right; height: 35px;}
+	.section-wrap p.btn_more a {padding-top: 10px;  background: url(../..../../resources/img/btn_more.png) no-repeat top 15px right; height: 35px;}
 
 	.section-wrap .section-1 {padding-top: 50px;}
 	.section-wrap .section-1 li {flex: 1 1 auto;}
@@ -277,7 +277,7 @@ section.box:last-child .conR ul li:nth-child(3) > div {background-position: cent
 
 
 	/* section 3 */
-	.section-wrap .section-3 {margin: 60px 0; background: url('../../resources/img/sec3_bg_m.jpg') center center no-repeat; background-size: cover; border-top: 1px solid rgba(255, 255, 255, 0.3);}
+	.section-wrap .section-3 {margin: 60px 0; background: url('../..../../resources/img/sec3_bg_m.jpg') center center no-repeat; background-size: cover; border-top: 1px solid rgba(255, 255, 255, 0.3);}
 	.section-wrap .section-3 li {width: 50%; height: 235px;}
 	.section-wrap .section-3 li a {height: 235px; border-right: 1px solid rgba(255, 255, 255, 0.3); border-bottom: 1px solid rgba(255, 255, 255, 0.3);}
 	.section-wrap .section-3 li a:hover, .section-wrap .section-3 li a:active {height: 235px; top: 0; border-right: 1px solid rgba(255, 255, 255, 0.3); box-shadow: none; transition: all 0.3s;}
@@ -288,14 +288,14 @@ section.box:last-child .conR ul li:nth-child(3) > div {background-position: cent
 	.section-wrap .section-3 li a:hover p.title, .section-wrap .section-3 li a:active p.title {font-size: 23px; margin-top: 115px;}
 	.section-wrap .section-3 li a:hover p.text, .section-wrap .section-3 li a:active p.text {font-size: 14px; font-family: "nanum-square-r", sans-serif;}
 	.section-wrap .section-3 li span.br {display: block;}
-	.section-wrap .section-3 li:nth-child(1) a {background: url('../../resources/img/main_icon_1.png') center top 50px no-repeat;}
-	.section-wrap .section-3 li:nth-child(1) a:hover, .section-wrap .section-3 li:nth-child(1) a:active {background: url('../../resources/img/main_icon_1.png') center top 50px no-repeat;}
-	.section-wrap .section-3 li:nth-child(2) a {background: url('../../resources/img/main_icon_2.png') center top 50px no-repeat;}
-	.section-wrap .section-3 li:nth-child(2) a:hover, .section-wrap .section-3 li:nth-child(2) a:active {background: url('../../resources/img/main_icon_2_on_m.png') center top 50px no-repeat;}
-	.section-wrap .section-3 li:nth-child(3) a {background: url('../../resources/img/main_icon_3.png') center top 50px no-repeat;}
-	.section-wrap .section-3 li:nth-child(3) a:hover, .section-wrap .section-3 li:nth-child(3) a:active {background: url('../../resources/img/main_icon_3.png') center top 50px no-repeat;}
-	.section-wrap .section-3 li:nth-child(4) a {background: url('../../resources/img/main_icon_4.png') center top 50px no-repeat;}
-	.section-wrap .section-3 li:nth-child(4) a:hover, .section-wrap .section-3 li:nth-child(4) a:active {background: url('../../resources/img/main_icon_4.png') center top 50px no-repeat;}
+	.section-wrap .section-3 li:nth-child(1) a {background: url('../..../../resources/img/main_icon_1.png') center top 50px no-repeat;}
+	.section-wrap .section-3 li:nth-child(1) a:hover, .section-wrap .section-3 li:nth-child(1) a:active {background: url('../..../../resources/img/main_icon_1.png') center top 50px no-repeat;}
+	.section-wrap .section-3 li:nth-child(2) a {background: url('../..../../resources/img/main_icon_2.png') center top 50px no-repeat;}
+	.section-wrap .section-3 li:nth-child(2) a:hover, .section-wrap .section-3 li:nth-child(2) a:active {background: url('../..../../resources/img/main_icon_2_on_m.png') center top 50px no-repeat;}
+	.section-wrap .section-3 li:nth-child(3) a {background: url('../..../../resources/img/main_icon_3.png') center top 50px no-repeat;}
+	.section-wrap .section-3 li:nth-child(3) a:hover, .section-wrap .section-3 li:nth-child(3) a:active {background: url('../..../../resources/img/main_icon_3.png') center top 50px no-repeat;}
+	.section-wrap .section-3 li:nth-child(4) a {background: url('../..../../resources/img/main_icon_4.png') center top 50px no-repeat;}
+	.section-wrap .section-3 li:nth-child(4) a:hover, .section-wrap .section-3 li:nth-child(4) a:active {background: url('../..../../resources/img/main_icon_4.png') center top 50px no-repeat;}
 
 	section.box:last-child {height: auto;}
 	section.box:last-child .conL p:nth-child(1), section.box:last-child .conL p:nth-child(1) span {font-size: 24px; margin-bottom: 10px;}

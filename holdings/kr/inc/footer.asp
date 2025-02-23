@@ -13,7 +13,7 @@
 					<!-- // footerL -->
 					<div class="footerR">
 						<div class="wa_mark">
-							<a href="http://www.webwatch.or.kr/Situation/WA_Situation.html?MenuCD=110" title="국가 공인 인증기관 : 웹와치"><img src="/resources/img/common/mark_wa.png" alt="과학기술정보통신부 WEB ACCESSIBILITY 마크(웹 접근성 품질인증 마크)"/></a>
+							<a href="http://www.webwatch.or.kr/Situation/WA_Situation.html?MenuCD=110" title="국가 공인 인증기관 : 웹와치"><img src="../../resources/img/common/mark_wa.png" alt="과학기술정보통신부 WEB ACCESSIBILITY 마크(웹 접근성 품질인증 마크)"/></a>
 						</div>
 						<div class="family pc">
 							<a href="#familyList" class="btn_familyView" title="관련 사이트 보기">Family Site<span class="ico"><span class="txt blind">열기</span></span></a>
